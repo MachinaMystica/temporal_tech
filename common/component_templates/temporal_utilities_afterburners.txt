@@ -1,0 +1,94 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+#############
+#	POWER	#
+#############
+@power_L1 = -5       
+@power_L2 = -10
+          
+#############
+#	COST	#
+#############
+@cost_L1 = 5
+@cost_L2 = 10
+
+#############
+#	AFTERBURNER	#
+#############
+
+#############
+# UTILITIES #
+#############
+
+# Afterburners
+
+utility_component_template = {
+	key = "TEMPORAL_AFTERBURNER"
+	size = aux
+	icon = "GFX_ship_part_temporal_afterburners"
+	icon_frame = 1
+	power = -36
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 11
+			sr_dark_matter = 1
+			sr_zro = 1
+		}
+	}
+	modifier = {
+		ship_speed_mult = 0.30
+		ship_evasion_mult = 0.15
+	}
+	class_restriction = { shipclass_military }
+	prerequisites = { "tech_temporal_afterburners" }
+	component_set = "TEMPORAL_AFTERBURNER"
+	upgrades_to = "TEMPORAL_2_AFTERBURNER"
+	
+	ai_weight = {
+		weight = 18
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_kinetic
+		}
+		modifier = {
+			factor = 0.5
+			is_preferred_weapons = weapon_type_explosive
+		}	
+	}
+}
+
+utility_component_template = {
+	key = "TEMPORAL_2_AFTERBURNER"
+	size = aux
+	icon = "GFX_ship_part_temporal_afterburners_2"
+	icon_frame = 1
+	power = -81
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 24
+			sr_dark_matter = 2.5
+			sr_zro = 2.5
+		}
+	}
+	modifier = {
+		ship_speed_mult = 0.50
+		ship_evasion_mult = 0.25
+	}
+	class_restriction = { shipclass_military }
+	prerequisites = { "tech_temporal_afterburners_2" }
+	component_set = "TEMPORAL_2_AFTERBURNER"
+	
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_kinetic
+		}
+		modifier = {
+			factor = 0.5
+			is_preferred_weapons = weapon_type_explosive
+		}	
+	}
+}

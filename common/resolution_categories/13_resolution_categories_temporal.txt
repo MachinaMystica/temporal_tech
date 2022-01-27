@@ -1,0 +1,20 @@
+# Resolution Categories for Custodians and Galactic Emperors
+
+resolution_category_temporal_institutions = {
+	group = custodianship
+	icon = "GFX_resolution_timeline_institutions"
+	multiple_active_resolutions = yes
+	resolution_types = {
+		"resolution_custodian_tva"
+		"resolution_custodian_disband_tva"
+	}
+}
+
+resolution_category_emperor_temporal_institutions = {
+	group = galactic_empire
+	icon = "GFX_resolution_imperial_timeline_institutions"
+	multiple_active_resolutions = yes
+	resolution_types = {
+		"resolution_emperor_iho"
+	}
+}

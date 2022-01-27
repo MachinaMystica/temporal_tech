@@ -1,0 +1,23 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_sb_events_predictor"
+		texturefile = "gfx/interface/icons/modules/sb_events_predictor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sb_temporal_space_yard"
+		texturefile = "gfx/interface/icons/modules/sb_temporal_space_yard.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sb_temporal_vacation_service"
+		texturefile = "gfx/interface/icons/modules/sb_temporal_vacation_service.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sb_time_shrine"
+		texturefile = "gfx/interface/icons/modules/sb_time_shrine.dds"
+	}
+
+}

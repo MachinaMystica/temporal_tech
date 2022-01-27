@@ -1,0 +1,35 @@
+# Star glow from sun is set under atmosphere in   00_planet_classes
+# Star surface is set in worldgfx file for each star
+# Effects are set in particle effect for each star
+# New planets also need planet tiles (game\gfx\interface\icons\tile_backgrounds)
+# New planets need surface background (game\gfx\portraits\environments)
+
+# ###########
+# Habitable Planets
+# ###########
+
+# ###########
+# Uninhabitable Planets
+# ###########
+
+pc_temporal_livingmetal = {
+	entity = "livingmetal_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 6s
+
+	atmosphere_color 		= hsv { 0.797 0.1 0.55 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0.2
+	
+	planet_size = { min = 12 max = 30 }
+	moon_size = { min = 6 max = 10 }
+	
+	colonizable = no
+}

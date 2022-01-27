@@ -1,0 +1,1052 @@
+#######
+# ARC EMITTER 1
+#######
+
+# WINDUP
+
+entity = {
+	name = "temporal_arc_emitter_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_windup" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_8 particle = "temporal_arc_emitter_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_7 particle = "temporal_arc_emitter_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_6 particle = "temporal_arc_emitter_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_5 particle = "temporal_arc_emitter_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_4 particle = "temporal_arc_emitter_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_3 particle = "temporal_arc_emitter_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_2 particle = "temporal_arc_emitter_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_1 particle = "temporal_arc_emitter_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "temporal_arc_emitter_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "temporal_arc_emitter_turret_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_windup" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "temporal_arc_emitter_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "humanoid_01_temporal_arc_emitter_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "temporal_arc_emitter_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "arthropoid_01_temporal_arc_emitter_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "temporal_arc_emitter_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "molluscoid_01_temporal_arc_emitter_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.2
+		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_windup" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_1 particle = "temporal_arc_emitter_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_2 particle = "temporal_arc_emitter_windup_effect" }
+		#event = { time = 0.4 use_parent_nodes = yes node = xl_windup_2 particle = "temporal_arc_emitter_windup_effect" }
+		#event = { time = 0.6 use_parent_nodes = yes node = xl_windup_1 particle = "temporal_arc_emitter_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "temporal_arc_emitter_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+# MUZZLE FLASHES
+
+entity = {
+	name = "temporal_arc_emitter_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "temporal_arc_emitter_muzzle_particle" keep_particle = yes sound = { soundeffect = xl_arc_emitter_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_xl_arc_emitter_fire" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "temporal_arc_emitter_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "temporal_arc_emitter_hit_effect" }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "temporal_arc_emitter_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		#event = { time = 0.0 particle = arc_emitter_hit_effect }
+		start_event = { particle = "projectile_large_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#######
+# ARC EMITTER 2
+#######
+
+# WINDUP
+
+entity = {
+	name = "temporal_arc_emitter_2_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_windup" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_8 particle = "temporal_arc_emitter_2_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_7 particle = "temporal_arc_emitter_2_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_6 particle = "temporal_arc_emitter_2_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_5 particle = "temporal_arc_emitter_2_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_4 particle = "temporal_arc_emitter_2_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_3 particle = "temporal_arc_emitter_2_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_2 particle = "temporal_arc_emitter_2_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_1 particle = "temporal_arc_emitter_2_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "temporal_arc_emitter_2_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "temporal_arc_emitter_2_turret_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_windup" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "temporal_arc_emitter_2_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "humanoid_01_temporal_arc_emitter_2_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "temporal_arc_emitter_2_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "arthropoid_01_temporal_arc_emitter_2_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "temporal_arc_emitter_2_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "molluscoid_01_temporal_arc_emitter_2_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.2
+		event = { trigger_once = yes sound = { soundeffect = "arc_emitter_windup" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_1 particle = "temporal_arc_emitter_2_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_2 particle = "temporal_arc_emitter_2_windup_effect" }
+		#event = { time = 0.4 use_parent_nodes = yes node = xl_windup_2 particle = "temporal_arc_emitter_windup_effect" }
+		#event = { time = 0.6 use_parent_nodes = yes node = xl_windup_1 particle = "temporal_arc_emitter_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "temporal_arc_emitter_2_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+# MUZZLE FLASHES
+
+entity = {
+	name = "temporal_arc_emitter_2_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "temporal_arc_emitter_2_muzzle_particle" keep_particle = yes sound = { soundeffect = xl_arc_emitter_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_xl_arc_emitter_fire" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "temporal_arc_emitter_2_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "temporal_arc_emitter_2_hit_effect" }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "temporal_arc_emitter_2_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		#event = { time = 0.0 particle = arc_emitter_hit_effect }
+		start_event = { particle = "projectile_large_shield_hit_effect" sound = { soundeffect = shield_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#######
+# ENERGY LANCE 1
+#######
+
+# WINDUP
+
+entity = {
+	name = "temporal_lance_1_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_fire" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_8 particle = "temporal_lance_1_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_7 particle = "temporal_lance_1_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_6 particle = "temporal_lance_1_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_5 particle = "temporal_lance_1_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_4 particle = "temporal_lance_1_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_3 particle = "temporal_lance_1_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_2 particle = "temporal_lance_1_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_1 particle = "temporal_lance_1_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "temporal_lance_1_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "temporal_lance_1_turret_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_fire" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "temporal_lance_1_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "humanoid_01_temporal_lance_1_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_fire" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "temporal_lance_1_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "arthropoid_01_temporal_lance_1_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_fire" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "temporal_lance_1_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "molluscoid_01_temporal_lance_1_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.2
+		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_fire" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_1 particle = "temporal_lance_1_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_2 particle = "temporal_lance_1_windup_effect" }
+		#event = { time = 0.4 use_parent_nodes = yes node = xl_windup_2 particle = "temporal_lance_windup_effect" }
+		#event = { time = 0.6 use_parent_nodes = yes node = xl_windup_1 particle = "temporal_lance_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "temporal_lance_1_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+# MUZZLE FLASHES
+
+entity = {
+	name = "temporal_lance_1_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 0.8 looping = no
+		event = { time = 0 particle = "temporal_lance_1_muzzle_particle" keep_particle = yes sound = { soundeffect = tachyon_lance_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_tachyon_lance_fire" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "temporal_lance_1_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		start_event = { particle = "temporal_lance_1_hit_effect" keep_particle = yes sound = { soundeffect = tachyon_lance_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_tachyon_lance_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+# SHIELD HIT ENTITIES
+
+entity = {
+	name = "temporal_lance_1_shield_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "temporal_lance_1_hit_effect" sound = { soundeffect = shield_hit } }
+		start_event = { particle = "projectile_large_shield_hit_effect" }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#######
+# ENERGY LANCE 2
+#######
+
+# WINDUP
+
+entity = {
+	name = "temporal_lance_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_fire" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_8 particle = "temporal_lance_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_7 particle = "temporal_lance_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_6 particle = "temporal_lance_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_5 particle = "temporal_lance_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_4 particle = "temporal_lance_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_3 particle = "temporal_lance_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_2 particle = "temporal_lance_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_1 particle = "temporal_lance_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "temporal_lance_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "temporal_lance_turret_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_fire" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "temporal_lance_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "humanoid_01_temporal_lance_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_fire" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "temporal_lance_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "arthropoid_01_temporal_lance_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_fire" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "temporal_lance_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "molluscoid_01_temporal_lance_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.2
+		event = { trigger_once = yes sound = { soundeffect = "tachyon_lance_fire" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_1 particle = "temporal_lance_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_2 particle = "temporal_lance_windup_effect" }
+		#event = { time = 0.4 use_parent_nodes = yes node = xl_windup_2 particle = "temporal_lance_windup_effect" }
+		#event = { time = 0.6 use_parent_nodes = yes node = xl_windup_1 particle = "temporal_lance_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "temporal_lance_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+# MUZZLE FLASHES
+
+entity = {
+	name = "temporal_lance_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 0.8 looping = no
+		event = { time = 0 particle = "temporal_lance_muzzle_particle" keep_particle = yes sound = { soundeffect = tachyon_lance_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_tachyon_lance_fire" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "temporal_lance_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		start_event = { particle = "temporal_lance_hit_effect" keep_particle = yes sound = { soundeffect = tachyon_lance_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_tachyon_lance_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+# SHIELD HIT ENTITIES
+
+entity = {
+	name = "temporal_lance_shield_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "temporal_lance_hit_effect" sound = { soundeffect = shield_hit } }
+		start_event = { particle = "projectile_large_shield_hit_effect" }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+######
+# MASS ACCELERATOR 1
+######
+
+
+# WINDUP
+
+
+entity = {
+	name = "tem_kinetic_artillery_1_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_8 particle = "tem_kinetic_artillery_1_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_7 particle = "tem_kinetic_artillery_1_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_6 particle = "tem_kinetic_artillery_1_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_5 particle = "tem_kinetic_artillery_1_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_4 particle = "tem_kinetic_artillery_1_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_3 particle = "tem_kinetic_artillery_1_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_2 particle = "tem_kinetic_artillery_1_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_1 particle = "tem_kinetic_artillery_1_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "tem_kinetic_artillery_1_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "humanoid_01_tem_kinetic_artillery_1_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "tem_kinetic_artillery_1_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "avian_01_tem_kinetic_artillery_1_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "tem_kinetic_artillery_1_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "reptilian_01_tem_kinetic_artillery_1_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "tem_kinetic_artillery_1_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "arthropoid_01_tem_kinetic_artillery_1_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "tem_kinetic_artillery_1_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "molluscoid_01_tem_kinetic_artillery_1_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.4
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_6 particle = "tem_kinetic_artillery_1_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_5 particle = "tem_kinetic_artillery_1_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_4 particle = "tem_kinetic_artillery_1_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_3 particle = "tem_kinetic_artillery_1_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "tem_kinetic_artillery_1_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+# MUZZLE FLASH
+
+entity = {
+	name = "tem_kinetic_artillery_1_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "tem_kinetic_artillery_1_muzzle_particle" keep_particle = yes sound = { soundeffect = adv_kinectic_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_adv_kinectic_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "tem_kinetic_artillery_1_entity"
+	pdxmesh = "tem_kinetic_artillery_1_tracer_round_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		#event = { time = 0 particle = "kinetic_artillery_idle_particle" keep_particle = yes }
+	}
+	
+	scale = 2
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "tem_kinetic_artillery_1_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5.0 looping = no
+		event = { time = 0.0 particle = "tem_kinetic_artillery_1_hit_effect" sound = { soundeffect = adv_kinectic_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_adv_kinectic_hit" } }
+	}
+	default_state = "explode_med_hp"
+	scale = 2
+}
+
+entity = {
+	name = "tem_kinetic_artillery_1_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "tem_kinetic_artillery_1_hit_effect" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+	scale = 2
+}
+
+
+######
+# MASS ACCELERATOR 2
+######
+
+
+# WINDUP
+
+
+entity = {
+	name = "tem_kinetic_artillery_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_8 particle = "tem_kinetic_artillery_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_7 particle = "tem_kinetic_artillery_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_6 particle = "tem_kinetic_artillery_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = xl_windup_5 particle = "tem_kinetic_artillery_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_4 particle = "tem_kinetic_artillery_windup_effect" }
+		event = { time = 0.4 use_parent_nodes = yes node = xl_windup_3 particle = "tem_kinetic_artillery_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_2 particle = "tem_kinetic_artillery_windup_effect" }
+		event = { time = 0.6 use_parent_nodes = yes node = xl_windup_1 particle = "tem_kinetic_artillery_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "tem_kinetic_artillery_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "humanoid_01_tem_kinetic_artillery_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "tem_kinetic_artillery_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "avian_01_tem_kinetic_artillery_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "tem_kinetic_artillery_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "reptilian_01_tem_kinetic_artillery_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "tem_kinetic_artillery_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "arthropoid_01_tem_kinetic_artillery_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		
+		event = { time = 0.0 use_parent_nodes = yes node = turret_muzzle_01 particle = "tem_kinetic_artillery_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "molluscoid_01_tem_kinetic_artillery_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.4
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_6 particle = "tem_kinetic_artillery_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_5 particle = "tem_kinetic_artillery_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_4 particle = "tem_kinetic_artillery_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = xl_windup_3 particle = "tem_kinetic_artillery_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "tem_kinetic_artillery_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+# MUZZLE FLASH
+
+entity = {
+	name = "tem_kinetic_artillery_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "tem_kinetic_artillery_muzzle_particle" keep_particle = yes sound = { soundeffect = adv_kinectic_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_adv_kinectic_fire" } }
+	}
+}
+
+# PROJECTILE
+
+entity = {
+	name = "tem_kinetic_artillery_entity"
+	pdxmesh = "tem_kinetic_artillery_tracer_round_mesh"
+	
+	default_state = idle
+	state = { name = "idle"
+		#event = { time = 0 particle = "kinetic_artillery_idle_particle" keep_particle = yes }
+	}
+	
+	scale = 2
+}
+
+# HIT EFFECT
+
+entity = {
+	name = "tem_kinetic_artillery_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5.0 looping = no
+		event = { time = 0.0 particle = "tem_kinetic_artillery_hit_effect" sound = { soundeffect = adv_kinectic_hit } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_adv_kinectic_hit" } }
+	}
+	default_state = "explode_med_hp"
+	scale = 2
+}
+
+entity = {
+	name = "tem_kinetic_artillery_shield_hit_entity"
+	cull_radius = 1.0
+	
+	state = { name = "explode_med_hp" state_time = 5 looping = no
+		event = { time = 0.0 particle = "tem_kinetic_artillery_hit_effect" }
+		event = { time = 0.0 particle = "projectile_medium_shield_hit_effect" }
+		event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	default_state = "explode_med_hp"
+	scale = 2
+}
+
+###########
+# TITAN LASER 1
+###########
+
+entity = {
+	name = "temporal_titan_laser_1_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = no next_state = "attack_2" state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "titan_laser_windup_02" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = titan_windup_16 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.0 use_parent_nodes = yes node = titan_windup_15 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.1 use_parent_nodes = yes node = titan_windup_14 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.1 use_parent_nodes = yes node = titan_windup_13 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.2 use_parent_nodes = yes node = titan_windup_12 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.2 use_parent_nodes = yes node = titan_windup_11 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.3 use_parent_nodes = yes node = titan_windup_10 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.3 use_parent_nodes = yes node = titan_windup_9 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.4 use_parent_nodes = yes node = titan_windup_8 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.4 use_parent_nodes = yes node = titan_windup_7 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.5 use_parent_nodes = yes node = titan_windup_6 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.5 use_parent_nodes = yes node = titan_windup_5 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.6 use_parent_nodes = yes node = titan_windup_4 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.6 use_parent_nodes = yes node = titan_windup_3 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.7 use_parent_nodes = yes node = titan_windup_2 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.7 use_parent_nodes = yes node = titan_windup_1 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = titan_gun_01 particle = "titan_laser_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+	state = {
+		name = "attack_2" looping = no next_state = "attack_3" state_time = 0.6
+		#event = { trigger_once = yes sound = { soundeffect = "titan_laser_windup_pulse" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = titan_windup_16 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.0 use_parent_nodes = yes node = titan_windup_15 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.06 use_parent_nodes = yes node = titan_windup_14 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.06 use_parent_nodes = yes node = titan_windup_13 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.12 use_parent_nodes = yes node = titan_windup_12 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.12 use_parent_nodes = yes node = titan_windup_11 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.18 use_parent_nodes = yes node = titan_windup_10 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.18 use_parent_nodes = yes node = titan_windup_9 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.24 use_parent_nodes = yes node = titan_windup_8 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.24 use_parent_nodes = yes node = titan_windup_7 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.3 use_parent_nodes = yes node = titan_windup_6 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.3 use_parent_nodes = yes node = titan_windup_5 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.36 use_parent_nodes = yes node = titan_windup_4 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.36 use_parent_nodes = yes node = titan_windup_3 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.42 use_parent_nodes = yes node = titan_windup_2 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		event = { time = 0.42 use_parent_nodes = yes node = titan_windup_1 particle = "temporal_titan_laser_1_windup_effect" keep_particle = yes }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = titan_gun_01 particle = "titan_laser_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+	state = {
+		name = "attack_3" looping = yes state_time = 0.4
+		event = { trigger_once = yes sound = { soundeffect = "titan_laser_windup_01" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = titan_windup_16 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = titan_windup_15 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.04 use_parent_nodes = yes node = titan_windup_14 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.04 use_parent_nodes = yes node = titan_windup_13 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.08 use_parent_nodes = yes node = titan_windup_12 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.08 use_parent_nodes = yes node = titan_windup_11 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.12 use_parent_nodes = yes node = titan_windup_10 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.12 use_parent_nodes = yes node = titan_windup_9 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.16 use_parent_nodes = yes node = titan_windup_8 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.16 use_parent_nodes = yes node = titan_windup_7 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = titan_windup_6 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = titan_windup_5 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.24 use_parent_nodes = yes node = titan_windup_4 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.24 use_parent_nodes = yes node = titan_windup_3 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.28 use_parent_nodes = yes node = titan_windup_2 particle = "temporal_titan_laser_1_windup_effect" }
+		event = { time = 0.28 use_parent_nodes = yes node = titan_windup_1 particle = "temporal_titan_laser_1_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = titan_gun_01 particle = "temporal_titan_laser_1_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+# MUZZLE FLASH
+
+entity = {
+	name = "temporal_titan_laser_1_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "temporal_titan_laser_1_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes  sound = { soundeffect = titan_laser_fire_01 } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_titan_laser_fire_01" } }
+		
+		event = { trigger_once = yes sound = { soundeffect = "titan_laser_fire_02" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_titan_laser_fire_02" } }
+		
+		event = { trigger_once = yes sound = { soundeffect = "titan_laser_fire_03" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_titan_laser_fire_03" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "temporal_titan_laser_1_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		start_event = { particle = "temporal_titan_laser_hit_effect" keep_particle = yes sound = { soundeffect = titan_laser_hit } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+# SHIELD HIT ENTITIES
+
+entity = {
+	name = "temporal_titan_laser_1_shield_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "temporal_titan_laser_1_hit_effect" sound = { soundeffect = shield_hit } }
+		start_event = { particle = "titan_laser_shield_hit_effect" }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+###########
+# TITAN LASER 2
+###########
+
+entity = {
+	name = "temporal_titan_laser_windup_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = no next_state = "attack_2" state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "titan_laser_windup_02" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = titan_windup_16 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.0 use_parent_nodes = yes node = titan_windup_15 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.1 use_parent_nodes = yes node = titan_windup_14 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.1 use_parent_nodes = yes node = titan_windup_13 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.2 use_parent_nodes = yes node = titan_windup_12 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.2 use_parent_nodes = yes node = titan_windup_11 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.3 use_parent_nodes = yes node = titan_windup_10 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.3 use_parent_nodes = yes node = titan_windup_9 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.4 use_parent_nodes = yes node = titan_windup_8 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.4 use_parent_nodes = yes node = titan_windup_7 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.5 use_parent_nodes = yes node = titan_windup_6 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.5 use_parent_nodes = yes node = titan_windup_5 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.6 use_parent_nodes = yes node = titan_windup_4 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.6 use_parent_nodes = yes node = titan_windup_3 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.7 use_parent_nodes = yes node = titan_windup_2 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.7 use_parent_nodes = yes node = titan_windup_1 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = titan_gun_01 particle = "titan_laser_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+	state = {
+		name = "attack_2" looping = no next_state = "attack_3" state_time = 0.6
+		#event = { trigger_once = yes sound = { soundeffect = "titan_laser_windup_pulse" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = titan_windup_16 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.0 use_parent_nodes = yes node = titan_windup_15 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.06 use_parent_nodes = yes node = titan_windup_14 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.06 use_parent_nodes = yes node = titan_windup_13 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.12 use_parent_nodes = yes node = titan_windup_12 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.12 use_parent_nodes = yes node = titan_windup_11 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.18 use_parent_nodes = yes node = titan_windup_10 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.18 use_parent_nodes = yes node = titan_windup_9 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.24 use_parent_nodes = yes node = titan_windup_8 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.24 use_parent_nodes = yes node = titan_windup_7 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.3 use_parent_nodes = yes node = titan_windup_6 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.3 use_parent_nodes = yes node = titan_windup_5 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.36 use_parent_nodes = yes node = titan_windup_4 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.36 use_parent_nodes = yes node = titan_windup_3 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.42 use_parent_nodes = yes node = titan_windup_2 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		event = { time = 0.42 use_parent_nodes = yes node = titan_windup_1 particle = "temporal_titan_laser_windup_effect" keep_particle = yes }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = titan_gun_01 particle = "titan_laser_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+	state = {
+		name = "attack_3" looping = yes state_time = 0.4
+		event = { trigger_once = yes sound = { soundeffect = "titan_laser_windup_01" } }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = titan_windup_16 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.0 use_parent_nodes = yes node = titan_windup_15 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.04 use_parent_nodes = yes node = titan_windup_14 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.04 use_parent_nodes = yes node = titan_windup_13 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.08 use_parent_nodes = yes node = titan_windup_12 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.08 use_parent_nodes = yes node = titan_windup_11 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.12 use_parent_nodes = yes node = titan_windup_10 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.12 use_parent_nodes = yes node = titan_windup_9 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.16 use_parent_nodes = yes node = titan_windup_8 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.16 use_parent_nodes = yes node = titan_windup_7 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = titan_windup_6 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.2 use_parent_nodes = yes node = titan_windup_5 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.24 use_parent_nodes = yes node = titan_windup_4 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.24 use_parent_nodes = yes node = titan_windup_3 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.28 use_parent_nodes = yes node = titan_windup_2 particle = "temporal_titan_laser_windup_effect" }
+		event = { time = 0.28 use_parent_nodes = yes node = titan_windup_1 particle = "temporal_titan_laser_windup_effect" }
+		
+		event = { time = 0.0 use_parent_nodes = yes node = titan_gun_01 particle = "temporal_titan_laser_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+# MUZZLE FLASH
+
+entity = {
+	name = "temporal_titan_laser_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "temporal_titan_laser_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes  sound = { soundeffect = titan_laser_fire_01 } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_titan_laser_fire_01" } }
+		
+		event = { trigger_once = yes sound = { soundeffect = "titan_laser_fire_02" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_titan_laser_fire_02" } }
+		
+		event = { trigger_once = yes sound = { soundeffect = "titan_laser_fire_03" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_titan_laser_fire_03" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "temporal_titan_laser_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		start_event = { particle = "temporal_titan_laser_hit_effect" keep_particle = yes sound = { soundeffect = titan_laser_hit } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+# SHIELD HIT ENTITIES
+
+entity = {
+	name = "temporal_titan_laser_shield_hit_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = "temporal_titan_laser_hit_effect" sound = { soundeffect = shield_hit } }
+		start_event = { particle = "titan_laser_shield_hit_effect" }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}

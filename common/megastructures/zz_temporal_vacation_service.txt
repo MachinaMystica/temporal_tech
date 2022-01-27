@@ -1,0 +1,246 @@
+temporal_vacation_service_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	prerequisites = { tech_temporal_tourism }
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+			influence = 300
+		}
+		upkeep = { energy = 5 }
+	}
+
+	potential = {
+		has_technology = tech_temporal_tourism
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = { fail_text = "requires_inside_border"		is_inside_border = from }
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_temporal_vacation_service"
+			from = { NOT = { has_country_flag = built_temporal_vacation_service_site } }
+		}
+	}
+	
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_survey"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+			custom_tooltip = { 
+				fail_text = "requires_no_birch"
+				NOT = {
+					is_planet_class = pc_birch 
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 15
+		
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}	
+		
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = { 
+					owner = { is_same_value = from } 
+				}
+			}
+		}
+	}
+
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = {
+			set_country_flag = built_temporal_vacation_service_site
+			country_event = { id = temporal_dialog.1310 }	# Notification
+		}
+		fromfrom.planet = {
+			if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
+			set_planet_flag = megastructure			# Vanilla uses to check if a megastrucure can be built here
+			set_planet_flag = has_megastructure		# Vanilla uses to check if an orbital station can be built here
+		}
+	}
+}
+
+temporal_vacation_service_1 = {
+	entity = "temporal_vacation_phase_01_entity"
+	construction_entity = "temporal_vacation_phase_01_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	upgrade_from = { temporal_vacation_service_0 }
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 15000
+			sr_dark_matter = 500
+			sr_zro = 500
+		}
+		upkeep = {
+			energy = 15
+			sr_dark_matter = 2.5
+			sr_zro = 2.5
+		}
+	}
+
+	possible = { from = { has_technology = tech_temporal_tourism } }
+	
+	country_modifier = {
+		trade_value_mult = 0.05
+		planet_amenities_mult = 0.05
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = { country_event = { id = temporal_dialog.1311 } }	# Notification
+	}
+}
+
+temporal_vacation_service_2 = {
+	entity = "temporal_vacation_phase_02_entity"
+	construction_entity = "temporal_vacation_phase_02_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	upgrade_from = { temporal_vacation_service_1 }
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 15000
+			sr_dark_matter = 500
+			sr_zro = 500
+		}
+		upkeep = {
+			energy = 25
+			sr_dark_matter = 5
+			sr_zro = 5
+		}
+	}
+
+	possible = { from = { has_technology = tech_temporal_tourism } }
+
+	country_modifier = {
+		trade_value_mult = 0.15
+		planet_amenities_mult = 0.1
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = { country_event = { id = temporal_dialog.1312 } }	# Notification
+	}
+}
+
+temporal_vacation_service_3 = {
+	entity = "temporal_vacation_phase_03_entity"
+	construction_entity = "temporal_vacation_phase_03_construction_entity"
+	portrait = "GFX_megastructure_galactic_market"
+	place_entity_on_planet_plane = no
+	upgrade_from = { temporal_vacation_service_2 }
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 15000
+			energy = 10000 
+			sr_dark_matter = 1000
+			sr_zro = 1000
+		}
+		upkeep = {
+			energy = 50
+			sr_dark_matter = 10
+			sr_zro = 10
+		}
+	}
+
+	possible = { from = { has_technology = tech_temporal_tourism } }
+
+	country_modifier = {
+		trade_value_mult = 0.3
+		planet_immigration_pull_mult = 0.25
+		planet_amenities_mult = 0.15
+		pop_citizen_happiness = 0.05
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		fromfrom = {
+			create_ambient_object = {
+				type = "temporal_storm_s_object"
+				location = this
+				entity_offset_height = {
+					min = -5
+					max = -5
+				}
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = random
+				}
+			}
+		}
+		save_event_target_as = temporal_system
+		fromfrom.planet = { 
+			save_event_target_as = temporal_planet
+		}
+		from = {
+			country_event = { id = temporal_dialog.1313 }	# Notification
+		}
+	}
+}

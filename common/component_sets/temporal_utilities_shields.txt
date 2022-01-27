@@ -1,0 +1,15 @@
+# Icons set here are the ones shown in component editor list.
+
+component_set = {
+	key = "TEMPORAL_SHIELD"
+	
+	icon = "GFX_ship_part_temporal_shield"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TEMPORAL_2_SHIELD"
+	
+	icon = "GFX_ship_part_temporal_shield_2"
+	icon_frame = 1	
+}

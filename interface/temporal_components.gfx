@@ -1,0 +1,288 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ship_part_alloy_burner_missile"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_alloy_burner_missile.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_alloy_burner_missile_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_alloy_burner_missile_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_armor_temporal"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_armor_temporal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_armor_temporal_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_armor_temporal_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_crystalline_torpedo"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_crystalline_torpedo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_energy_dampener"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_energy_dampener.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_energy_dampener_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_energy_dampener_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_energy_refractor"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_energy_refractor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_high_energy_magnifier"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_high_energy_magnifier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_high_energy_magnifier_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_high_energy_magnifier_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_massive_shield_depleter"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_massive_shield_depleter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_massive_shield_depleter_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_massive_shield_depleter_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_mental_singularity_generator"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_mental_singularity_generator.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_mental_singularity_generator_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_mental_singularity_generator_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_null_space_projector"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_null_space_projector.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_null_space_projector_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_null_space_projector_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_shard_cannon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_shard_cannon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_shard_cannon_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_shard_cannon_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_shield_accelerator"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_shield_accelerator.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_shield_accelerator_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_shield_accelerator_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_small_time_distortion_burst"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_small_time_distortion_burst.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_small_time_distortion_burst_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_small_time_distortion_burst_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_strike_craft_fighter_temporal"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_strike_craft_fighter_temporal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_strike_craft_fighter_temporal_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_strike_craft_fighter_temporal_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_subspace_rupture_beam"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_subspace_rupture_beam.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_subspace_rupture_beam_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_subspace_rupture_beam_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_tachyon_projection_cannon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_tachyon_projection_cannon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_tachyon_projection_cannon_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_tachyon_projection_cannon_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_jump_drive"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_jump_drive.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_jump_drive_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_jump_drive_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_afterburners"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_afterburners.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_afterburners_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_afterburners_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_power_core"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_power_core.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_power_core_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_power_core_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_sensor"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_sensor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_sensor_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_sensor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_disruptor"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_disruptor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_disruptor_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_disruptor_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_sensors"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_sensors.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_temporal_shield"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_shield.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_shield_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_shield_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_shifter"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_shifter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_shifter_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_shifter_2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_temporal_swarmer_missile"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_swarmer_missile.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_swarmer_missile_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_swarmer_missile_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_tachyon_cannon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_tachyon_cannon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_tachyon_cannon_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_tachyon_cannon_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_thruster"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_thruster.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_thruster_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_thruster_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_time_distortion_burst"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_time_distortion_burst.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_time_distortion_burst_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_time_distortion_burst_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_torpedo"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_torpedo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_torpedo_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_torpedo_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_weapon_phase_accelerator"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_weapon_phase_accelerator.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_decoder"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_decoder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_temporal_encoder"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_temporal_encoder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_global_deceleration"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_global_deceleration.dds"
+	}
+
+}

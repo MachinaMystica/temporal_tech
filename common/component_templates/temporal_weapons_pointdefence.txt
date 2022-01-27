@@ -1,0 +1,163 @@
+# Icons set here are the ones show in the actual slot. 
+
+### Point Defence Temporal 1
+weapon_component_template = {
+	key = "POINT_DEFENCE_TEMPORAL"
+	size = point_defence
+	
+	icon = "GFX_ship_part_small_time_distortion_burst"
+	icon_frame = 1
+	
+	prerequisites = { "tech_small_time_distortion_burst" }
+	component_set = "POINT_DEFENCE_TEMPORAL"
+	upgrades_to = "POINT_DEFENCE_2_TEMPORAL"
+	type = point_defence
+	projectile_gfx = "temporal_laser_pd"
+	tags = { weapon_type_point_defense weapon_type_energy }
+	ai_tags = { weapon_role_point_defense }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 24
+		}
+		upkeep = {
+			energy = 0.24
+			alloys = 0.024
+		}
+	}
+
+	power = -14.5
+	damage = { min = 4 max = 14 }
+	windup = { min = 0 max = 0 }
+	hull_damage = 1
+	shield_damage = 1
+	shield_penetration = 0
+	armor_damage = 0.25
+	armor_penetration = 0
+	total_fire_time = 5
+	range = 30
+	accuracy = 0.75
+	tracking = 0.3
+}
+
+### Point Defence Temporal 2
+weapon_component_template = {
+	key = "POINT_DEFENCE_2_TEMPORAL"
+	size = point_defence
+	
+	icon = "GFX_ship_part_small_time_distortion_burst_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_small_time_distortion_burst_2" }
+	component_set = "POINT_DEFENCE_2_TEMPORAL"
+	type = point_defence
+	projectile_gfx = "temporal_laser_pd_2"
+	tags = { weapon_type_point_defense weapon_type_energy }
+	ai_tags = { weapon_role_point_defense }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 24
+		}
+		upkeep = {
+			energy = 0.24
+			alloys = 0.024
+		}
+	}
+
+	power = -29.0
+	damage = { min = 7 max = 32 }
+	windup = { min = 0 max = 0 }
+	hull_damage = 1
+	shield_damage = 1
+	shield_penetration = 0
+	armor_damage = 0.25
+	armor_penetration = 0
+	total_fire_time = 5
+	range = 40
+	accuracy = 0.75
+	tracking = 0.3
+}
+
+
+#####################
+#  Flak Battery
+#####################
+
+### Flak Battery Temporal 1
+weapon_component_template = {
+	type = point_defence
+	
+	key = "FLAK_BATTERY_TEMPORAL"
+	size = point_defence
+	
+	icon = "GFX_ship_part_tachyon_projection_cannon"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tachyon_projection_cannon" }
+	component_set = "FLAK_BATTERY_TEMPORAL"
+	upgrades_to = "FLAK_BATTERY_2_TEMPORAL"
+	projectile_gfx = "flak_pd_temporal"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 24
+		}
+		upkeep = {
+			energy = 0.24
+			alloys = 0.024
+		}
+	}
+
+	power = -18
+	damage = { min = 4 max = 11 }
+	windup = { min = 0 max = 0 }
+	hull_damage = 1.0
+	shield_damage = 1.0
+	armor_damage = 0.25
+	armor_penetration = 0
+	total_fire_time = 5
+	range = 30
+	accuracy = 0.75
+	tracking = 0.70
+}
+
+### Flak Battery Temporal 2
+weapon_component_template = {
+	type = point_defence
+	
+	key = "FLAK_BATTERY_2_TEMPORAL"
+	size = point_defence
+	
+	icon = "GFX_ship_part_tachyon_projection_cannon_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tachyon_projection_cannon_2" }
+	component_set = "FLAK_BATTERY_2_TEMPORAL"
+	projectile_gfx = "flak_pd_temporal_2"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 24
+		}
+		upkeep = {
+			energy = 0.24
+			alloys = 0.024
+		}
+	}
+
+	power = -41
+	damage = { min = 9 max = 25 }
+	windup = { min = 0 max = 0 }
+	hull_damage = 1.0
+	shield_damage = 1.0
+	armor_damage = 0.25
+	total_fire_time = 5
+	range = 40
+	accuracy = 0.75
+	tracking = 0.70
+}

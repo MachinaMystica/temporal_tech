@@ -1,0 +1,666 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes.
+#############
+#	POWER	#
+#############
+
+@tempcorvette_power_7 = 513
+@tempcorvette_power_8 = 1154
+
+@tempdestroyer_power_7 = 990
+@tempdestroyer_power_8 = 2228
+
+@tempcruiser_power_7 = 1854
+@tempcruiser_power_8 = 4172
+
+@tempbattleship_power_7 = 3600
+@tempbattleship_power_8 = 8100
+
+@temptitan_power_7 = 7560
+@temptitan_power_8 = 17010
+
+@tempcolossus_power = 18000
+@tempcolossus_power_2 = 40500
+
+@tempstarbase_power_7 = 11160
+@tempstarbase_power_8 = 25110
+
+@tempplatform_power_7 = 1350
+@tempplatform_power_8 = 3038
+
+#############
+#	COST	#
+#############
+
+@tempcorvette_cost_7 = 67
+@tempcorvette_cost_8 = 150
+
+@tempdestroyer_cost_7 = 133
+@tempdestroyer_cost_8 = 300
+
+@tempcruiser_cost_7 = 266
+@tempcruiser_cost_8 = 599
+
+@tempbattleship_cost_7 = 533
+@tempbattleship_cost_8 = 1199
+
+@temptitan_cost_7 = 1066
+@temptitan_cost_8 = 2398
+
+@tempcolossus_cost_2 = 0
+@tempcolossus_cost_3 = 0
+
+@tempplatform_cost_7 = 133
+@tempplatform_cost_8 = 300
+
+#############
+#  REACTORS #
+#############
+
+####################
+# Temporal Reactors
+####################
+
+utility_component_template = {
+	key = "CORVETTE_TEMPORAL_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core"
+	icon_frame = 1
+	power = @tempcorvette_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempcorvette_cost_7
+			sr_dark_matter = 1
+			sr_zro = 1
+		}
+		upkeep = {
+			energy = 0.45
+			alloys = 0.045
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core" }
+	component_set = "power_core"
+	upgrades_to = "TEMPORAL_2_JUMP_DRIVE"
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_TEMPORAL_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core"
+	icon_frame = 1
+	power = @tempdestroyer_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempdestroyer_cost_7
+			sr_dark_matter = 2
+			sr_zro = 2
+		}
+		upkeep = {
+			energy = 0.94
+			alloys = 0.094
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core" }
+	component_set = "power_core"
+	upgrades_to = "TEMPORAL_2_JUMP_DRIVE"
+	size_restriction = { destroyer crisis_destroyer }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_TEMPORAL_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core"
+	icon_frame = 1
+	power = @tempcruiser_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempcruiser_cost_7
+			sr_dark_matter = 4
+			sr_zro = 4
+		}
+		upkeep = {
+			energy = 1.76
+			alloys = 0.176
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core" }
+	component_set = "power_core"
+	upgrades_to = "TEMPORAL_2_JUMP_DRIVE"
+	size_restriction = { cruiser crisis_cruiser }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_TEMPORAL_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core"
+	icon_frame = 1
+	power = @tempbattleship_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempbattleship_cost_7
+			sr_dark_matter = 8
+			sr_zro = 8
+		}
+		upkeep = {
+			energy = 3.26
+			alloys = 0.326
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core" }
+	component_set = "power_core"
+	upgrades_to = "TEMPORAL_2_JUMP_DRIVE"
+	size_restriction = { battleship }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_TEMPORAL_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core"
+	icon_frame = 1
+	power = @temptitan_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @temptitan_cost_7
+			sr_dark_matter = 16
+			sr_zro = 16
+		}
+		upkeep = {
+			energy = 6.41
+			alloys = 0.641
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core" }
+	component_set = "power_core"
+	upgrades_to = "TEMPORAL_2_JUMP_DRIVE"
+	size_restriction = { titan }
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_TEMPORAL_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core"
+	icon_frame = 1
+	power = @tempcolossus_power
+	resources = {
+		category = ship_components
+	}
+
+	prerequisites = { "tech_temporal_power_core" }
+	component_set = "power_core"
+	upgrades_to = "TEMPORAL_2_JUMP_DRIVE"
+	size_restriction = { colossus star_eater }
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_TEMPORAL_REACTOR"
+	size = large
+	icon = "GFX_ship_part_temporal_power_core"
+	icon_frame = 1
+	power = @tempstarbase_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempplatform_cost_7
+			sr_dark_matter = 4
+			sr_zro = 4
+		}
+		upkeep = {
+			energy = 0.94
+			alloys = 0.094
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core" }
+	component_set = "power_core"
+	upgrades_to = "TEMPORAL_2_JUMP_DRIVE"
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ION_CANNON_TEMPORAL_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core"
+	icon_frame = 1
+	power = @tempcruiser_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempcruiser_power_7
+			sr_dark_matter = 8
+			sr_zro = 8
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core" }
+	component_set = "power_core"
+	upgrades_to = "TEMPORAL_2_JUMP_DRIVE"
+	size_restriction = { ion_cannon }
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_TEMPORAL_REACTOR"
+	size = large
+	icon = "GFX_ship_part_temporal_power_core"
+	icon_frame = 1
+	power = @tempplatform_power_7
+
+	prerequisites = { "tech_temporal_power_core" }
+	component_set = "power_core"
+	upgrades_to = "TEMPORAL_2_JUMP_DRIVE"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+	}
+
+	ai_weight = {
+		weight = 7
+	}
+}
+
+### Tier 2 Temporal Reactors ###
+
+utility_component_template = {
+	key = "CORVETTE_TEMPORAL_2_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core_2"
+	icon_frame = 1
+	power = @tempcorvette_power_8
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempcorvette_cost_8
+			sr_dark_matter = 2.5
+			sr_zro = 2.5
+			exotic_gases = 2.5
+		}
+		upkeep = {
+			energy = 0.65
+			alloys = 0.065
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core_2" }
+	component_set = "power_core"
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
+
+	ai_weight = {
+		weight = 8
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = exotic_gases }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_TEMPORAL_2_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core_2"
+	icon_frame = 1
+	power = @tempdestroyer_power_8
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempdestroyer_cost_8
+			sr_dark_matter = 4.5
+			sr_zro = 4.5
+			exotic_gases = 4.5
+		}
+		upkeep = {
+			energy = 1.94
+			alloys = 0.194
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core_2" }
+	component_set = "power_core"
+	size_restriction = { destroyer crisis_destroyer }
+
+	ai_weight = {
+		weight = 8
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = exotic_gases }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_TEMPORAL_2_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core_2"
+	icon_frame = 1
+	power = @tempcruiser_power_8
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempcruiser_cost_8
+			sr_dark_matter = 6.5
+			sr_zro = 6.5
+			exotic_gases = 6.5
+		}
+		upkeep = {
+			energy = 2.76
+			alloys = 0.276
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core_2" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser }
+
+	ai_weight = {
+		weight = 8
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = exotic_gases }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_TEMPORAL_2_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core_2"
+	icon_frame = 1
+	power = @tempbattleship_power_8
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempbattleship_cost_8
+			sr_dark_matter = 12
+			sr_zro = 12
+			exotic_gases = 12
+		}
+		upkeep = {
+			energy = 4.26
+			alloys = 0.426
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core_2" }
+	component_set = "power_core"
+	size_restriction = { battleship }
+
+	ai_weight = {
+		weight = 8
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = exotic_gases }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_TEMPORAL_2_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core_2"
+	icon_frame = 1
+	power = @temptitan_power_8
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @temptitan_cost_8
+			sr_dark_matter = 22
+			sr_zro = 22
+			exotic_gases = 22
+		}
+		upkeep = {
+			energy = 8.41
+			alloys = 0.841
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core_2" }
+	component_set = "power_core"
+	size_restriction = { titan }
+
+	ai_weight = {
+		weight = 8
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = exotic_gases }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "COLOSSUS_TEMPORAL_2_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core_2"
+	icon_frame = 1
+	power = @tempcolossus_power_2
+	resources = {
+		category = ship_components
+	}
+
+	prerequisites = { "tech_temporal_power_core_2" }
+	component_set = "power_core"
+	size_restriction = { colossus star_eater }
+
+	ai_weight = {
+		weight = 8
+	}
+}
+
+utility_component_template = {
+	key = "PLATFORM_TEMPORAL_REACTOR"
+	size = large
+	icon = "GFX_ship_part_temporal_power_core_2"
+	icon_frame = 1
+	power = @tempstarbase_power_8
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempplatform_cost_8
+			sr_dark_matter = 8
+			sr_zro = 8
+			exotic_gases = 8
+		}
+		upkeep = {
+			energy = 1.94
+			alloys = 0.194
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core_2" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+
+	ai_weight = {
+		weight = 8
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = exotic_gases }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "ION_CANNON_TEMPORAL_2_REACTOR"
+	size = small
+	icon = "GFX_ship_part_temporal_power_core_2"
+	icon_frame = 1
+	power = @tempcruiser_power_8
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempcruiser_power_8
+			sr_dark_matter = 10
+			sr_zro = 10
+			exotic_gases = 10
+		}
+	}
+
+	prerequisites = { "tech_temporal_power_core_2" }
+	component_set = "power_core"
+	upgrades_to = "TEMPORAL_2_JUMP_DRIVE"
+	size_restriction = { ion_cannon }
+
+	ai_weight = {
+		weight = 9
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = exotic_gases }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_TEMPORAL_2_REACTOR"
+	size = large
+	icon = "GFX_ship_part_temporal_power_core_2"
+	icon_frame = 1
+	power = @tempplatform_power_8
+
+	prerequisites = { "tech_temporal_power_core_2" }
+	component_set = "power_core"
+	upgrades_to = "TEMPORAL_2_JUMP_DRIVE"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+	}
+
+	ai_weight = {
+		weight = 9
+	}
+}

@@ -1,0 +1,73 @@
+@hit5 = 25
+@hit6 = 50
+
+@cost5 = 14
+@cost6 = 32
+
+@power5 = -30
+@power6 = -45
+
+@sensor5 = 6
+@sensor6 = 8
+
+@hyperlane5 = 12
+@hyperlane6 = 18
+
+utility_component_template = {
+	key = "TEMPORAL_SENSOR"
+	size = medium
+	icon = "GFX_ship_part_temporal_sensor"
+	icon_frame = 1
+	power = @power5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost5
+			sr_dark_matter = 2
+			sr_zro = 2
+		}
+	}
+	sensor_range = @sensor5
+	hyperlane_range = @hyperlane5
+
+	ship_modifier = {
+		ship_tracking_add = @hit5
+	}
+
+	prerequisites = { "tech_ship_part_temporal_sensor" }
+	component_set = "sensor_components"
+	upgrades_to = "TEMPORAL_2_SENSOR"
+
+	ai_weight = {
+		weight = 1100
+	}
+}
+
+utility_component_template = {
+	key = "TEMPORAL_2_SENSOR"
+	size = medium
+	icon = "GFX_ship_part_temporal_sensor_2"
+	icon_frame = 1
+	power = @power6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost6
+			sr_dark_matter = 4
+			sr_zro = 4
+		}
+	}
+	sensor_range = @sensor6
+	hyperlane_range = @hyperlane6
+
+	ship_modifier = {
+		ship_tracking_add = @hit6
+	}
+
+	prerequisites = { "tech_ship_part_temporal_sensor_2" }
+	component_set = "sensor_components"
+
+	ai_weight = {
+		weight = 1400
+	}
+}

@@ -1,0 +1,7 @@
+# Nano Colossus
+on_destroy_planet_with_PLANET_KILLER_TEMPORAL = {
+	events = {
+		crisis.5015
+		temporal_colossus.400
+	}
+}

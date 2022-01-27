@@ -1,0 +1,17 @@
+objectTypes = {
+	
+	pdxparticle = {
+		name = "archailect_crisis_room_energy_effect"
+		type = "archailect_crisis_room_energy_effect"
+		
+		scale = 0.2
+	}
+	
+	pdxparticle = {
+		name = "archailect_crisis_room_smoke_effect"
+		type = "archailect_crisis_room_smoke_effect"
+		
+		scale = 1.0
+	}
+	
+}

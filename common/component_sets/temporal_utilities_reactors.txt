@@ -1,0 +1,15 @@
+# Icons set here are the ones shown in compnent editor list.
+
+component_set = {
+	key = "TEMPORAL_REACTOR"
+	
+	icon = "GFX_ship_part_temporal_power_core"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TEMPORAL_2_REACTOR"
+	
+	icon = "GFX_ship_part_temporal_power_core_2"
+	icon_frame = 1	
+}

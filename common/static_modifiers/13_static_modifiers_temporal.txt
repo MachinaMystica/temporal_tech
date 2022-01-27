@@ -1,0 +1,61 @@
+resolution_custodian_temporal_variance_authority = {
+    planet_stability_add = 5
+    pop_government_ethic_attraction = 0.25
+    pop_cat_ruler_political_power = 1.0
+    country_energy_produces_mult = -0.03
+}
+
+resolution_emperor_horological_office = {
+    planet_stability_add = 5
+    pop_government_ethic_attraction = 0.25
+    pop_cat_ruler_political_power = 1.5
+    country_energy_produces_mult = -0.04
+}
+
+imperial_horological_office = {
+    add_base_country_intel = 15
+}
+
+temporal_acceleration_field = {
+    pop_growth_speed = 0.5
+    planet_pop_assembly_mult = 0.5
+    planet_pop_assembly_organic_mult = 0.5
+    planet_jobs_produces_mult = 0.5
+    planet_jobs_upkeep_mult = 0.5
+    planet_pops_upkeep_mult = 0.5
+    icon = "gfx/interface/icons/planet_modifiers/pm_temporal_acceleration_field.dds"
+	icon_frame = 1
+}
+
+temporal_hyperacceleration_field = {
+    pop_growth_speed = 1.0
+    planet_pop_assembly_mult = 1.0
+    planet_pop_assembly_organic_mult = 1.0
+    planet_jobs_produces_mult = 1.0
+    planet_jobs_upkeep_mult = 1.0
+    planet_pops_upkeep_mult = 1.0
+    icon = "gfx/interface/icons/planet_modifiers/pm_temporal_hyperacceleration_field.dds"
+	icon_frame = 1
+}
+
+temporal_deceleration_field = {
+    pop_growth_speed = -0.5
+    planet_pop_assembly_mult = -0.5
+    planet_pop_assembly_organic_mult = -0.5
+    planet_jobs_produces_mult = -0.5
+    planet_jobs_upkeep_mult = -0.5
+    planet_pops_upkeep_mult = -0.5
+    icon = "gfx/interface/icons/planet_modifiers/pm_temporal_deceleration_field.dds"
+	icon_frame = 3
+}
+
+temporal_stasis_field = {
+    pop_growth_speed = -2.0
+    planet_pop_assembly_mult = -2.0
+    planet_pop_assembly_organic_mult = -2.0
+    planet_jobs_produces_mult = -2.0
+    planet_jobs_upkeep_mult = -2.0
+    planet_pops_upkeep_mult = -2.0
+    icon = "gfx/interface/icons/planet_modifiers/pm_temporal_stasis_field.dds"
+	icon_frame = 3
+}

@@ -1,0 +1,12 @@
+objectTypes = {
+	
+	pdxparticle = {
+		name = "temporal_magic_circle_effect"
+		type = "temporal_magic_circle_file"
+		
+		scale = 1.0
+	}
+
+}
+
+

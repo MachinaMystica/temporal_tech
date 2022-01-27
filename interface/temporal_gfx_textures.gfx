@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = { name = "GFX_megastructure_galactic_market"					textureFile = "gfx/interface/planetview/temporal_galactic_market.dds" }
+	spriteType = { name = "GFX_megastructure_vortex"					textureFile = "gfx/interface/planetview/temporal_vortex.dds" }
+	spriteType = { name = "GFX_megastructure_ai_planet"					textureFile = "gfx/interface/planetview/temporal_ai_planet.dds" }
+	spriteType = { name = "GFX_megastructure_shrouded_planet"					textureFile = "gfx/interface/planetview/temporal_shrouded_planet.dds" }
+}

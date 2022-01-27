@@ -1,0 +1,15 @@
+# Icons set here are the ones shown in compnent editor list.
+
+component_set = {
+	key = "STRIKE_CRAFT_HANGAR_TEMPORAL"
+	
+	icon = "GFX_ship_part_strike_craft_fighter_temporal"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STRIKE_CRAFT_HANGAR_TEMPORAL_2"
+	
+	icon = "GFX_ship_part_strike_craft_fighter_temporal_2"
+	icon_frame = 1	
+}

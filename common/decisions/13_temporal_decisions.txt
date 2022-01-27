@@ -1,0 +1,443 @@
+##########################################################################
+# Decisions
+##########################################################################
+
+# Timeline Colonization
+decision_colonize_timeline = {
+	owned_planets_only = yes
+	sound = event_activating_unknown_technology
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				from = {
+					is_lithoid_empire = no
+					is_robot_empire = no
+					is_hive_empire = no
+				}
+			}
+			energy = 1000
+			alloys = 200
+			food = 200
+			consumer_goods = 200
+		}
+		cost = {
+			trigger = {
+				from = {
+					is_lithoid_empire = yes
+					is_robot_empire = no
+					is_hive_empire = no
+				}
+			}
+			energy = 1000
+			alloys = 200
+			minerals = 200
+			consumer_goods = 200
+		}
+		cost = {
+			trigger = {
+				from = {
+					is_robot_empire = yes
+				}
+			}
+			energy = 1000
+			alloys = 400
+		}
+		cost = {
+			trigger = {
+				from = {
+					is_hive_empire = yes
+					is_lithoid_empire = no
+					NOT = { has_origin = origin_tree_of_life }
+				}
+			}
+			energy = 1000
+			alloys = 200
+			food = 500
+		}
+		cost = {
+			trigger = {
+				from = {
+					is_hive_empire = yes
+					is_lithoid_empire = no
+					has_origin = origin_tree_of_life
+				}
+			}
+			energy = 1000
+			alloys = 50
+			food = 1000
+		}
+		cost = {
+			trigger = {
+				from = {
+					is_hive_empire = yes
+					is_lithoid_empire = yes
+					has_origin = origin_tree_of_life
+				}
+			}
+			energy = 1000
+			alloys = 50
+			food = 500
+			minerals = 500
+		}
+		cost = {
+			trigger = {
+				from = {
+					is_hive_empire = yes
+					is_lithoid_empire = yes
+					NOT = { has_origin = origin_tree_of_life }
+				}
+			}
+			energy = 1000
+			alloys = 200
+			minerals = 500
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = { has_megastructure = timeline_tunneler_7 }
+	}
+
+	allow = {
+		owner = { has_megastructure = timeline_tunneler_7 }
+	}
+	
+	effect = {
+		custom_tooltip = decision_colonize_timeline_effects
+		planet_event = { id = temporal.1320 }
+		hidden_effect = {
+			while = {
+				count = 1
+				
+				random_owned_pop = {
+					weights = {
+						# can use add or mult
+						base = 1
+						modifier = {
+							add = 100
+							is_pop_category = purge
+						}
+						modifier = {
+							mult = 50
+							is_unemployed = yes
+						}
+						modifier = {
+							mult = 10
+							has_citizenship_rights = no
+						}					
+						modifier = {
+							add = 10
+							OR = {
+								is_pop_category = worker
+								is_pop_category = slave
+							}					
+						}						
+					}
+					kill_pop = yes
+				}
+			}		
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+# Acceleration Field
+decision_local_acceleration = {
+	owned_planets_only = yes
+	sound = event_mystic_reveal_light
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 12500
+			sr_dark_matter = 150
+			sr_zro = 150
+			influence = 50
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_temporal_acceleration }
+		NOT = { has_modifier = temporal_acceleration_field }
+		NOT = { has_modifier = temporal_hyperacceleration_field }
+		NOT = { has_modifier = temporal_deceleration_field }
+		NOT = { has_modifier = temporal_stasis_field }
+	}
+
+	allow = {
+		owner = { has_technology = tech_temporal_acceleration }
+		NOT = { has_modifier = temporal_acceleration_field }
+		NOT = { has_modifier = temporal_hyperacceleration_field }
+		NOT = { has_modifier = temporal_deceleration_field }
+		NOT = { has_modifier = temporal_stasis_field }
+	}
+	
+	effect = {
+		add_modifier = { modifier = temporal_acceleration_field days = -1 }
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+# Hyper-Acceleration Field
+decision_local_hyperacceleration = {
+	owned_planets_only = yes
+	sound = sfx_archeology_event_bad_omen_01
+
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			energy = 25000
+			sr_dark_matter = 300
+			sr_zro = 300
+			influence = 100
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_temporal_hyperacceleration }
+		has_modifier = temporal_acceleration_field
+	}
+
+	allow = {
+		owner = { has_technology = tech_temporal_hyperacceleration }
+		has_modifier = temporal_acceleration_field
+	}
+	
+	effect = {
+		add_modifier = { modifier = temporal_hyperacceleration_field days = -1 }
+		remove_modifier = temporal_acceleration_field
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#Deceleration Field
+decision_local_deceleration = {
+	owned_planets_only = yes
+	sound = sfx_archeology_event_bad_omen_01
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 12500
+			sr_dark_matter = 150
+			sr_zro = 150
+			influence = 50
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_temporal_deceleration }
+		NOT = { has_modifier = temporal_acceleration_field }
+		NOT = { has_modifier = temporal_hyperacceleration_field }
+		NOT = { has_modifier = temporal_deceleration_field }
+		NOT = { has_modifier = temporal_stasis_field }
+	}
+
+	allow = {
+		owner = { has_technology = tech_temporal_deceleration }
+		NOT = { has_modifier = temporal_acceleration_field }
+		NOT = { has_modifier = temporal_hyperacceleration_field }
+		NOT = { has_modifier = temporal_deceleration_field }
+		NOT = { has_modifier = temporal_stasis_field }
+	}
+	
+	effect = {
+		add_modifier = { modifier = temporal_deceleration_field days = -1 }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#Stasis Field
+decision_local_stasis = {
+	owned_planets_only = yes
+	sound = sfx_archeology_event_bad_omen_01
+
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			energy = 25000
+			sr_dark_matter = 300
+			sr_zro = 300
+			influence = 100
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_temporal_stasis }
+		has_modifier = temporal_deceleration_field
+	}
+
+	allow = {
+		owner = { has_technology = tech_temporal_stasis }
+		has_modifier = temporal_deceleration_field
+	}
+	
+	effect = {
+		add_modifier = { modifier = temporal_stasis_field days = -1 }
+		remove_modifier = temporal_deceleration_field
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Remove Acceleration Bubble
+decision_dismantle_acceleration = {
+	owned_planets_only = yes
+	sound = event_mystic_reveal_light
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 12500
+		}
+	}
+
+	potential = {
+		has_modifier = temporal_acceleration_field
+	}
+
+	allow = {
+		owner = { has_technology = tech_temporal_manipulation }
+	}
+
+	effect = {
+		if = {
+			limit = { has_modifier = temporal_acceleration_field }
+			remove_modifier = temporal_acceleration_field
+		}
+		custom_tooltip = decision_revoke_market_nomination_effect
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Remove Deceleration Bubble
+decision_dismantle_deceleration = {
+	owned_planets_only = yes
+	sound = event_mystic_reveal_light
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 12500
+		}
+	}
+
+	potential = {
+		has_modifier = temporal_deceleration_field
+	}
+
+	allow = {
+		owner = { has_technology = tech_temporal_manipulation }
+	}
+
+	effect = {
+		if = {
+			limit = { has_modifier = temporal_deceleration_field }
+			remove_modifier = temporal_deceleration_field
+		}
+		custom_tooltip = decision_revoke_market_nomination_effect
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# Remove Hyper-Acceleration Bubble
+decision_dismantle_adv_acceleration = {
+	owned_planets_only = yes
+	sound = event_mystic_reveal_light
+
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			energy = 25000
+		}
+	}
+
+	potential = {
+		has_modifier = temporal_hyperacceleration_field
+	}
+
+	allow = {
+		owner = { has_technology = tech_timeline_manipulation }
+	}
+
+	effect = {
+		if = {
+			limit = { has_modifier = temporal_hyperacceleration_field }
+			remove_modifier = temporal_hyperacceleration_field
+		}
+		custom_tooltip = decision_revoke_market_nomination_effect
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+# Remove Stasis Bubble
+decision_dismantle_adv_deceleration = {
+	owned_planets_only = yes
+	sound = event_mystic_reveal_light
+
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			energy = 25000
+		}
+	}
+
+	potential = {
+		has_modifier = temporal_stasis_field
+	}
+
+	allow = {
+		owner = { has_technology = tech_timeline_manipulation }
+	}
+
+	effect = {
+		if = {
+			limit = { has_modifier = temporal_stasis_field }
+			remove_modifier = temporal_stasis_field
+		}
+		custom_tooltip = decision_revoke_market_nomination_effect
+	}
+
+	ai_weight = {
+		weight = 10
+	}
+}

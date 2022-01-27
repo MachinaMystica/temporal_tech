@@ -1,0 +1,189 @@
+objectTypes = {
+
+
+####################
+#	MUZZLE FLASHES
+####################
+
+	pdxparticle = {
+		name = "temporal_missile_1_large_muzzle_flash_particle"
+		type = "temporal_missile_2_file"
+		
+		scale = 3.0
+	}
+	
+	pdxparticle = {
+		name = "temporal_missile_1_medium_muzzle_flash_particle"
+		type = "temporal_missile_1_file"
+		
+		scale = 2.5
+	}
+	
+	pdxparticle = {
+		name = "temporal_missile_1_small_muzzle_flash_particle"
+		type = "temporal_missile_1_file"
+		
+		scale = 2.0
+	}
+	
+	pdxparticle = {
+		name = "temporal_torpedo_1_large_muzzle_particle"
+		type = "temporal_torpedo_1_muzzle_file"
+		
+		scale = 3.0
+	}
+
+	pdxparticle = {
+		name = "temporal_torpedo_2_large_muzzle_particle"
+		type = "temporal_torpedo_2_muzzle_file"
+		
+		scale = 3.0
+	}
+	
+	
+#####
+# FLYING EFFECTS
+#####
+	
+	pdxparticle = {
+		name = "temporal_large_missile_1_idle_particle"
+		type = "temporal_large_missile_1_idle_file"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "temporal_medium_1_missile_idle_particle"
+		type = "temporal_medium_1_missile_idle_file"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "temporal_small_missile_1_idle_particle"
+		type = "temporal_small_missile_1_idle_file"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "temporal_missile_1_idle_flame_particle"
+		type = "temporal_missile_1_idle_flame_file"
+		
+		scale = 0.5
+	}
+
+	pdxparticle = {
+		name = "temporal_missile_2_idle_flame_particle"
+		type = "temporal_missile_2_idle_flame_file"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "temporal_large_torpedo_1_idle_particle"
+		type = "temporal_large_torpedo_1_idle_file"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "temporal_large_torpedo_2_idle_particle"
+		type = "temporal_large_torpedo_2_idle_file"
+		
+		scale = 0.5
+	}
+
+	pdxparticle = {
+		name = "large_torpedo_temporal_1_idle_flame_particle"
+		type = "torpedo_temporal_1_idle_flame_file"
+		
+		scale = 1.25
+	}
+
+	pdxparticle = {
+		name = "large_torpedo_temporal_2_idle_flame_particle"
+		type = "torpedo_temporal_2_idle_flame_file"
+		
+		scale = 1.25
+	}
+	
+	pdxparticle = {
+		name = "temporal_swarmer_missile_01_idle_particle"
+		type = "temporal_swarmer_missile_01_idle_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "temporal_swarmer_missile_02_idle_particle"
+		type = "temporal_swarmer_missile_02_idle_file"
+		
+		scale = 1.0
+	}
+	
+#########
+# HIT EFFECTS
+#########
+	
+	pdxparticle = {
+		name = "temporal_missile_large_hit_effect"
+		type = "temporal_hit_effect"
+		
+		scale = 0.75
+	}
+	
+	pdxparticle = {
+		name = "torpedo_temporal_1_large_hit_effect"
+		type = "torpedo_temporal_1_hit_effect"
+		
+		scale = 0.75
+	}
+	
+	pdxparticle = {
+		name = "torpedo_temporal_2_large_hit_effect"
+		type = "torpedo_temporal_2_hit_effect"
+		
+		scale = 0.75
+	}
+
+	pdxparticle = {
+		name = "temporal_swarmer_missile_01_hit_effect"
+		type = "temporal_swarmer_missile_01_hit_effect"
+		
+		scale = 0.5
+	}
+
+	pdxparticle = {
+		name = "temporal_swarmer_missile_02_hit_effect"
+		type = "temporal_swarmer_missile_02_hit_effect"
+		
+		scale = 0.5
+	}
+	
+##################
+# SHIELD HITS
+##################
+
+	pdxparticle = {
+		name = "temporal_missile_1_small_shield_hit_effect"
+		type = "temporal_missile_1_shield_hit_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "temporal_missile_1_medium_shield_hit_effect"
+		type = "temporal_missile_1_shield_hit_effect"
+		
+		scale = 1.25
+	}
+	
+	pdxparticle = {
+		name = "temporal_missile_1_large_shield_hit_effect"
+		type = "temporal_missile_1_shield_hit_effect"
+		
+		scale = 1.75
+	}
+	
+}

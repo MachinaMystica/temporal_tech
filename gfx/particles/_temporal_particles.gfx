@@ -1,0 +1,24 @@
+objectTypes = {
+	
+	pdxparticle = {
+		name = "temporal_planet_muzzle_windup_effect"
+		type = "temporal_planet_muzzle_windup_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "temporal_planet_laser_hit_effect"
+		type = "temporal_planet_laser_hit_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "temporal_planet_laser_muzzle_effect"
+		type = "temporal_planet_laser_muzzle"
+		
+		scale = 1.0
+	}
+	
+}

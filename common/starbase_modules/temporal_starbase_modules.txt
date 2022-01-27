@@ -1,0 +1,92 @@
+# possible section models:
+# SHIPYARD_STARBASE_SECTION
+# REFINERY_STARBASE_SECTION
+# SCIENCE_STARBASE_SECTION
+# HANGAR_STARBASE_SECTION
+# ASSEMBLYYARD_STARBASE_SECTION
+#
+
+temporal_shipyard = {
+	icon = "GFX_sb_temporal_space_yard"
+	section = "ASSEMBLYYARD_STARBASE_SECTION"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = { has_technology = "tech_stable_temporal_bubbles" }
+	}
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 1000
+			nanites = 75
+			sr_zro = 75
+		}
+
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	station_modifier = {
+		starbase_shipyard_capacity_add = 2
+		starbase_shipyard_build_speed_mult = 0.20
+	}
+
+	show_in_tech = "tech_stable_temporal_bubbles"
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 100
+			owner = {
+				OR = {
+					count_owned_starbase = {
+						count = 0
+						limit = { has_starbase_module = shipyard }
+					}
+					AND = {
+						num_starbases >= 4
+						count_owned_starbase = {
+							count < 2
+							limit = { has_starbase_module = shipyard }
+						}
+					}
+					AND = {
+						num_starbases >= 9
+						count_owned_starbase = {
+							count < 3
+							limit = { has_starbase_module = shipyard }
+						}
+					}
+					AND = {
+						num_starbases >= 15
+						count_owned_starbase = {
+							count < 4
+							limit = { has_starbase_module = shipyard }
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			has_starbase_module = shipyard
+			count_starbase_modules = {
+				count < 2
+				type = shipyard
+			}
+		}
+		modifier = {
+			factor = 3
+			has_starbase_module = shipyard
+			count_starbase_modules = {
+				count < 4
+				type = shipyard
+			}
+		}
+	}
+}

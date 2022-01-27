@@ -1,0 +1,591 @@
+# ####################
+#  Arc Emitter
+# ####################
+
+### Arc Emitter Temporal
+weapon_component_template = {
+	key = "ARC_EMITTER_TEMPORAL"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_part_temporal_shifter"
+	icon_frame = 1
+	
+	firing_arc = 35.0
+	min_range = 10.0
+	use_ship_kill_target = no
+
+	damage = { min = 1 max = 3060 }
+	windup = { min = 1.0 max = 19.0 }
+	power = -450
+	range = 150
+	tracking = 0.00
+	accuracy = 1.00
+	total_fire_time = 71
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 1.0
+	
+	prerequisites = { "tech_temporal_shifter" }
+	component_set = "ARC_EMITTER_TEMPORAL"
+	upgrades_to = "ARC_EMITTER_2_TEMPORAL"
+	projectile_gfx = "temporal_arc_emitter"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t7_cost
+			sr_dark_matter = @xl_t7_rare
+			sr_zro = @xl_t7_rare
+		}		
+		upkeep = {
+			energy = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+### Arc Emitter Temporal T2
+weapon_component_template = {
+	key = "ARC_EMITTER_2_TEMPORAL"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_part_temporal_shifter_2"
+	icon_frame = 1
+	
+	firing_arc = 35.0
+	min_range = 10.0
+	use_ship_kill_target = no
+
+	damage = { min = 1 max = 6885 }
+	windup = { min = 1.0 max = 19.0 }
+	power = -1013
+	range = 150
+	tracking = 0.15
+	accuracy = 1.00
+	total_fire_time = 71
+	hull_damage = 1.0
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 1.0
+	
+	prerequisites = { "tech_temporal_shifter_2" }
+	component_set = "ARC_EMITTER_2_TEMPORAL"
+	projectile_gfx = "temporal_arc_emitter_2"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_temp_t8_cost
+			sr_dark_matter = @xl_temp_t8_rare
+			sr_zro = @xl_temp_t8_rare
+			rare_crystals = @xl_temp_t8_rare
+		}		
+		upkeep = {
+			energy = @xl_temp_t8_upkeep_energy
+			alloys = @xl_temp_t8_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = rare_crystals }
+			}
+		}
+	}
+}
+
+### Energy Lance Temporal
+weapon_component_template = {
+	key = "ENERGY_LANCE_TEMPORAL"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_part_subspace_rupture_beam"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_subspace_rupture_beam" }
+	component_set = "ENERGY_LANCE_TEMPORAL"
+	upgrades_to = "ENERGY_LANCE_2_TEMPORAL"
+	projectile_gfx = "temporal_lance_1"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+
+	damage = { min = 1440 max = 3600 }
+	windup = { min = 1.0 max = 19.0 }
+	power = -450
+	range = 150
+	tracking = 0.00
+	accuracy = 0.85
+	total_fire_time = 70
+	hull_damage = 1.50
+	shield_damage = 0.50
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t7_cost
+			sr_dark_matter = @xl_t7_rare
+			sr_zro = @xl_t7_rare
+		}		
+		upkeep = {
+			energy = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "ENERGY_LANCE_2_TEMPORAL"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_part_subspace_rupture_beam_2"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_subspace_rupture_beam_2" }
+	component_set = "ENERGY_LANCE_2_TEMPORAL"
+	projectile_gfx = "temporal_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+
+	damage = { min = 3240 max = 8100 }
+	windup = { min = 1.0 max = 19.0 }
+	power = -1013
+	range = 150
+	tracking = 0.15
+	accuracy = 0.95
+	total_fire_time = 70
+	hull_damage = 1.50
+	shield_damage = 0.50
+	shield_penetration = 0.0
+	armor_damage = 2.0
+	armor_penetration = 0.0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_temp_t8_cost
+			sr_dark_matter = @xl_temp_t8_rare
+			sr_zro = @xl_temp_t8_rare
+			rare_crystals = @xl_temp_t8_rare
+		}		
+		upkeep = {
+			energy = @xl_temp_t8_upkeep_energy
+			alloys = @xl_temp_t8_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = rare_crystals }
+			}
+		}
+	}
+}
+
+#####################
+# Mass Accelerator
+#####################
+
+### Mass Accelerator Temporal 1
+weapon_component_template = {
+	type = instant
+	
+	key = "MASS_ACCELERATOR_TEMPORAL"
+	size = extra_large
+	
+	icon = "GFX_ship_part_massive_shield_depleter"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_massive_shield_depleter" }
+	component_set = "MASS_ACCELERATOR_TEMPORAL"
+	upgrades_to = "MASS_ACCELERATOR_2_TEMPORAL"
+	projectile_gfx = "tem_kinetic_artillery_1"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+
+	damage = { min = 1620 max = 4680 }
+	windup = { min = 1.0 max = 19.0 }
+	power = -450
+	range = 150
+	tracking = 0.00
+	accuracy = 0.75
+	total_fire_time = 80
+	hull_damage = 1.25
+	shield_damage = 1.50
+	shield_penetration = 0.0
+	armor_damage = 0.75
+	armor_penetration = 0.0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t7_cost
+			sr_dark_matter = @xl_t7_rare
+			sr_living_metal = @xl_t7_rare
+		}		
+		upkeep = {
+			energy = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+### Mass Accelerator Temporal 2
+weapon_component_template = {
+	type = instant
+	
+	key = "MASS_ACCELERATOR_2_TEMPORAL"
+	size = extra_large
+	
+	icon = "GFX_ship_part_massive_shield_depleter_2"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_massive_shield_depleter_2" }
+	component_set = "MASS_ACCELERATOR_2_TEMPORAL"
+	projectile_gfx = "tem_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+
+	damage = { min = 3645 max = 10530 }
+	windup = { min = 1.0 max = 19.0 }
+	power = -1013
+	range = 150
+	tracking = 0.15
+	accuracy = 0.90
+	total_fire_time = 80
+	hull_damage = 1.25
+	shield_damage = 1.50
+	shield_penetration = 0.0
+	armor_damage = 0.75
+	armor_penetration = 0.0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_temp_t8_cost
+			sr_dark_matter = @xl_temp_t8_rare
+			sr_living_metal = @xl_temp_t8_rare
+			volatile_motes = @xl_temp_t8_rare
+		}		
+		upkeep = {
+			energy = @xl_temp_t8_upkeep_energy
+			alloys = @xl_temp_t8_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = volatile_motes }
+			}
+		}
+	}
+}
+
+# ####################
+#  Titan Laser
+# ####################
+
+### Perdition Beam
+weapon_component_template = {
+	key = "TEMPORAL_BEAM_TITAN"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+		
+	icon = "GFX_ship_part_temporal_tachyon_cannon"
+	icon_frame = 1
+	
+	firing_arc = 10.0
+	min_range = 30.0
+	use_ship_kill_target = no
+
+	tags = { weapon_type_energy }
+	
+	prerequisites = { "tech_titans" }
+	component_set = "TEMPORAL_BEAM"
+	upgrades_to = "TEMPORAL_2_BEAM_TITAN"
+	projectile_gfx = "temporal_titan_laser_1"
+	size_restriction = { titan }
+
+	damage = { min = 9000 max = 18000 }
+	windup = { min = 30.0 max = 45.0 }
+	power = -900
+	range = 250
+	tracking = 0.00
+	accuracy = 0.85
+	total_fire_time = 180
+	hull_damage = 1.25
+	shield_damage = 0.75
+	shield_penetration = 0.0
+	armor_damage = 1.50
+	armor_penetration = 0.0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_t7_cost
+			sr_dark_matter = @titanic_t7_rare
+			sr_zro = @titanic_t7_rare
+		}		
+		upkeep = {
+			energy = @titanic_t7_upkeep_energy
+			alloys = @titanic_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+### Ion Beam
+weapon_component_template = {
+	key = "TEMPORAL_BEAM_ION"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+		
+	icon = "GFX_ship_part_temporal_tachyon_cannon"
+	icon_frame = 1
+	
+	firing_arc = 10.0
+	min_range = 30.0
+	use_ship_kill_target = no
+
+	tags = { weapon_type_energy }
+	
+	prerequisites = { "tech_titans" }
+	component_set = "TEMPORAL_BEAM"
+	upgrades_to = "TEMPORAL_2_BEAM_ION"
+	projectile_gfx = "temporal_titan_laser_1"
+	size_restriction = { ion_cannon }
+
+	damage = { min = 9000 max = 18000 }
+	windup = { min = 30.0 max = 45.0 }
+	range = 250
+	tracking = 0.00
+	accuracy = 0.85
+	total_fire_time = 180
+	hull_damage = 1.25
+	shield_damage = 0.75
+	shield_penetration = 0.0
+	armor_damage = 1.50
+	armor_penetration = 0.0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_t7_cost
+			sr_dark_matter = @titanic_t7_rare
+			sr_zro = @titanic_t7_rare
+		}		
+		upkeep = {
+			energy = @titanic_t7_upkeep_energy
+			alloys = @titanic_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+### Perdition Beam T2
+weapon_component_template = {
+	key = "TEMPORAL_2_BEAM_TITAN"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+		
+	icon = "GFX_ship_part_temporal_tachyon_cannon_2"
+	icon_frame = 1
+	
+	firing_arc = 10.0
+	min_range = 30.0
+	use_ship_kill_target = no
+
+	tags = { weapon_type_energy }
+	
+	prerequisites = { "tech_titans" }
+	component_set = "TEMPORAL_2_BEAM"
+	projectile_gfx = "temporal_titan_laser"
+	size_restriction = { titan }
+
+	damage = { min = 20250 max = 40500 }
+	windup = { min = 30.0 max = 45.0 }
+	power = -2025
+	range = 250
+	tracking = 0.15
+	accuracy = 1.00
+	total_fire_time = 180
+	hull_damage = 1.25
+	shield_damage = 0.75
+	shield_penetration = 0.0
+	armor_damage = 1.50
+	armor_penetration = 0.0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_temp_t8_cost
+			sr_dark_matter = @titanic_temp_t8_rare
+			sr_zro = @titanic_temp_t8_rare
+			rare_crystals = @titanic_temp_t8_rare
+		}		
+		upkeep = {
+			energy = @titanic_temp_t8_upkeep_energy
+			alloys = @titanic_temp_t8_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = rare_crystals }
+			}
+		}
+	}
+}
+
+### Ion Beam T2
+weapon_component_template = {
+	key = "TEMPORAL_2_BEAM_ION"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+		
+	icon = "GFX_ship_part_temporal_tachyon_cannon_2"
+	icon_frame = 1
+	
+	firing_arc = 10.0
+	min_range = 30.0
+	use_ship_kill_target = no
+
+	tags = { weapon_type_energy }
+	
+	prerequisites = { "tech_titans" }
+	component_set = "TEMPORAL_2_BEAM"
+	projectile_gfx = "temporal_titan_laser"
+	size_restriction = { ion_cannon }
+
+	damage = { min = 20250 max = 40500 }
+	windup = { min = 30.0 max = 45.0 }
+	range = 250
+	tracking = 0.15
+	accuracy = 1.00
+	total_fire_time = 180
+	hull_damage = 1.25
+	shield_damage = 0.75
+	shield_penetration = 0.0
+	armor_damage = 1.50
+	armor_penetration = 0.0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_temp_t8_cost
+			sr_dark_matter = @titanic_temp_t8_rare
+			sr_zro = @titanic_temp_t8_rare
+		}		
+		upkeep = {
+			energy = @titanic_temp_t8_upkeep_energy
+			alloys = @titanic_temp_t8_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}

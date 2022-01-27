@@ -1,0 +1,862 @@
+﻿l_english:
+
+### Actions
+ PLANET_KILLER_TEMPORAL_ACTION:0 "Stasis-Lock World"
+ MESSAGE_DESC_FOR_PLANET_KILLER_TEMPORAL:0 "was stasis-locked by"
+
+### Armies
+
+
+### Ascension Perks
+ ap_temporal_technology:0 "Empire Eternal"
+ ap_temporal_technology_desc:0 "As we have achieved mastery over space, so too must we expand our dominion over time. Masters of the past and the future, we will reign in eternity."
+
+### Bombardment
+
+
+### Buildings
+ building_dark_matter_plant_1:0 "Singularity Bore"
+ building_dark_matter_plant_1_desc:0 ""
+ building_dark_matter_plant_2:0 "Singularity Super-Bore"
+ building_dark_matter_plant_2_desc:0 ""
+ building_dark_matter_plant_3:0 "Singularity Ultra-Bore"
+ building_dark_matter_plant_3_desc:0 ""
+
+ building_living_metal_plant_1:0 "Metal Breeding Plant"
+ building_living_metal_plant_1_desc:0 ""
+ building_living_metal_plant_2:0 "Metal Multi-Breeding Plant"
+ building_living_metal_plant_2_desc:0 ""
+ building_living_metal_plant_3:0 "Metal Mass-Breeding Plant"
+ building_living_metal_plant_3_desc:0 ""
+
+ building_zro_plant_1:0 "Shroud Coalescer"
+ building_zro_plant_1_desc:0 ""
+ building_zro_plant_2:0 "Shroud Funnel"
+ building_zro_plant_2_desc:0 ""
+ building_zro_plant_3:0 "Shroud Mega-Funnel"
+ building_zro_plant_3_desc:0 ""
+
+### Components
+
+ ### Afterburner ###
+ TEMPORAL_AFTERBURNER:0 "Chrono-Accelerator Afterburners"
+ TEMPORAL_AFTERBURNER_DESC:0 ""
+ TEMPORAL_2_AFTERBURNER:0 "Phase-Shifting Afterburner"
+ TEMPORAL_2_AFTERBURNER_DESC:0 ""
+
+ ### Anti-Shield ###
+ SHIELD_ACCELERATOR:0 "Shield Accelerator Beam"
+ SHIELD_ACCELERATOR_DESC:0 ""
+ SMALL_SHIELD_ACCELERATOR:0 "Small Shield Accelerator Beam"
+ MEDIUM_SHIELD_ACCELERATOR:0 "Medium Shield Accelerator Beam"
+ LARGE_SHIELD_ACCELERATOR:0 "Large Shield Accelerator Beam"
+ SHIELD_2_ACCELERATOR:0 "Total Entropy Beam"
+ SHIELD_2_ACCELERATOR_DESC:0 ""
+ SMALL_SHIELD_2_ACCELERATOR:0 "Small Total Entropy Beam"
+ MEDIUM_SHIELD_2_ACCELERATOR:0 "Medium Total Entropy Beam"
+ LARGE_SHIELD_2_ACCELERATOR:0 "Large Total Entropy Beam"
+
+ ### Arc Emitter ###
+ ARC_EMITTER_TEMPORAL:0 "Temporal Shifter"
+ ARC_EMITTER_TEMPORAL_DESC:0 ""
+ ARC_EMITTER_2_TEMPORAL:0 "Temporal Negator"
+ ARC_EMITTER_2_TEMPORAL_DESC:0 ""
+
+ ### Armor ###
+ TEMPORAL_ARMOR:0 "Chronostatic Armor"
+ TEMPORAL_ARMOR_DESC:0 ""
+ SMALL_TEMPORAL_ARMOR:0 "Small Chronostatic Armor"
+ MEDIUM_TEMPORAL_ARMOR:0 "Medium Chronostatic Armor"
+ LARGE_TEMPORAL_ARMOR:0 "Large Chronostatic Armor"
+ TEMPORAL_2_ARMOR:0 "Negentropy Armor"
+ TEMPORAL_2_ARMOR_DESC:0 ""
+ SMALL_TEMPORAL_2_ARMOR:0 "Small Negentropy Armor"
+ MEDIUM_TEMPORAL_2_ARMOR:0 "Medium Negentropy Armor"
+ LARGE_TEMPORAL_2_ARMOR:0 "Large Negentropy Armor"
+
+ ### Aura ###
+ SHIP_AURA_TEMPORAL_ARRAY:0 "Temporal Regulator"
+ aura_chrono_accelerator:0 "$aura_category_defensive$"
+ aura_chrono_decelerator:0 "$aura_category_offensive$"
+ SHIP_AURA_WEAPON_PHASE_ACCELERATOR:0 "Weapon Phase Accelerator"
+ aura_temporal_array:0 "$aura_category_defensive$"
+ SHIP_AURA_ENERGY_REFRACTOR:0 "Energy Refractor"
+ aura_energy_refractor:0 "$aura_category_offensive$"
+
+ ### Autocannon ###
+ AUTOCANNON_TEMPORAL:0 "Accelerator Autocannon"
+ AUTOCANNON_TEMPORAL_DESC:0 ""
+ AUTOCANNON_2_TEMPORAL:0 "Antifractal Autocannon"
+ AUTOCANNON_2_TEMPORAL_DESC:0 ""
+
+ ### Aux ###
+ TEMPORAL_DECODER:0 "Timestream Decoder"
+ TEMPORAL_DECODER_DESC:0 ""
+ TEMPORAL_ENCODER:0 "Timestream Encoder"
+ TEMPORAL_ENCODER_DESC:0 ""
+
+ ### Colossus ###
+ PLANET_KILLER_TEMPORAL:0 "Planetary Decelerator"
+ PLANET_KILLER_TEMPORAL_DESC:0 ""
+
+ ### Disruptor ###
+ DISRUPTOR_TEMPORAL:0 "Cohesion Disruptor"
+ DISRUPTOR_TEMPORAL_DESC:0 ""
+ SMALL_DISRUPTOR_TEMPORAL:0 "Small Cohesion Disruptor"
+ MEDIUM_DISRUPTOR_TEMPORAL:0 "Medium Cohesion Disruptor"
+ DISRUPTOR_2_TEMPORAL:0 "Spacetime Disruptor"
+ DISRUPTOR_2_TEMPORAL_DESC:0 ""
+ SMALL_DISRUPTOR_2_TEMPORAL:0 "Small Spacetime Disruptor"
+ MEDIUM_DISRUPTOR_2_TEMPORAL:0 "Medium Spacetime Disruptor"
+
+ ### Energy Lance ###
+ ENERGY_LANCE_TEMPORAL:0 "Subspace Rupture Lance"
+ ENERGY_LANCE_TEMPORAL_DESC:0 ""
+ ENERGY_LANCE_2_TEMPORAL:0 "Blazar Hellfire Lance"
+ ENERGY_LANCE_2_TEMPORAL_DESC:0 ""
+
+ ### Energy Torpedoes ###
+ ENERGY_TORPEDO_TEMPORAL:0 "Singularity Launcher"
+ ENERGY_TORPEDO_TEMPORAL_DESC:0 ""
+ ENERGY_TORPEDO_2_TEMPORAL:0 "Antisingularity Launcher"
+ ENERGY_TORPEDO_2_TEMPORAL_DESC:0 ""
+
+ ### Flak ###
+ FLAK_BATTERY_TEMPORAL:0 "Neutronium Flak Array"
+ FLAK_BATTERY_TEMPORAL_DESC:0 ""
+ FLAK_BATTERY_2_TEMPORAL:0 "Predictive Flak Array"
+ FLAK_BATTERY_2_TEMPORAL_DESC:0 ""
+
+ ### Jump Drive ###
+ TEMPORAL_JUMP_DRIVE:0 "Void Bubble Drive"
+ TEMPORAL_JUMP_DRIVE_DESC:0 ""
+ TEMPORAL_2_JUMP_DRIVE:0 "Omnidrive"
+ TEMPORAL_2_JUMP_DRIVE_DESC:0 ""
+
+
+ ### Kinetic Artillery ###
+ KINETIC_ARTILLERY_TEMPORAL:0 "Neutronium Artillery"
+ KINETIC_ARTILLERY_TEMPORAL_DESC:0 ""
+ KINETIC_ARTILLERY_2_TEMPORAL:0 "Antifractal Artillery"
+ KINETIC_ARTILLERY_2_TEMPORAL_DESC:0 ""
+
+ ### Laser ###
+ TEMPORAL_LASER:0 "Null-Space Projector"
+ TEMPORAL_LASER_DESC:0 ""
+ SMALL_TEMPORAL_LASER:0 "Small Null-Space Projector"
+ MEDIUM_TEMPORAL_LASER:0 "Medium Null-Space Projector"
+ LARGE_TEMPORAL_LASER:0 "Large Null-Space Projector"
+ TEMPORAL_2_LASER:0 "Null-Space Disintegrator"
+ TEMPORAL_2_LASER_DESC:0 ""
+ SMALL_TEMPORAL_2_LASER:0 "Small Null-Space Disintegrator"
+ MEDIUM_TEMPORAL_2_LASER:0 "Medium Null-Space Disintegrator"
+ LARGE_TEMPORAL_2_LASER:0 "Large Null-Space Disintegrator"
+
+ ### Mass Accelerator ###
+ MASS_ACCELERATOR_TEMPORAL:0 "Neutronium Cannon"
+ MASS_ACCELERATOR_TEMPORAL_DESC:0 ""
+ MASS_ACCELERATOR_2_TEMPORAL:0 "Antifractal Cannon"
+ MASS_ACCELERATOR_2_TEMPORAL_DESC:0 ""
+
+ ### Mass Driver ###
+ MASS_DRIVER_TEMPORAL:0 "Neutronium Railgun"
+ MASS_DRIVER_TEMPORAL_DESC:0 ""
+ SMALL_MASS_DRIVER_TEMPORAL:0 "Small Neutronium Railgun"
+ MEDIUM_MASS_DRIVER_TEMPORAL:0 "Medium Neutronium Railgun"
+ LARGE_MASS_DRIVER_TEMPORAL:0 "Large Neutronium Railgun"
+ MASS_DRIVER_2_TEMPORAL:0 "Antifractal Drivers"
+ MASS_DRIVER_2_TEMPORAL_DESC:0 ""
+ SMALL_MASS_DRIVER_2_TEMPORAL:0 "Small Antifractal Drivers"
+ MEDIUM_MASS_DRIVER_2_TEMPORAL:0 "Medium Antifractal Drivers"
+ LARGE_MASS_DRIVER_2_TEMPORAL:0 "Large Antifractal Drivers"
+
+ ### Missile ###
+ ALLOY_BURNER_MISSILE:0 "Alloy Burner Missile"
+ ALLOY_BURNER_MISSILE_DESC:0 ""
+ ALLOY_BURNER_2_MISSILE:0 "Vacuum Collapse Missile"
+ ALLOY_BURNER_2_MISSILE_DESC:0 ""
+
+
+ ### Plasma ###
+ PLASMA_TEMPORAL:0 "Time Distortion Burst"
+ PLASMA_TEMPORAL_DESC:0 ""
+ SMALL_PLASMA_TEMPORAL:0 "Small Time Distortion Burst"
+ MEDIUM_PLASMA_TEMPORAL:0 "Medium Time Distortion Burst"
+ LARGE_PLASMA_TEMPORAL:0 "Large Time Distortion Burst"
+ PLASMA_2_TEMPORAL:0 "Time Eraser Burst"
+ PLASMA_2_TEMPORAL_DESC:0 ""
+ SMALL_PLASMA_2_TEMPORAL:0 "Small Time Eraser Burst"
+ MEDIUM_PLASMA_2_TEMPORAL:0 "Medium Time Eraser Burst"
+ LARGE_PLASMA_2_TEMPORAL:0 "Large Time Eraser Burst"
+
+ ### Point Defense ###
+ POINT_DEFENCE_TEMPORAL:0 "Distortion Point-Defense"
+ POINT_DEFENCE_TEMPORAL_DESC:0 ""
+ POINT_DEFENCE_2_TEMPORAL:0 "Eraser Point-Defense"
+ POINT_DEFENCE_2_TEMPORAL_DESC:0 ""
+
+ ### Reactor ###
+ TEMPORAL_REACTOR:0 "Singularity Reactor"
+ TEMPORAL_REACTOR_DESC:0 ""
+ CORVETTE_TEMPORAL_REACTOR:0 "Singularity Reactor"
+ DESTROYER_TEMPORAL_REACTOR:0 "Singularity Reactor"
+ CRUISER_TEMPORAL_REACTOR:0 "Singularity Reactor"
+ BATTLESHIP_TEMPORAL_REACTOR:0 "Singularity Reactor"
+ TITAN_TEMPORAL_REACTOR:0 "Singularity Reactor"
+ COLOSSUS_TEMPORAL_REACTOR:0 "Singularity Reactor"
+ PLATFORM_TEMPORAL_REACTOR:0 "Singularity Reactor"
+ ION_CANNON_TEMPORAL_REACTOR:0 "Singularity Reactor"
+ STARBASE_TEMPORAL_REACTOR:0 "Singularity Reactor"
+ TEMPORAL_2_REACTOR:0 "Genesis Reactor"
+ TEMPORAL_2_REACTOR_DESC:0 ""
+ CORVETTE_TEMPORAL_2_REACTOR:0 "Genesis Reactor"
+ DESTROYER_TEMPORAL_2_REACTOR:0 "Genesis Reactor"
+ CRUISER_TEMPORAL_2_REACTOR:0 "Genesis Reactor"
+ BATTLESHIP_TEMPORAL_2_REACTOR:0 "Genesis Reactor"
+ TITAN_TEMPORAL_2_REACTOR:0 "Genesis Reactor"
+ COLOSSUS_TEMPORAL_2_REACTOR:0 "Genesis Reactor"
+ PLATFORM_TEMPORAL_2_REACTOR:0 "Genesis Reactor"
+ ION_CANNON_TEMPORAL_2_REACTOR:0 "Genesis Reactor"
+ STARBASE_TEMPORAL_2_REACTOR:0 "Genesis Reactor"
+
+ ### Sensor ###
+ TEMPORAL_SENSOR:0 "Sterile Neutrino Sensor"
+ TEMPORAL_SENSOR_DESC:0 ""
+ TEMPORAL_2_SENSOR:0 "Timestream Sensor"
+ TEMPORAL_2_SENSOR_DESC:0 ""
+
+ ### Shield ###
+ TEMPORAL_SHIELD:0 "Temporal Bubble Shield"
+ TEMPORAL_SHIELD_DESC:0 ""
+ SMALL_TEMPORAL_SHIELD:0 "Small Temporal Bubble Shield"
+ MEDIUM_TEMPORAL_SHIELD:0 "Medium Temporal Bubble Shield"
+ LARGE_TEMPORAL_SHIELD:0 "Large Temporal Bubble Shield"
+ TEMPORAL_2_SHIELD:0 "Antitime Shield"
+ TEMPORAL_2_SHIELD_DESC:0 ""
+ SMALL_TEMPORAL_2_SHIELD:0 "Small Antitime Shield"
+ MEDIUM_TEMPORAL_2_SHIELD:0 "Medium Antitime Shield"
+ LARGE_TEMPORAL_2_SHIELD:0 "Large Antitime Shield"
+
+ ### Strike Craft ###
+ STRIKE_CRAFT_HANGAR_TEMPORAL:0 "Slipstream Autowar"
+ STRIKE_CRAFT_HANGAR_TEMPORAL_DESC:0 ""
+ STRIKE_CRAFT_HANGAR_TEMPORAL_2:0 "Superposition Autowar"
+ STRIKE_CRAFT_HANGAR_TEMPORAL_2_DESC:0 ""
+
+ ### Swarmer Missile ###
+ TEMPORAL_SWARMER_MISSILE:0 "Hurricane Missiles"
+ TEMPORAL_SWARMER_MISSILE_DESC:0 ""
+ TEMPORAL_SWARMER_2_MISSILE:0 "Ragnarök Missiles"
+ TEMPORAL_SWARMER_2_MISSILE_DESC:0 ""
+
+ ### Titan Laser ###
+ TEMPORAL_BEAM:0 "Temporal Tachyon Beam"
+ TEMPORAL_BEAM_DESC:0 ""
+ TEMPORAL_BEAM_TITAN:0 "Temporal Tachyon Beam"
+ TEMPORAL_BEAM_ION:0 "Temporal Tachyon Beam"
+ TEMPORAL_2_BEAM:0 "Sic Mundus Beam"
+ TEMPORAL_2_BEAM_DESC:0 ""
+ TEMPORAL_2_BEAM_TITAN:0 "Sic Mundus Beam"
+ TEMPORAL_2_BEAM_ION:0 "Sic Mundus Beam"
+
+ ### Thruster ###
+ SHIP_THRUSTER_TEMPORAL:0 "Displacement Thruster"
+ DESTROYER_SHIP_THRUSTER_TEMPORAL:0 "Displacement Thruster"
+ CRUISER_SHIP_THRUSTER_TEMPORAL:0 "Displacement Thruster"
+ BATTLESHIP_SHIP_THRUSTER_TEMPORAL:0 "Displacement Thruster"
+ TITAN_SHIP_THRUSTER_TEMPORAL:0 "Displacement Thruster"
+ COLOSSUS_SHIP_THRUSTER_TEMPORAL:0 "Displacement Thruster"
+ SHIP_THRUSTER_2_TEMPORAL:0 "Halo Thruster"
+ DESTROYER_SHIP_THRUSTER_2_TEMPORAL:0 "Halo Thruster"
+ CRUISER_SHIP_THRUSTER_2_TEMPORAL:0 "Halo Thruster"
+ BATTLESHIP_SHIP_THRUSTER_2_TEMPORAL:0 "Halo Thruster"
+ TITAN_SHIP_THRUSTER_2_TEMPORAL:0 "Halo Thruster"
+ COLOSSUS_SHIP_THRUSTER_2_TEMPORAL:0 "Halo Thruster"
+
+ ### Torpedo ###
+ TORPEDO_TEMPORAL:0 "Nova Torpedo"
+ TORPEDO_TEMPORAL_DESC:0 ""
+ TORPEDO_2_TEMPORAL:0 "Ultra-Crunch Torpedo"
+ TORPEDO_2_TEMPORAL_DESC:0 ""
+
+### Decisions
+ decision_colonize_timeline:0 "Colonize Alternate Reality"
+ decision_colonize_timeline_desc:0 "It our manifest destiny to colonize every corner of the multiverse! Nowhere under eternity will escape our dominion."
+ decision_colonize_timeline_effects:3 "Sends §Y1§! £pop£ Pop and a £colony_ship£ Colony Ship from the Planet to another dimension or universe. A powerful new §YPlanetary Feature§! will be added to the planet."
+ decision_colonize_timeline_effects_short:0 "Sends §Y1§! £pop£ Pops from the Planet to another reality.\n\nCreates a new §YPlanetary Feature§!"
+
+ decision_local_acceleration:0 "Create Local Acceleration Bubble"
+ decision_local_acceleration_desc:0 ""
+ decision_local_hyperacceleration:0 "Create Local Hyper-Acceleration Bubble"
+ decision_local_hyperacceleration_desc:0 ""
+ decision_local_deceleration:0 "Create Local Deceleration Bubble"
+ decision_local_deceleration_desc:0 ""
+ decision_local_stasis:0 "Create Local Stasis Bubble"
+ decision_local_stasis_desc:0 ""
+ decision_dismantle_acceleration:0 "Disrupt Acceleration Bubble"
+ decision_dismantle_acceleration_desc:0 ""
+ decision_dismantle_deceleration:0 "Disrupt Deceleration Bubble"
+ decision_dismantle_deceleration_desc:0 ""
+ decision_dismantle_adv_acceleration:0 "Disrupt Hyper-Acceleration Bubble"
+ decision_dismantle_adv_acceleration_desc:0 ""
+ decision_dismantle_adv_deceleration:0 "Disrupt Stasis Bubble"
+ decision_dismantle_adv_deceleration_desc:0 ""
+
+ decision_dismantle_bubble:0 "Disrupt Temporal Bubble"
+ decision_dismantle_bubble_desc:0 ""
+ decision_dismantle_advanced_bubble:0 "Disrupt Advanced Temporal Bubble"
+ decision_dismantle_advanced_bubble_desc:0 ""
+
+### Deposits
+ d_temporal_bathwater_epoch:0 "Bathwater Epoch Colony"
+ d_temporal_bathwater_epoch_desc:0 "A colony established during the Bathwater Epoch of a universe. The average temperature of the entire universe is within the range of liquid water. Stars have yet to form in significant numbers but exotic lifeforms may be found."
+ d_temporal_stelliferous_era:0 "Stelliferous Era Colony"
+ d_temporal_stelliferous_era_desc:0 "A colony established during the Stelliferous Era of a universe. This era is the most familiar to us, covering the vast period of star and galaxy formation. Civilisations as we know them are plentiful during this time."
+ d_temporal_degenerate_era:0 "Degenerate Era Colony"
+ d_temporal_degenerate_era_desc:0 "A colony established during the Degenerate Era of a universe. Stellar formation has long ceased, all that remains of a once rich universe are the cooling corpses of stars, and black holes. Organic life as we know it is long extinct."
+ d_temporal_black_hole_era:0 "Black Hole Era Colony"
+ d_temporal_black_hole_era_desc:0 "A colony established during the Black Hole Era of a universe. The very matter that made up stars and planets has long since decayed into nothingness; only black holes remain. The universe is unimaginably dark."
+ d_temporal_dark_era:0 "Dark Era Observatory"
+ d_temporal_dark_era_desc:0 "An observational outpost established in the Dark Era of a universe. Time has become meaningless; this universe is so ancient that not even black holes remain. Only the hardiest forms of particles continue to endure, stretched across unfathomable distances by cosmic inflation."
+ d_temporal_synthetic_universe:0 "Gray Goo Universe Colony"
+ d_temporal_synthetic_universe_desc:0 "A colony established in a universe that has been entirely consumed by Nanites. Our Great Archailect has subsumed the Nanites into our network, dramatically improving its computational capacity."
+ d_temporal_anomalous_dimension:0 "Shroud-Adjacent Colony"
+ d_temporal_anomalous_dimension_desc:0 "A colony established in an anomalous, Shroud-Adjacent Dimension. The walls between this dimension and the Shroud are especially permeable. Most lifeforms exist as pure energy or willpower."
+ d_temporal_eldritch_dimension:0 "Eldritch Dimension Observatory"
+ d_temporal_eldritch_dimension_desc:0 "An observational outpost established in a terrifying and hellish dimension. This plane is utterly hostile to life as we know it, populated by creatures we can scarce fathom. The few, brave scientists who study this abominable plane risk both life and sanity."
+ 
+
+### Events
+ temporal.1300.name:0 "The Future starts Today"
+ temporal.1300.desc:0 "Eternity and entropy; the day draws near when we will no longer fear either. With the assistance of our Archailect we have taken the bold step forward into mastery over the fabric of time itself. Age old proverbs of the nature and cycles of empire will no longer hold sway over us; today, we begin dominion without end."
+ temporal.1300.a:0 "May we reign in eternity!"
+
+ temporal.1320.name:0 "$name_timeline_tunneler$ Colonization"
+ temporal.1320.1.desc:0 "Test"
+ temporal.1320.2.desc:0 "Test 2"
+ temporal.1320.a:0 "Activate calibration sequence."
+ temporal.1320.b:0 "Create $d_temporal_bathwater_epoch$"
+ temporal.1320.c:0 "Create $d_temporal_stelliferous_era$"
+ temporal.1320.d:0 "Create $d_temporal_degenerate_era$"
+ temporal.1320.e:0 "Create $d_temporal_black_hole_era$"
+ temporal.1320.f:0 "Create $d_temporal_anomalous_dimension$"
+ temporal.1320.g:0 "Create $d_temporal_dark_era$"
+ temporal.1320.h:0 "Create $d_temporal_synthetic_universe$"
+ temporal.1320.i:0 "Create $d_temporal_eldritch_dimension$"
+
+ temporal.70.name:0 "The Imperial Horological Office"
+ temporal.70.desc:0 "Agents from the §HImperial Horological Office§! are in the process of deploying to every timeline under the Imperium's dominion, where they will monitor and suppress the development of Temporal technologies.\n\nAnother function of the IHO, which reports only to the [gal_emperor.GetRulerTitle] through the Imperial Ministry of Justice, is to root out "scientists and civilizations" who threaten to undermine the stability of the Imperium's infinite domain."
+ temporal.70.a:0 "Nowhere under time or space escapes the eye of the Imperium."
+ temporal.72.desc:0 "With the rise of the Imperium, the Temporal Variance Authority is being reorganized and has changed its name to the §HImperial Horological Office§!. The jurisdiction of IHO agents still extends across the entire Imperium, but as of now they report only to the [gal_emperor.GetRulerTitle].\n\nWhile one of the primary responsibilities of the IHO is still to maintain the integrity of the multiverse, they are now also used to hunt down scientists and civilizations who would research temporal technologies that could threaten the stability of the timelines under Imperial control. Some are voicing concern that the former organization is turning into a tool of oppression..."
+
+ ## Temporal Vacation Service ##
+ temporal_dialog.1310.name:0 "$name_temporal_vacation_service$ Site Complete"
+ temporal_dialog.1310.desc:0 "The construction site for a future $name_temporal_vacation_service$ has been completed in the [temporal_system.GetName] system. Upon this scaffold, we shall construct a port like no other that allows for tourists, traders, and travelers alike to journey to the far-flung regions of time. This will greatly improve our empire's Amenities and Trade Value. The initial step will be to begin work on the Chronoport that serves as the heart of this megastructure."
+ temporal_dialog.1310.a:0 "Good."
+
+ temporal_dialog.1311.name:0 "$name_temporal_vacation_service$ Chronoport Complete"
+ temporal_dialog.1311.desc:0 "Our architects and engineers have complete the construction of our $name_temporal_vacation_service$'s Chronoport in the [temporal_system.GetName] system. This massive structure will process the untold number of temporal vacationers that will flow throughout. It is also home to a sizeable security force to ward off any nefarious forces that might use our time travel technology against us. Next, we will begin work on the Orbital Hotels that provide accommodations for travelers."
+ temporal_dialog.1311.a:0 "Great."
+
+ temporal_dialog.1312.name:0 "$name_temporal_vacation_service$ Orbital Hotels Complete"
+ temporal_dialog.1312.desc:0 "The rotating Orbital Hotels that surround the $name_temporal_vacation_service$ in the [temporal_system.GetName] system are now complete. These sprawling complexes provide a massive area containing top-of-the-line accommodations, sprawling shops, and luxury services for those coming and going from the Chronoport. The last step will be the construction of the Chronogate, a large structure that regulates and conducts the passage of temporal travelers."
+ temporal_dialog.1312.a:0 "Excellent."
+
+ temporal_dialog.1313.name:0 "$name_temporal_vacation_service$ Complete"
+ temporal_dialog.1313.desc:0 "With the completion of the Chronogate and a grand opening ceremony, the $name_temporal_vacation_service$'s Chronoport in the [temporal_system.GetName] system is now fully operational. The hottest spot for thrill seeking tourists across the galaxy, a massive flow of goods and visitors from every era of our universe flows through its sprawling halls."
+ temporal_dialog.1313.a:0 "Perfect!"
+
+ ## Timeline Tunneler ##
+ temporal_dialog.1320.name:0 "$name_timeline_tunneler$ Site Complete"
+ temporal_dialog.1320.desc:0 "The construction site for a future $name_timeline_tunneler$ has been completed in the [temporal_system.GetName] system. Upon this scaffold, we shall construct a colossal energy drill that will be able to pierce through the very fabric of spacetime and into other dimensions and timelines, allowing our empire to spread across infinity. The first step of its creation will be the massive Stellar Supercompressor."
+ temporal_dialog.1320.a:0 "Good."
+
+ temporal_dialog.1321.name:0 "$name_timeline_tunneler$ Stellar Supercompressor Complete"
+ temporal_dialog.1321.desc:0 "Our Engineers have completed the construction of the Stellar Supercompressor [temporal_system.GetName] system. This component of the $name_timeline_tunneler$ is a specialized Dyson Sphere that collapses a star into Neutron Star density. The resulting intense gravitational and magnetic forces given off will be focused, refined, and used to tear apart spacetime at a later stage in construction. The next step is to build the massive Control Rings that will orbit the $name_timeline_tunneler$."
+ temporal_dialog.1321.a:0 "Great."
+
+ temporal_dialog.1322.name:0 "$name_timeline_tunneler$ Control Rings Complete"
+ temporal_dialog.1322.desc:0 "The Control Rings in orbit around the $name_timeline_tunneler$ have been completed. This massive structure is a powerful supercomputer designed with a single purpose; the impossibly complex calculations that will be required to target alternate timelines and calibrate the energies to open a cross-temporal tunnel to reach them. The next stage will be the construction of the Gate Modulators."
+ temporal_dialog.1322.a:0 "Excellent."
+
+ temporal_dialog.1323.name:0 "$name_timeline_tunneler$ Gate Modulators Complete"
+ temporal_dialog.1323.desc:0 "We have now completed the Gate Modulators for our $name_timeline_tunneler$ in the [temporal_system.GetName] system. These unique devices control and stabilize the wormholes that link timelines, allowing for them to be maintained indefinitely while acting as a method of regulating the traffic that flows between. The next stage of this megastructure is the Focusing Array."
+ temporal_dialog.1323.a:0 "Fantastic."
+
+ temporal_dialog.1324.name:0 "$name_timeline_tunneler$ Focusing Array Complete"
+ temporal_dialog.1324.desc:0 "Our elite engineers have finished constructing the Focusing Array for our $name_timeline_tunneler$. This Focusing Array draws energy from the Stellar Supercompressor, as well as coalescing the disparate gravitational and magnetic waves given off by the collapsed star into a single convergent stream. The next step of the construction process will be the Liminal Megadrill."
+ temporal_dialog.1324.a:0 "Incredible."
+
+ temporal_dialog.1325.name:0 "$name_timeline_tunneler$ Liminal Megadrill"
+ temporal_dialog.1325.desc:0 "The Liminal Megadrill is now complete and installed into the $name_timeline_tunneler$ in the [temporal_system.GetName] system. This fantastically complex piece of machinery - designed with the careful oversight of our $name_great_archailect$ - channels the energy of an entire star into a carefully focused beam capable of creating punctures between our universe and other timelines. With the Gate Modulators working in tandem, these breaches can be maintained indefinitely. The penultimate stage of this incredible machine are the Cascade Stabilizers."
+ temporal_dialog.1325.a:0 "Wonderful."
+
+ temporal_dialog.1326.name:0 "$name_timeline_tunneler$ Cascade Stabilizers"
+ temporal_dialog.1326.desc:0 "The $name_timeline_tunneler$ in the [temporal_system.GetName] system nears completion. While not technically required for basic functioning, the Cascade Stabilizers are a vital safety feature capable of compensating and correcting irregularities in the energy flow of the Liminal Megadrill created by dimensional anomalies or differences in the fundamental underpinning of the laws of physics found in other universes.\n\nOur Physicists assure us that the Cascade Stabilizers will prevent the $name_timeline_tunneler$ from creating an accidental vacuum collapse when it is activated in the final stage of its construction. While the energy output of a single star is enough to maintain a breach in spacetime, the initial puncture out of our universe will require the simultaneous output of dozens of stars working in tandem."
+ temporal_dialog.1326.a:0 "Amazing."
+
+ temporal_dialog.1327.name:0 "$name_timeline_tunneler$ Complete"
+ temporal_dialog.1327.desc:0 "The $name_timeline_tunneler$ in the [temporal_system.GetName] system is now fully operational. A stable breach in the fabric of space time has been created, allowing us to create stable wormhole bridges between our universe and other dimensions or timelines.\n\nWe have unlocked a new §YDecision§! that will allow us to send a £pops£ Pop to colonize a new universe, creating a new Planetary Deposit on the Planet where the Pop departed from. The Control Rings will need to be properly calibrated through a few test fires, after which we will be able to choose which type of universe is colonized."
+ temporal_dialog.1327.a:0 "Perfect!"
+
+ ## Living Metal Replicator ##
+ temporal_dialog.1330.name:0 "$name_living_metal_replicator$ Site Complete"
+ temporal_dialog.1330.desc:0 "The construction site for a future $name_living_metal_replicator$ has been completed in the [temporal_system.GetName] system. Upon this scaffold, we shall construct an orbital ring that will seed the world below with $sr_living_metal$ to serve our Empire's vast industries. The first step will be to begin work on the Orbital Platform that serves as the foundation of the megastructure."
+ temporal_dialog.1330.a:0 "Good."
+
+ temporal_dialog.1331.name:0 "$name_living_metal_replicator$ Orbital Platform"
+ temporal_dialog.1331.desc:0 "Our engineers have finished the construction of the Orbital Platform that serves as the basis for the future $name_living_metal_replicator$. The Orbital Platform houses sprawling industrial complexes and highly specialized computers that will run the majority of the $name_living_metal_replicator$'s operations. Next, we will begin work on designing the Living Metal Seeders."
+ temporal_dialog.1331.a:0 "Great."
+
+ temporal_dialog.1332.name:0 "$name_living_metal_replicator$ $sr_living_metal$ Seeders"
+ temporal_dialog.1332.desc:0 "The Living Metal Seeders in the [temporal_system.GetName] system are now complete. These two massive industrial engines act as a dual purpose device, housing the specialized replicators that breed huge quantities of $sr_living_metal$ from a stock source, as well as a series of Orbital Tractor Beams that allow for speedy atmospheric transversal from the planet below to the $name_living_metal_replicator$. The final step is to begin the Planetary Seeding Process, whereby the majority of the metals from the planet below will be converted to $sr_living_metal$."
+ temporal_dialog.1332.a:0 "Excellent."
+
+ temporal_dialog.1333.name:0 "$name_living_metal_replicator$ Complete"
+ temporal_dialog.1333.desc:0 "The $name_living_metal_replicator$ in the [temporal_system.GetName] system is now fully operational. The planet it orbits has been irrevocably terraformed into an alien world of $sr_living_metal$ oceans. Our Orbital Tractor Beams draw upon the ocean below to transport the $sr_living_metal$ to our industrial bases across the galaxy. The sheer quantity of metal now available will supply us for centuries to come."
+ temporal_dialog.1333.a:0 "Perfect!"
+
+ ## Shroud Zro Extractor ##
+ temporal_dialog.1340.name:0 "$name_shroud_zro_extractor$ Site Complete"
+ temporal_dialog.1340.desc:0 "The construction site for a future $name_shroud_zro_extractor$ has been completed in the [temporal_system.GetName] system. Upon this scaffold, we shall construct the eldritch machinery that will draw forth $sr_zro$ from the weak barrier between the $pc_shrouded$ world below and the Shroud. The first step will be to begin work on the Dimensional Apparatus that will allow for the flow of energies between dimensions."
+ temporal_dialog.1340.a:0 "Good."
+
+ temporal_dialog.1341.name:0 "$name_shroud_zro_extractor$ Dimensional Apparatus Complete"
+ temporal_dialog.1341.desc:0 "The Dimensional Apparatus in the [temporal_system.GetName] system is now complete. This peculiar machine creates a bridge between our dimension and the shroud through the weak barriers around a $pc_shrouded$. What future consequences this might bring are yet unforeseen. The next step of the construction process is begin work the Shroud Engine."
+ temporal_dialog.1341.a:0 "Great."
+
+ temporal_dialog.1342.name:0 "$name_shroud_zro_extractor$ Shroud Engine Complete"
+ temporal_dialog.1342.desc:0 "With the completion of the Shroud Engine, the physical components of the $name_shroud_zro_extractor$ have been completed. The Shroud Engine draws raw psionic energy into our dimension, creating a one-way funnel effect. The final step is the most challenging, to create the Transdimensional Anchors out of pure psionic energy."
+ temporal_dialog.1342.a:0 "Excellent."
+
+ temporal_dialog.1343.name:0 "$name_shroud_zro_extractor$ Complete"
+ temporal_dialog.1343.desc:0 "The $name_shroud_zro_extractor$ is now fully operational. The Transdimensional Anchors draw psionic entities from the shroud into our universe, where they are distilled down into pure $sr_zro$. The shrieks and echoes of dying psionic entities reverberate across the [temporal_system.GetName] system, blending in with the background frequency. Let us hope that there will be no consequences for our actions here."
+ temporal_dialog.1343.a:0 "Perfect!"
+
+### Fleet
+ FLEETORDER_DESTROY_PLANET_WITH_PLANET_KILLER_TEMPORAL:0 "Preparing to stasis-lock $PLANET|Y$"
+
+### Jobs
+ 
+ ### Singularity Mechanic ###
+ job_singularity_mechanic:0 "Singularity Mechanic"
+ job_singularity_mechanic_plural:0 "Singularity Mechanics"
+ job_singularity_mechanic_desc:0 "Skilled machinists oversee the maintenance of the complex machines that draw Dark Matter from an artificial singularity."
+ job_singularity_mechanic_effect_desc:0 "£job_singularity_mechanic£ $job_singularity_mechanic_plural$ turn £alloys£ §Y$alloys$§! into £sr_dark_matter£ §Y$sr_dark_matter$§!"
+ mod_job_singularity_mechanic_add:0 "$job_singularity_mechanic$ Jobs"
+ mod_job_singularity_mechanic_per_pop:0 "§G+1§! $job_singularity_mechanic$ Job per $VALUE$ Pops"
+ mod_job_singularity_mechanic_per_pop_short:0 "\n§G+1§! £mod_job_singularity_mechanic_add£ per $VALUE$ £pop"
+ mod_planet_singularity_mechanic_produces_mult:0 "£job_singularity_mechanic£ $job_singularity_mechanic_plural$ Output"
+ mod_planet_singularity_mechanic_sr_dark_matter_produces_mult:0 "£sr_dark_matter£ $sr_dark_matter$ from £job_singularity_mechanic£ $job_singularity_mechanic_plural$"
+ mod_planet_singularity_mechanic_sr_dark_matter_produces_add:0 "$mod_planet_singularity_mechanic_sr_dark_matter_produces_mult$"
+ planet_singularity_mechanics:0 "Singularity Mechanic Jobs"
+ job_singularity_mechanic_drone:0 "Singularity Mechanic Drone"
+ job_singularity_mechanic_drone_plural:0 "Singularity Mechanic Drones"
+ job_singularity_mechanic_drone_desc:0 "Skilled machinist drones oversee the maintenance of the complex machines that draw Dark Matter from an artificial singularity."
+ job_singularity_mechanic_drone_effect_desc:0 "£job_singularity_mechanic_drone£ $job_singularity_mechanic_drone_plural$ turn £alloys£ §Y$alloys$§! into £sr_dark_matter£ §Y$sr_dark_matter$§!"
+ mod_job_singularity_mechanic_drone_add:0 "$job_singularity_mechanic_drone$ Jobs"
+ mod_job_singularity_mechanic_drone_per_pop:0 "§G+1§! $job_singularity_mechanic_drone$ Job per $VALUE$ Pops"
+ mod_job_singularity_mechanic_drone_per_pop_short:0 "\n§G+1§! £mod_job_singularity_mechanic_drone_add£ per $VALUE$ £pop"
+ mod_planet_singularity_mechanic_drone_produces_mult:0 "£job_singularity_mechanic_drone£ $job_singularity_mechanic_drone_plural$ Output"
+ mod_planet_singularity_mechanic_drone_sr_dark_matter_produces_mult:0 "£sr_dark_matter£ $sr_dark_matter$ from £job_singularity_mechanic_drone£ $job_singularity_mechanic_drone_plural$"
+ mod_planet_singularity_mechanic_drone_sr_dark_matter_produces_add:0 "$mod_planet_singularity_mechanic_drone_sr_dark_matter_produces_mult$"
+
+ ### Living Metal Breeder ###
+ job_metal_breeder:0 "Metal Cultivator"
+ job_metal_breeder_plural:0 "Metal Cultivators"
+ job_metal_breeder_desc:0 "These keen specialists oversee the steady growth of large pools of Living Metal through the introduction of highly purified alloys."
+ job_metal_breeder_effect_desc:0 "£job_metal_breeder£ $job_metal_breeder_plural$ turn £alloys£ §Y$alloys$§! into £sr_living_metal£ §Y$sr_living_metal$§!"
+ mod_job_metal_breeder_add:0 "$job_metal_breeder$ Jobs"
+ mod_job_metal_breeder_per_pop:0 "§G+1§! $job_metal_breeder$ Job per $VALUE$ Pops"
+ mod_job_metal_breeder_per_pop_short:0 "\n§G+1§! £mod_job_metal_breeder_add£ per $VALUE$ £pop"
+ mod_planet_metal_breeder_produces_mult:0 "£job_metal_breeder£ $job_metal_breeder_plural$ Output"
+ mod_planet_metal_breeder_sr_living_metal_produces_mult:0 "£sr_living_metal£ $sr_living_metal$ from £job_metal_breeder£ $job_metal_breeder_plural$"
+ mod_planet_metal_breeder_sr_living_metal_produces_add:0 "$mod_planet_metal_breeder_sr_living_metal_produces_mult$"
+ planet_metal_breeders:0 "Metal Cultivator Jobs"
+ job_metal_breeder_drone:0 "Metal Cultivator Drone"
+ job_metal_breeder_drone_plural:0 "Metal Cultivator Drones"
+ job_metal_breeder_drone_desc:0 "These keen specialist drones oversee the steady growth of large pools of Living Metal through the introduction of highly purified alloys."
+ job_metal_breeder_drone_effect_desc:0 "£job_metal_breeder_drone£ $job_metal_breeder_drone_plural$ turn £alloys£ §Y$alloys$§! into £sr_living_metal£ §Y$sr_living_metal$§!"
+ mod_job_metal_breeder_drone_add:0 "$job_metal_breeder_drone$ Jobs"
+ mod_job_metal_breeder_drone_per_pop:0 "§G+1§! $job_metal_breeder_drone$ Job per $VALUE$ Pops"
+ mod_job_metal_breeder_drone_per_pop_short:0 "\n§G+1§! £mod_job_metal_breeder_drone_add£ per $VALUE$ £pop"
+ mod_planet_metal_breeder_drone_produces_mult:0 "£job_metal_breeder_drone£ $job_metal_breeder_drone_plural$ Output"
+ mod_planet_metal_breeder_drone_sr_living_metal_produces_mult:0 "£sr_living_metal£ $sr_living_metal$ from £job_metal_breeder_drone£ $job_metal_breeder_drone_plural$"
+ mod_planet_metal_breeder_drone_sr_living_metal_produces_add:0 "$mod_planet_metal_breeder_drone_sr_living_metal_produces_mult$"
+
+ ### Zro Distiller ###
+ job_zro_distiller:0 "Zro Distiller"
+ job_zro_distiller_plural:0 "Zro Distillers"
+ job_zro_distiller_desc:0 "Adepts of the enigmatic, these specialists oversee the eldritch machinery that distills the highly psycho-active compound $sr_zro$."
+ job_zro_distiller_effect_desc:0 "£job_zro_distiller£ $job_zro_distiller_plural$ turn £alloys£ §Y$alloys$§! into £sr_zro£ §Y$sr_zro$§!"
+ mod_job_zro_distiller_add:0 "$job_zro_distiller$ Jobs"
+ mod_job_zro_distiller_per_pop:0 "§G+1§! $job_zro_distiller$ Job per $VALUE$ Pops"
+ mod_job_zro_distiller_per_pop_short:0 "\n§G+1§! £mod_job_zro_distiller_add£ per $VALUE$ £pop"
+ mod_planet_zro_distiller_produces_mult:0 "£job_zro_distiller£ $job_zro_distiller_plural$ Output"
+ mod_planet_zro_distiller_sr_zro_produces_mult:0 "£sr_zro£ $sr_zro$ from £job_zro_distiller£ $job_zro_distiller_plural$"
+ mod_planet_zro_distiller_sr_zro_produces_add:0 "$mod_planet_zro_distiller_sr_zro_produces_mult$"
+ planet_zro_distillers:0 "Zro Distiller Jobs"
+ job_zro_distiller_drone:0 "Zro Distiller Drone"
+ job_zro_distiller_drone_plural:0 "Zro Distiller Drones"
+ job_zro_distiller_drone_desc:0 "Adepts of the enigmatic, these specialist drones oversee the eldritch machinery that distills the highly psycho-active compound $sr_zro$."
+ job_zro_distiller_drone_effect_desc:0 "£job_zro_distiller_drone£ $job_zro_distiller_drone_plural$ turn £alloys£ §Y$alloys$§! into £sr_zro£ §Y$sr_zro$§!"
+ mod_job_zro_distiller_drone_add:0 "$job_zro_distiller_drone$ Jobs"
+ mod_job_zro_distiller_drone_per_pop:0 "§G+1§! $job_zro_distiller_drone$ Job per $VALUE$ Pops"
+ mod_job_zro_distiller_drone_per_pop_short:0 "\n§G+1§! £mod_job_zro_distiller_drone_add£ per $VALUE$ £pop"
+ mod_planet_zro_distiller_drone_produces_mult:0 "£job_zro_distiller_drone£ $job_zro_distiller_drone_plural$ Output"
+ mod_planet_zro_distiller_drone_sr_zro_produces_mult:0 "£sr_zro£ $sr_zro$ from £job_zro_distiller_drone£ $job_zro_distiller_drone_plural$"
+ mod_planet_zro_distiller_drone_sr_zro_produces_add:0 "$mod_planet_zro_distiller_drone_sr_zro_produces_mult$"
+
+### Megastructures
+
+ ### Living Metal Replicator ###
+ name_living_metal_replicator:0 "Planetary Metal Evacuator"
+ living_metal_replicator_0:0 "$name_living_metal_replicator$ Site"
+ living_metal_replicator_0_DESC:0 "This orbital platform serves as the construction site for a future $name_living_metal_replicator$ around this planet. It houses the necessary personnel and infrastructure in order to begin constructing this massive space station."
+ living_metal_replicator_0_MEGASTRUCTURE_DETAILS:0 "A fully operational $name_living_metal_replicator$ will allow us to harvest large quantities of $sr_living_metal$ from a seeded planet."
+ living_metal_replicator_1:0 "$name_living_metal_replicator$ Orbital Platform"
+ living_metal_replicator_1_DESC:0 "A large orbital ring around the planet will act as the foundation for the infrastructure of the $name_living_metal_replicator$."
+ living_metal_replicator_2:0 "$name_living_metal_replicator$ $sr_living_metal$ Seeders"
+ living_metal_replicator_2_DESC:0 "The Living Metal Seeders act as multipurpose tools that both contains the “seed” Living Metal as well as a powerful array of tractor beams that draw metals to the surface."
+ living_metal_replicator_3:0 "$name_living_metal_replicator$"
+ living_metal_replicator_3_DESC:0 "A fully operational $name_living_metal_replicator$, the Orbital Tractor Beams draw a large quantity of $sr_living_metal$ from the vast oceans below."
+
+ ### Shroud Zro Extractor ###
+ name_shroud_zro_extractor:0 "Liminal Barrier Siphon"
+ shroud_zro_extractor_0:0 "$name_shroud_zro_extractor$ Site"
+ shroud_zro_extractor_0_DESC:0 "This orbital platform serves as the construction site for a future $name_shroud_zro_extractor$ around this planet. It houses the necessary personnel and infrastructure in order to begin constructing this massive space station."
+ shroud_zro_extractor_0_MEGASTRUCTURE_DETAILS:0 "A fully operational $name_shroud_zro_extractor$ will allow us to harvest large quantities of $sr_zro$ from a $pc_shrouded$."
+ shroud_zro_extractor_1:0 "$name_shroud_zro_extractor$ Dimensional Apparatus"
+ shroud_zro_extractor_1_DESC:0 "Clear of the incredibly dangerous atmosphere of a $pc_shrouded$, the Dimensional Apparatuses interface with the “thin” barriers between our universe and the Shroud."
+ shroud_zro_extractor_2:0 "$name_shroud_zro_extractor$ Shroud Engine"
+ shroud_zro_extractor_2_DESC:0 "The eldritch machinery within the Shroud Engine draws a constant stream of raw psionic energy from the Shroud into our dimension."
+ shroud_zro_extractor_3:0 "$name_shroud_zro_extractor$"
+ shroud_zro_extractor_3_DESC:0 "A fully operational $name_shroud_zro_extractor$, the Transdimensional Anchors draw psionic entities into our dimension before converting them into pure $sr_zro$."
+
+ ### Temporal Vacation Service ###
+ name_temporal_vacation_service:0 "Temporal Vacation Service"
+ temporal_vacation_service_0:0 "$name_temporal_vacation_service$ Site"
+ temporal_vacation_service_0_DESC:0 "This orbital platform serves as the construction site for a future $name_temporal_vacation_service$ around this star. It houses the necessary personnel and infrastructure in order to begin constructing this massive space station."
+ temporal_vacation_service_0_MEGASTRUCTURE_DETAILS:0 "The Temporal Vacation Service will provide a large boost to Amenities and Trade Value across the Empire."
+ temporal_vacation_service_1:0 "$name_temporal_vacation_service$ Chronoport"
+ temporal_vacation_service_1_DESC:0 "The Chronoport acts as the heart of the $name_temporal_vacation_service$, processing the flow of transtemporal travelers and goods as well as housing a significant security force to protect the sensitive and valuable technologies housed within."
+ temporal_vacation_service_2:0 "$name_temporal_vacation_service$ Orbital Hotels"
+ temporal_vacation_service_2_DESC:0 "A ring of Orbital Hotels and shopping centers around the Chronoport provide accommodation and entertainment for tourists."
+ temporal_vacation_service_3:0 "$name_temporal_vacation_service$"
+ temporal_vacation_service_3_DESC:0 "A fully operational $name_temporal_vacation_service$, it acts as a hub location for a network of temporal tunnels that allow tourists to journey out on exotic vacations throughout time."
+
+ ### Timeline Tunneler ###
+ name_timeline_tunneler:0 "Transdimensional Chronobore"
+ timeline_tunneler_0:0 "$name_timeline_tunneler$ Site"
+ timeline_tunneler_0_DESC:0 "This orbital platform serves as the construction site for a future $name_timeline_tunneler$ around this star. It houses the necessary personnel and infrastructure in order to begin constructing this massive, enigmatic machine."
+ timeline_tunneler_0_MEGASTRUCTURE_DETAILS:0 "The Transdimensional Chronobore will provide access to a powerful new §YDecision§!."
+ timeline_tunneler_1:0 "$name_timeline_tunneler$ Stellar Supercompressor"
+ timeline_tunneler_1_DESC:0 "The Stellar Supercompressor is a specialized Dyson Sphere that uses intense gravity wave bombardment to collapse a star to Neutron Star density."
+ timeline_tunneler_2:0 "$name_timeline_tunneler$ Control Rings"
+ timeline_tunneler_2_DESC:0 "The Control Rings house a massive computer system that will perform the incredibly complex calculations required to focus on and target alternate timelines with the Liminal Megadrill."
+ timeline_tunneler_3:0 "$name_timeline_tunneler$ Gate Modulators"
+ timeline_tunneler_3_DESC:0 "The Gate Modulators act as a stabilizing device that will allow for massive, permanent bridges between timelines."
+ timeline_tunneler_4:0 "$name_timeline_tunneler$ Focusing Array"
+ timeline_tunneler_4_DESC:0 "The Focusing Array harnesses the energy of the local star and directs its entire output towards the structures that will house the future Liminal Megadrill."
+ timeline_tunneler_5:0 "$name_timeline_tunneler$ Liminal Megadrill"
+ timeline_tunneler_5_DESC:0 "The Liminal Megadrill - the most important piece of technology in the whole structure - creates punctures through fundamental spacetime into alternate timelines."
+ timeline_tunneler_6:0 "$name_timeline_tunneler$ Cascade Stabilizers"
+ timeline_tunneler_6_DESC:0 "The Cascade Stabilizers regulate the intense energy output of the $name_timeline_tunneler$ and prevent fluctuations in the energy stream created by exotic particles or differing laws of physics from cascading backwards into our reality."
+ timeline_tunneler_7:0 "$name_timeline_tunneler$"
+ timeline_tunneler_7_DESC:0 "A fully operational $name_timeline_tunneler$, this vast and incomprehensible machines creates transversable links between different timelines as well as alternate realities and dimensions."
+
+### Modifiers
+ mod_planet_jobs_sr_dark_matter_produces_mult:0 "£sr_dark_matter£ $sr_dark_matter$ from £job£ Jobs"
+ mod_planet_jobs_sr_living_metal_produces_mult:0 "£sr_living_metal£ $sr_living_metal$ from £job£ Jobs"
+ mod_planet_jobs_sr_zro_produces_mult:0 "£sr_zro£ $sr_zro$ from £job£ Jobs"
+ tech_dark_matter_plant_4_modifier_desc:0 "Increases base production of §H$job_singularity_mechanic$§!"
+ tech_living_metal_plant_4_modifier_desc:0 "Increases base production of §H$job_metal_breeder$§!"
+ tech_zro_plant_4_modifier_desc:0 "Increases base production of §H$job_zro_distiller$§!"
+ imperial_horological_office:0 "Imperial Horological Office"
+ temporal_acceleration_field:0 "Planetary Acceleration Bubble"
+ temporal_acceleration_field_desc:0 ""
+ temporal_hyperacceleration_field:0 "Planetary Hyper-Acceleration Bubble"
+ temporal_hyperacceleration_field_desc:0 ""
+ temporal_deceleration_field:0 "Planetary Deceleration Bubble"
+ temporal_deceleration_field_desc:0 ""
+ temporal_stasis_field:0 "Planetary Stasis Bubble"
+ temporal_stasis_field_desc:0 ""
+
+### Opinion Modifiers
+ opinion_stasislocked_a_world:0 "Stasis-Locked a World"
+ opinion_stasislocked_my_world:0 "Stasis-Locked our World"
+
+### Planet Classes
+ pc_temporal_livingmetal:0 "Living Metal"
+ pc_temporal_livingmetal_desc:0 "A world covered in mercurial oceans of Living Metal. Such worlds are artificial in nature and totally inhospitable to life."
+
+### Planet Destruction Events
+ temporal_colossus.401.name:0 "Planet Stasis-Locked"
+ temporal_colossus.401.desc:0 "As [From.From.GetName] ceases establishing a planet-scale stasis field, [From.GetName] has been enveloped in an eerie silence.\n\nThe time dilation field that surrounds [From.GetName] imprisons all within in an unmoving eternity. In the time within the field that it takes for the blink of an eye, untold millennium will pass without."
+ temporal_colossus.401.tooltip:0 "The only way to counteract chaos is stillness."
+
+### Projects
+
+
+### Resolutions
+ resolution_category_temporal_institutions:0 "Timeline Institutions"
+ resolution_custodian_temporal_variance_authority:0 "Temporal Variance Authority"
+ resolution_custodian_tva:0 "Establish Temporal Variance Authority"
+ resolution_custodian_tva_desc:0 "The establishment of a trans-temporal police agency will ensure the perpetual stability of all timelines and prevent the meddling of those who would bring catastrophe to the multiverse."
+ resolution_custodian_disband_tva:0 "Disband Temporal Variance Authority"
+ resolution_custodian_disband_tva_desc:0 "The Temporal Variance Authority is an afront to the free will of civilization's and timeline's right to self-determination. For the good of all, it must be disbanded."
+ resolution_category_emperor_temporal_institutions:0 "Imperial Timeline Institutions"
+ resolution_emperor_horological_office:0 "Imperial Horological Office"
+ resolution_emperor_iho:0 "Establish Imperial Horological Office"
+ resolution_emperor_iho_desc:0 "The Imperium must preserve the stability of timelines from the forces of chaos. It is the duty of the Imperial Horological Office to ensure that every clock in the empire runs on time."
+
+
+### Technology
+
+ ### Tier 5 ###
+
+ ## Engineering ##
+ tech_living_metal_plant_1:0 "Living Metal Breeders"
+ tech_living_metal_plant_1_desc:0 ""
+ tech_planetscale_metal_seeding:0 "Planetary Metal Evacuators"
+ tech_planetscale_metal_seeding_desc:0 ""
+ tech_planetscale_metal_seeding_modifier_desc:0 "§H$unlocks_megastructure$§! $name_living_metal_replicator$"
+
+ ## Physics ##
+ tech_dark_matter_plant_1:0 "Artificial Singularity Generators"
+ tech_dark_matter_plant_1_desc:0 ""
+
+ ## Society ##
+ tech_zro_plant_1:0 "Shroud Harvesting"
+ tech_zro_plant_1_desc:0 ""
+
+ ### Tier 6 ###
+
+ ## Engineering ##
+ tech_living_metal_plant_2:0 "Rapid Multi-Breeders"
+ tech_living_metal_plant_2_desc:0 ""
+
+ ## Physics ##
+ tech_dark_matter_plant_2:0 "Post-Horizon Drawing"
+ tech_dark_matter_plant_2_desc:0 ""
+ tech_temporal_theory:0 "Temporal Theory"
+ tech_temporal_theory_desc:0 ""
+
+ ## Society ##
+ tech_shroud_collapsing_zones:0 "Liminal Barrier Siphons"
+ tech_shroud_collapsing_zones_desc:0 ""
+ tech_shroud_collapsing_zones_modifier_desc:0 "§H$unlocks_megastructure$§! $name_shroud_zro_extractor$"
+ tech_zro_plant_2:0 "Shroud Funneling Zones"
+ tech_zro_plant_2_desc:0 ""
+ tech_zro_nanites:0 "Psionic Nanite Swarms"
+ tech_zro_nanites_desc:0 ""
+
+ ### Tier 7 ###
+
+ tech_temporal_manipulation:0 "Temporal Field Manipulation"
+ tech_temporal_manipulation_desc:0 ""
+ tech_temporal_manipulation_modifier_desc:0 "§H$unlocks_decision$§! $decision_dismantle_acceleration$ §H$unlocks_decision$§! $decision_dismantle_deceleration$"
+
+ ## Engineering ##
+ tech_events_predictor:0 "Predictive Computers"
+ tech_events_predictor_desc:0 ""
+ tech_temporal_vacation_service:0 "Temporal Regulatory Agencies"
+ tech_temporal_vacation_service_desc:0 ""
+ tech_strike_craft_fighter_temporal:0 "Slipstream Autowars"
+ tech_strike_craft_fighter_temporal_desc:0 ""
+ tech_high_energy_magnifier:0 "Neutronium Railguns"
+ tech_high_energy_magnifier_desc:0 ""
+ tech_shard_cannon:0 "Neutronium Artillery"
+ tech_shard_cannon_desc:0 ""
+ tech_massive_shield_depleter:0 "Neutronium Cannons"
+ tech_massive_shield_depleter_desc:0 ""
+ tech_energy_dampener:0 "Neutronium Autocannons"
+ tech_energy_dampener_desc:0 ""
+ tech_tachyon_projection_cannon:0 "Neutronium Flak Arrays"
+ tech_tachyon_projection_cannon_desc:0 ""
+ tech_alloy_burner_missile:0 "Alloy Burner Missiles"
+ tech_alloy_burner_missile_desc:0 ""
+ tech_temporal_swarmer_missile:0 "Hurricane Missiles"
+ tech_temporal_swarmer_missile_desc:0 ""
+ tech_temporal_torpedo:0 "Nova Torpedoes"
+ tech_temporal_torpedo_desc:0 ""
+ tech_temporal_thruster:0 "Displacement Thrusters"
+ tech_temporal_thruster_desc:0 ""
+ tech_temporal_afterburners:0 "Chrono-Accelerator Afterburners"
+ tech_temporal_afterburners_desc:0 ""
+ tech_armor_temporal:0 "Chronostatic Materials"
+ tech_armor_temporal_desc:0 ""
+ tech_living_metal_plant_3:0 "Metal Mass-Duplicators"
+ tech_living_metal_plant_3_desc:0 ""
+ 
+
+ ## Physics ##
+ tech_stable_temporal_bubbles:0 "Stable Chrono-Bubbles"
+ tech_stable_temporal_bubbles_desc:0 ""
+ tech_temporal_acceleration:0 "Massive Acceleration Fields"
+ tech_temporal_acceleration_desc:0 ""
+ tech_temporal_acceleration_modifier_desc:0 "§H$unlocks_decision$§! $decision_local_hyperacceleration$"
+ tech_temporal_deceleration:0 "Massive Deceleration Fields"
+ tech_temporal_deceleration_desc:0 ""
+ tech_temporal_deceleration_modifier_desc:0 "§H$unlocks_decision$§! $decision_local_stasis$"
+ tech_temporal_power_core:0 "Contained Singularity Power"
+ tech_temporal_power_core_desc:0 ""
+ tech_temporal_shield:0 "Time Bubble Shields"
+ tech_temporal_shield_desc:0 ""
+ tech_ship_part_temporal_sensor:0 "Sterile Neutrino Sensors"
+ tech_ship_part_temporal_sensor_desc:0 ""
+ tech_temporal_jump_drive:0 "Void Bubble Navigation"
+ tech_temporal_jump_drive_desc:0 ""
+ tech_null_space_projector:0 "Null Space Projection Fields"
+ tech_null_space_projector_desc:0 ""
+ tech_subspace_rupture_beam:0 "Subspace Rupture Lances"
+ tech_subspace_rupture_beam_desc:0 ""
+ tech_time_distortion_burst:0 "Time Distorters"
+ tech_time_distortion_burst_desc:0 ""
+ tech_temporal_disruptor:0 "Cohesion Disruptors"
+ tech_temporal_disruptor_desc:0 ""
+ tech_temporal_shifter:0 "Temporal Shifting"
+ tech_temporal_shifter_desc:0 ""
+ tech_shield_accelerator:0 "Shield Accelerators"
+ tech_shield_accelerator_desc:0 ""
+ tech_mental_singularity_generator:0 "Singularity Launchers"
+ tech_mental_singularity_generator_desc:0 ""
+ tech_small_time_distortion_burst:0 "Temporal Threading Countermeasures"
+ tech_small_time_distortion_burst_desc:0 ""
+ tech_dark_matter_plant_3:0 "Naked Singularity Harvesting"
+ tech_dark_matter_plant_3_desc:0 ""
+
+ ## Society ##
+ tech_temporal_tourism:0 "Temporal Tourism"
+ tech_temporal_tourism_desc:0 ""
+ tech_temporal_tourism_modifier_desc:0 "§H$unlocks_megastructure$§! $name_temporal_vacation_service$"
+ tech_zro_plant_3:0 "Shroud Covalecense Arrays"
+ tech_zro_plant_3_desc:0 ""
+
+ ### Tier 8 ###
+ tech_timeline_manipulation:0 "Timeline Manipulation"
+ tech_timeline_manipulation_desc:0 ""
+ tech_timeline_manipulation_modifier_desc:0 "§H$unlocks_decision$§! $decision_dismantle_adv_acceleration$ §H$unlocks_decision$§! $decision_dismantle_adv_deceleration$"
+ tech_stable_temporal_tunnels:0 "Stable Chrono-Tunnel Creation"
+ tech_stable_temporal_tunnels_desc:0 ""
+ tech_temporal_tunnelers:0 "Transdimensional Chronobore"
+ tech_temporal_tunnelers_desc:0 ""
+ tech_temporal_tunnelers_modifier_desc:0 "§H$unlocks_megastructure$§! $name_timeline_tunneler$"
+
+ ## Engineering ##
+ tech_strike_craft_fighter_temporal_2:0 "Superposition Autowars"
+ tech_strike_craft_fighter_temporal_2_desc:0 ""
+ tech_high_energy_magnifier_2:0 "Antifractal Railguns"
+ tech_high_energy_magnifier_2_desc:0 ""
+ tech_shard_cannon_2:0 "Antifractal Artillery"
+ tech_shard_cannon_2_desc:0 ""
+ tech_massive_shield_depleter_2:0 "Antifractal Cannons"
+ tech_massive_shield_depleter_2_desc:0 ""
+ tech_energy_dampener_2:0 "Antifractal Autocannons"
+ tech_energy_dampener_2_desc:0 ""
+ tech_tachyon_projection_cannon_2:0 "Predictive Flak Arrays"
+ tech_tachyon_projection_cannon_2_desc:0 ""
+ tech_alloy_burner_missile_2:0 "Vacuum Collapse Missiles"
+ tech_alloy_burner_missile_2_desc:0 ""
+ tech_temporal_swarmer_missile_2:0 "Ragnarök Missiles"
+ tech_temporal_swarmer_missile_2_desc:0 ""
+ tech_temporal_torpedo_2:0 "Ultra-Crunch Torpedoes"
+ tech_temporal_torpedo_2_desc:0 ""
+ tech_temporal_thruster_2:0 "Halo Thrusters"
+ tech_temporal_thruster_2_desc:0 ""
+ tech_temporal_afterburners_2:0 "Phase-Shifting Afterburners"
+ tech_temporal_afterburners_2_desc:0 ""
+ tech_armor_temporal_2:0 "Negentropy Materials"
+ tech_armor_temporal_2_desc:0 ""
+ tech_living_metal_plant_4:0 "Matter Transmutation Chains"
+ tech_living_metal_plant_4_desc:0 ""
+ tech_temporal_regulatory_agencies:0 "Temporal Regulatory Agencies"
+ tech_temporal_regulatory_agencies_desc:0 ""
+ 
+
+ ## Physics ##
+ tech_temporal_hyperacceleration:0 "Massive Hyper-Acceleration Fields"
+ tech_temporal_hyperacceleration_desc:0 ""
+ tech_temporal_hyperacceleration_modifier_desc:0 "§H$unlocks_decision$§! $decision_local_hyperacceleration$"
+ tech_temporal_stasis:0 "Massive Stasis Fields"
+ tech_temporal_stasis_desc:0 ""
+ tech_temporal_stasis_modifier_desc:0 "§H$unlocks_decision$§! $decision_local_stasis$"
+ tech_temporal_power_core_2:0 "Fractal Timeline Power"
+ tech_temporal_power_core_2_desc:0 ""
+ tech_temporal_shield_2:0 "Antitime Fields"
+ tech_temporal_shield_2_desc:0 ""
+ tech_ship_part_temporal_sensor_2:0 "Timestream Sensors"
+ tech_ship_part_temporal_sensor_2_desc:0 ""
+ tech_temporal_jump_drive_2:0 "Timeline Breaching"
+ tech_temporal_jump_drive_2_desc:0 ""
+ tech_null_space_projector_2:0 "Null-Space Disintegrators"
+ tech_null_space_projector_2_desc:0 ""
+ tech_subspace_rupture_beam_2:0 "Blazar Hellfire Lances"
+ tech_subspace_rupture_beam_2_desc:0 ""
+ tech_time_distortion_burst_2:0 "Time Eraser Bursts"
+ tech_time_distortion_burst_2_desc:0 ""
+ tech_temporal_disruptor_2:0 "Spacetime Disruptors"
+ tech_temporal_disruptor_2_desc:0 ""
+ tech_temporal_shifter_2:0 "Temporal Negating"
+ tech_temporal_shifter_2_desc:0 ""
+ tech_shield_accelerator_2:0 "Total Entropy Zones"
+ tech_shield_accelerator_2_desc:0 ""
+ tech_mental_singularity_generator_2:0 "Antisingularity Launchers"
+ tech_mental_singularity_generator_2_desc:0 ""
+ tech_small_time_distortion_burst_2:0 "Timestrean Analysis Defenses"
+ tech_small_time_distortion_burst_2_desc:0 ""
+ tech_temporal_encoder:0 "Timestream Encoder"
+ tech_temporal_encoder_desc:0 ""
+ tech_temporal_decoder:0 "Timestream Decoder"
+ tech_temporal_decoder_desc:0 ""
+ tech_dark_matter_plant_4:0 "Subspace Singularity Harvesting"
+ tech_dark_matter_plant_4_desc:0 ""
+
+ ## Society ##
+ tech_zro_plant_4:0 "Higher Dimensional Sinks"
+ tech_zro_plant_4_desc:0 ""
+
+### Tooltips
+ requires_technology_temporal_theory:0 "$TRIGGER_FAIL$Requires the §Y$tech_temporal_theory$§! Technology."
+ temporaltech_tooltip:0 "We will expand our dominion unto eternity, and being the journey of mastering exotic Temporal Technologies."
+ TEMPORALTECHNOLOGY_TREE_UNLOCKED:0 "We now have access to Temporal Technology. Researching Temporal Manipulation will begin the Tech Tree."
+ TECH_UNLOCK_THRUSTER_5_TITLE:0 "§HUnlocks Component:§! Displacement Thruster"
+ TECH_UNLOCK_THRUSTER_5_DESC:0 "§HDisplacement Thruster§!\nThese highly advanced fusion-powered thrusters provide ships with unmatched maneuverability and speed under sublight conditions."
+ TECH_UNLOCK_THRUSTER_6_TITLE:0 "§HUnlocks Component:§! Halo Thruster"
+ TECH_UNLOCK_THRUSTER_6_DESC:0 "§HHalo Thruster§!\nThese highly advanced fusion-powered thrusters provide ships with unmatched maneuverability and speed under sublight conditions."
+ TECH_UNLOCK_AFTERBURNER_3_TITLE:0 "§HUnlocks Component:§! Chrono-Accelerator Afterburners"
+ TECH_UNLOCK_AFTERBURNER_3_DESC:0 "§HChrono-Accelerator Afterburners§!\nThis improved version of the standard afterburners provide an even greater boost to a ship's combat speed."
+ TECH_UNLOCK_AFTERBURNER_4_TITLE:0 "§HUnlocks Component:§! Phase-Shifting Afterburner"
+ TECH_UNLOCK_AFTERBURNER_4_DESC:0 "§HPhase-Shifting Afterburners§!\nThis improved version of the standard afterburners provide an even greater boost to a ship's combat speed."
+ TECH_UNLOCK_SENSOR_5_TITLE:0 "§HUnlocks Component:§! $TEMPORAL_SENSOR$"
+ TECH_UNLOCK_SENSOR_5_DESC:0 "§H$TEMPORAL_SENSOR$§!\n$TEMPORAL_SENSOR_DESC$"
+ TECH_UNLOCK_SENSOR_6_TITLE:0 "§HUnlocks Component:§! $TEMPORAL_2_SENSOR$"
+ TECH_UNLOCK_SENSOR_6_DESC:0 "§H$TEMPORAL_SENSOR$§!\n$TEMPORAL_2_SENSOR_DESC$"
+ TECH_UNLOCK_TEMPORAL_POWER_TITLE:0 "§HUnlocks Component:§! $TEMPORAL_REACTOR$"
+ TECH_UNLOCK_TEMPORAL_POWER_DESC:0 "§H$TEMPORAL_REACTOR$§!\n$TEMPORAL_REACTOR_DESC$"
+ TECH_UNLOCK_TEMPORAL_POWER_2_TITLE:0 "§HUnlocks Component:§! $TEMPORAL_2_REACTOR$"
+ TECH_UNLOCK_TEMPORAL_POWER_2_DESC:0 "§H$TEMPORAL_2_REACTOR$§!\n$TEMPORAL_2_REACTOR_DESC$"
+ TECH_UNLOCK_TEMPORAL_JUMP_DRIVE_TITLE:0 "§HUnlocks Component:§! $TEMPORAL_JUMP_DRIVE$"
+ TECH_UNLOCK_TEMPORAL_JUMP_DRIVE_DESC:0 "§H$TEMPORAL_JUMP_DRIVE$§!\n$TEMPORAL_JUMP_DRIVE_DESC$"
+ TECH_UNLOCK_TEMPORAL_JUMP_DRIVE_2_TITLE:0 "§HUnlocks Component:§! $TEMPORAL_2_JUMP_DRIVE$"
+ TECH_UNLOCK_TEMPORAL_JUMP_DRIVE_2_DESC:0 "§H$TEMPORAL_2_JUMP_DRIVE$§!\n$TEMPORAL_2_JUMP_DRIVE_DESC$"
+ unlocks_megastructure:0 "Unlocks Megastructure:"
+ unlocks_decision:0 "Unlocks Planetary Decision:"
+ is_decelerated:0 "§R$TRIGGER_FAIL$Target is already in a Stasis Bubble§!"
+ requires_no_existing_temporal_vacation_service:0 "$TRIGGER_FAIL$Cannot build more than one $temporal_vacation_service_3$."
+ requires_no_existing_timeline_tunneler:0 "$TRIGGER_FAIL$Cannot build more than one $temporal_vacation_service_3$."
+ requires_not_colony:0 "$TRIGGER_FAIL$Cannot build on a Colony."
+ must_build_around_shrouded:0 "$TRIGGER_FAIL$Must build around a $pc_shrouded$."
+
+
+### Starbase Buildings
+ sm_events_predictor:0 "Events Predictor"
+ sm_events_predictor_desc:0 ""
+ sm_temporal_regulatory_agencies:0 "Temporal Regulatory Agency"
+ sm_temporal_regulatory_agencies_desc:0 ""
+ sm_temporal_transit_hub:0 "Cross-Temporal Hub"
+ sm_temporal_transit_hub_desc:0 ""
+
+### Starbase Modules
+ sm_temporal_shipyard:0 "Temporal Shipyard"
+ sm_temporal_shipyard_desc:0 ""

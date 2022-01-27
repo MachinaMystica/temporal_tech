@@ -1,0 +1,31 @@
+ap_temporal_technology = {
+
+	on_enabled = {
+		custom_tooltip = "temporaltech_tooltip"
+		hidden_effect = {
+			country_event = { id = temporal.1300 }
+		}
+		add_research_option = tech_temporal_manipulation
+	}
+
+	modifier = {
+		planet_researchers_physics_research_produces_mult = 0.2
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_temporal_theory"
+			has_technology = tech_temporal_theory
+		}
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_temporal_technology
+		}
+	}
+
+	ai_weight = {
+		factor = 15
+	}
+}

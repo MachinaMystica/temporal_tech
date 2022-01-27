@@ -1,0 +1,573 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+#Updated Range on these
+
+# DEFAULT VALUES:
+# is_missile = no
+# is_beam = no
+# is_point_defence = no
+
+#####################
+# Kinetic Artillery
+#####################
+
+### Kinetic Artillery Temporal
+weapon_component_template = {
+	type = instant
+	
+	key = "KINETIC_ARTILLERY_TEMPORAL"
+	size = large
+	
+	icon = "GFX_ship_part_shard_cannon"
+	icon_frame = 1
+	
+	prerequisites = { "tech_shard_cannon" }
+	component_set = "KINETIC_ARTILLERY_TEMPORAL"
+	upgrades_to = "KINETIC_ARTILLERY_2_TEMPORAL"
+	projectile_gfx = "tem_kinetic_artillery_1"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+
+	power = -162
+	damage = { min = 351 max = 1053 }
+	windup = { min = 1 max = 18 }
+	hull_damage = 1.00
+	shield_damage = 1.50
+	shield_penetration = 0.0
+	armor_damage = 0.50
+	armor_penetration = 0.0
+	total_fire_time = 25
+	range = 100
+	accuracy = 0.75
+	tracking = 0.05
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+			sr_dark_matter = @l_t7_rare
+			sr_living_metal = @l_t7_rare
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+			}
+		}
+	}
+}
+
+### Kinetic Artillery Temporal T2
+weapon_component_template = {
+	type = instant
+	
+	key = "KINETIC_ARTILLERY_2_TEMPORAL"
+	size = large
+	
+	icon = "GFX_ship_part_shard_cannon_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_shard_cannon_2" }
+	component_set = "KINETIC_ARTILLERY_2_TEMPORAL"
+	projectile_gfx = "tem_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+
+	power = -365
+	damage = { min = 790 max = 2369 }
+	windup = { min = 1 max = 18 }
+	hull_damage = 1.00
+	shield_damage = 1.50
+	shield_penetration = 0.0
+	armor_damage = 0.50
+	armor_penetration = 0.0
+	total_fire_time = 25
+	range = 100
+	accuracy = 0.90
+	tracking = 0.05
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_temp_t8_cost
+			sr_dark_matter = @l_temp_t8_rare
+			sr_living_metal = @l_temp_t8_rare
+			volatile_motes = @l_temp_t8_rare
+		}		
+		upkeep = {
+			energy = @l_temp_t8_upkeep_energy
+			alloys = @l_temp_t8_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+				no_resource_for_component = { RESOURCE = volatile_motes }
+			}
+		}
+	}
+}
+
+#####################
+# Mass Drivers
+#####################
+
+### Temporal Cannons
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_MASS_DRIVER_TEMPORAL"
+	size = small
+	
+	icon = "GFX_ship_part_high_energy_magnifier"
+	icon_frame = 1
+	
+	prerequisites = { "tech_high_energy_magnifier" }
+	component_set = "MASS_DRIVER_TEMPORAL"
+	upgrades_to = "SMALL_MASS_DRIVER_2_TEMPORAL"
+	projectile_gfx = "temporal_cannon_1_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+
+	power = -31
+	damage = { min = 25 max = 83 }
+	windup = { min = 1 max = 18 }
+	hull_damage = 1.00
+	shield_damage = 1.50
+	shield_penetration = 0.0
+	armor_damage = 0.50
+	armor_penetration = 0.0
+	total_fire_time = 25
+	range = 50
+	accuracy = 0.90
+	tracking = 0.50
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t7_cost
+			sr_dark_matter = @s_t7_rare
+			sr_living_metal = @s_t7_rare
+		}		
+		upkeep = {
+			energy = @s_t7_upkeep_energy
+			alloys = @s_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+			}
+		}
+	}
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_MASS_DRIVER_TEMPORAL"
+	size = medium
+	
+	icon = "GFX_ship_part_high_energy_magnifier"
+	icon_frame = 1
+	
+	prerequisites = { "tech_high_energy_magnifier" }
+	component_set = "MASS_DRIVER_TEMPORAL"
+	upgrades_to = "MEDIUM_MASS_DRIVER_2_TEMPORAL"
+	projectile_gfx = "temporal_cannon_1_m"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+
+	power = -54
+	damage = { min = 63 max = 207 }
+	windup = { min = 1 max = 18 }
+	hull_damage = 1.00
+	shield_damage = 1.50
+	shield_penetration = 0.0
+	armor_damage = 0.50
+	armor_penetration = 0.0
+	total_fire_time = 25
+	range = 75
+	accuracy = 0.75
+	tracking = 0.30
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t7_cost
+			sr_dark_matter = @m_t7_rare
+			sr_living_metal = @m_t7_rare
+		}		
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+			}
+		}
+	}
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_MASS_DRIVER_TEMPORAL"
+	size = large
+	
+	icon = "GFX_ship_part_high_energy_magnifier"
+	icon_frame = 1
+	
+	prerequisites = { "tech_high_energy_magnifier" }
+	component_set = "MASS_DRIVER_TEMPORAL"
+	upgrades_to = "LARGE_MASS_DRIVER_2_TEMPORAL"
+	projectile_gfx = "temporal_cannon_1_l"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+
+	power = -106
+	damage = { min = 151 max = 497 }
+	windup = { min = 1 max = 18 }
+	hull_damage = 1.00
+	shield_damage = 1.50
+	shield_penetration = 0.0
+	armor_damage = 0.50
+	armor_penetration = 0.0
+	total_fire_time = 25
+	range = 75
+	accuracy = 0.75
+	tracking = 0.30
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+			sr_dark_matter = @l_t7_rare
+			sr_living_metal = @l_t7_rare
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+			}
+		}
+	}
+}
+
+### Temporal Cannons T2
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_MASS_DRIVER_2_TEMPORAL"
+	size = small
+	
+	icon = "GFX_ship_part_high_energy_magnifier_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_high_energy_magnifier_2" }
+	component_set = "MASS_DRIVER_2_TEMPORAL"
+	projectile_gfx = "temporal_cannon_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+
+	power = -70
+	damage = { min = 57 max = 187 }
+	windup = { min = 1 max = 18 }
+	hull_damage = 1.00
+	shield_damage = 1.50
+	shield_penetration = 0.0
+	armor_damage = 0.50
+	armor_penetration = 0.0
+	total_fire_time = 25
+	range = 50
+	accuracy = 1.00
+	tracking = 0.50
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_temp_t8_cost
+			sr_dark_matter = @s_temp_t8_rare
+			sr_living_metal = @s_temp_t8_rare
+			volatile_motes = @s_temp_t8_rare
+		}		
+		upkeep = {
+			energy = @s_temp_t8_upkeep_energy
+			alloys = @s_temp_t8_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+				no_resource_for_component = { RESOURCE = volatile_motes }
+			}
+		}
+	}
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_MASS_DRIVER_2_TEMPORAL"
+	size = medium
+	
+	icon = "GFX_ship_part_high_energy_magnifier_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_high_energy_magnifier_2" }
+	component_set = "MASS_DRIVER_2_TEMPORAL"
+	projectile_gfx = "temporal_cannon_m"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+
+	power = -122
+	damage = { min = 142 max = 466 }
+	windup = { min = 1 max = 18 }
+	hull_damage = 1.00
+	shield_damage = 1.50
+	shield_penetration = 0.0
+	armor_damage = 0.50
+	armor_penetration = 0.0
+	total_fire_time = 25
+	range = 75
+	accuracy = 0.90
+	tracking = 0.30
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_temp_t8_cost
+			sr_dark_matter = @m_temp_t8_rare
+			sr_living_metal = @m_temp_t8_rare
+			volatile_motes = @m_temp_t8_rare
+		}		
+		upkeep = {
+			energy = @m_temp_t8_upkeep_energy
+			alloys = @m_temp_t8_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+				no_resource_for_component = { RESOURCE = volatile_motes }
+			}
+		}
+	}
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_MASS_DRIVER_2_TEMPORAL"
+	size = large
+	
+	icon = "GFX_ship_part_high_energy_magnifier_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_high_energy_magnifier_2" }
+	component_set = "MASS_DRIVER_2_TEMPORAL"
+	projectile_gfx = "temporal_cannon_l"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+
+	power = -239
+	damage = { min = 340 max = 1118 }
+	windup = { min = 1 max = 18 }
+	hull_damage = 1.00
+	shield_damage = 1.50
+	shield_penetration = 0.0
+	armor_damage = 0.50
+	armor_penetration = 0.0
+	total_fire_time = 25
+	range = 75
+	accuracy = 0.90
+	tracking = 0.30
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_temp_t8_cost
+			sr_dark_matter = @l_temp_t8_rare
+			sr_living_metal = @l_temp_t8_rare
+			volatile_motes = @l_temp_t8_rare
+		}		
+		upkeep = {
+			energy = @l_temp_t8_upkeep_energy
+			alloys = @m_temp_t8_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+				no_resource_for_component = { RESOURCE = volatile_motes }
+			}
+		}
+	}
+}
+
+#####################
+# Autocannons
+#####################
+
+### Autocannons 1
+weapon_component_template = {
+	type = instant
+	
+	key = "AUTOCANNON_TEMPORAL"
+	size = small
+	
+	icon = "GFX_ship_part_energy_dampener"
+	icon_frame = 1
+	
+	prerequisites = { "tech_energy_dampener" }
+	component_set = "AUTOCANNON_TEMPORAL"
+	upgrades_to = "AUTOCANNON_2_TEMPORAL"
+	projectile_gfx = "temporal_auto_cannons_1_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+
+	power = -31
+	damage = { min = 25 max = 49 }
+	windup = { min = 2 max = 14 }
+	hull_damage = 1
+	shield_damage = 1.50
+	shield_penetration = 0.0
+	armor_damage = 0.25
+	armor_penetration = 0.0
+	total_fire_time = 15
+	range = 30
+	accuracy = 0.85
+	tracking = 0.75
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t7_cost
+			sr_dark_matter = @s_t7_rare
+			sr_living_metal = @s_t7_rare
+		}		
+		upkeep = {
+			energy = @s_t7_upkeep_energy
+			alloys = @s_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+			}
+		}
+	}
+}
+
+### Autocannons 2
+weapon_component_template = {
+	type = instant
+	
+	key = "AUTOCANNON_2_TEMPORAL"
+	size = small
+	
+	icon = "GFX_ship_part_energy_dampener_2"
+	icon_frame = 1
+	
+	prerequisites = { "tech_energy_dampener_2" }
+	component_set = "AUTOCANNON_2_TEMPORAL"
+	projectile_gfx = "temporal_auto_cannons_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+
+	power = -70
+	damage = { min = 56 max = 110 }
+	windup = { min = 2 max = 14 }
+	hull_damage = 1
+	shield_damage = 1.50
+	shield_penetration = 0.0
+	armor_damage = 0.25
+	armor_penetration = 0.0
+	total_fire_time = 15
+	range = 40
+	accuracy = 1.00
+	tracking = 0.90
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_temp_t8_cost
+			sr_dark_matter = @s_temp_t8_rare
+			sr_living_metal = @s_temp_t8_rare
+			volatile_motes = @s_temp_t8_rare
+		}		
+		upkeep = {
+			energy = @s_temp_t8_upkeep_energy
+			alloys = @s_temp_t8_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+				no_resource_for_component = { RESOURCE = volatile_motes }
+			}
+		}
+	}
+}

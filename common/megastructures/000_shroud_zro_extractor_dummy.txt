@@ -1,0 +1,3 @@
+shroud_zro_extractor_0 = {
+	entity = ""
+}

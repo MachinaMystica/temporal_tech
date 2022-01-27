@@ -1,0 +1,23 @@
+# Wormhole Ambient
+ambient_object = {
+	name = "temporal_wormhole_object"
+	entity = "natural_wormhole_entity"
+	selectable = no
+	show_name = no
+}
+
+#Portal 1 Ambient
+ambient_object = {
+	name = "temporal_storm_s_object"
+	entity = "extra_dimensional_storm_s"
+	selectable = no
+	show_name = no
+}
+
+# Octopus Rifts Ambient
+ambient_object = {
+	name = "temporal_system_effect_1_object"
+	entity = "extra_dimensional_system_effect_1"
+	selectable = no
+	show_name = no
+}

@@ -1,0 +1,255 @@
+@resolution_weight_hated = 3
+@resolution_weight_disliked = 4
+@resolution_weight_unpopular = 5
+@resolution_weight_normal = 6
+@resolution_weight_popular = 6.5
+@resolution_weight_loved = 7
+
+@resolution_cost_t1 = 100
+@resolution_cost_t2 = 150
+@resolution_cost_t3 = 200
+@resolution_cost_t4 = 250
+@resolution_cost_t5 = 300
+@resolution_cost_denounce = 25
+
+@resolution_flag_timer = 360
+
+#example_resolution = {
+#	icon = "name of the icon key"
+#	resources = {} # cost and category
+#	target = yes/no # if this resolution requires a target country
+#	harmful = yes/no # if the AI should consider this harmful when choosing target
+#	modifier = {} # modifier to be applied to all community members if passed
+#	triggered_modifier = {} # triggered modifier to be applied, scope is country
+#	effect = {} # effect to be applied if passed, scope is proposer unless there is a target country - then scope is target country, with proposer in from scope
+#	fail_effects = {} # effect to be applied if failed, scope is proposer unless there is a target country - then scope is target country, with proposer in from scope
+#	potential = {} # potential trigger, scope is country
+#	allow = {} # allow trigger, scope is country
+#	active = {} # Enacted sesolutions are cancelled if this trigger fails
+#	ai_weight = {} # ai weight modifiers, scope is country. from scope is the target country for targeted resolutions
+#	valid_target = {} # valid targets trigger, scope is country
+#}
+
+# NOTE: Remember to add Resolutions to a Resolution Category!
+
+### GALACTIC CUSTODIANSHIP
+
+# Temporal Variance Authority
+resolution_custodian_tva = {
+	icon = "GFX_resolution_temporal_variance_authority"
+
+	resources = {
+		category = resolutions
+		cost = {
+			influence = @resolution_cost_t4
+		}
+	}
+	target = no
+
+	modifier = {
+		resolution_custodian_temporal_variance_authority = 1
+	}
+
+	effect = {
+	}
+
+	fail_effects = {
+	}
+
+	potential = {
+		has_nemesis = yes
+		is_galactic_custodian = yes
+		has_technology = tech_timeline_manipulation
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = "resolution_already_active"
+			NOT = { is_active_resolution = "resolution_custodian_tva" }
+		}
+	}
+
+	ai_weight = {
+		weight = @resolution_weight_normal
+
+		modifier = {
+			factor = 2
+			any_owned_planet = {
+				planet_crime > 40
+			}
+		}
+
+		modifier = {
+			factor = 2
+			any_owned_planet = {
+				has_branch_office = yes
+				branch_office_owner = { is_criminal_syndicate = yes }
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_criminal_syndicate = yes
+		}
+
+		modifier = {
+			factor = 0.5
+			has_ai_personality = xenophobic_isolationists
+		}
+
+		modifier = {
+			factor = 4
+			is_galactic_custodian = yes
+		}
+	}
+}
+
+# Disband TVA
+resolution_custodian_disband_tva = {
+	icon = "GFX_resolution_disband_tva"
+
+	resources = {
+		category = resolutions
+		cost = {
+			influence = @resolution_cost_t3
+		}
+	}
+	target = no
+
+	modifier = {
+	}
+
+	effect = {
+		cancel_resolution = "resolution_custodian_tva"
+	}
+
+	fail_effects = {
+	}
+
+	potential = {
+		is_active_resolution = "resolution_custodian_tva"
+	}
+
+	ai_weight = {
+		weight = @resolution_weight_disliked
+
+		modifier = {
+			factor = 6
+			is_criminal_syndicate = yes
+		}
+
+		modifier = {
+			factor = 1.8
+			has_ai_personality = xenophobic_isolationists
+		}
+
+		modifier = {
+			factor = 0.4
+			any_owned_planet = {
+				planet_crime > 40
+			}
+		}
+
+		modifier = {
+			factor = 0.2
+			any_owned_planet = {
+				has_branch_office = yes
+				branch_office_owner = { is_criminal_syndicate = yes }
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_galactic_custodian = yes
+		}
+	}
+}
+
+### GALACTIC EMPIRE
+
+# Imperial Horological Office
+resolution_emperor_iho = {
+	icon = "GFX_resolution_imperial_horological_office"
+
+	resources = {
+		category = resolutions
+		cost = {
+			influence = @resolution_cost_t4
+		}
+	}
+	target = no
+
+	allow = {
+		custom_tooltip = {
+			fail_text = "resolution_already_active"
+			NOT = { is_active_resolution = "resolution_emperor_iho" }
+		}
+	}
+
+	modifier = {
+		resolution_emperor_horological_office = 1
+	}
+
+	effect = {
+		random_playable_country =  {
+			limit = { is_galactic_emperor = yes }
+			add_modifier = { modifier = "imperial_horological_office" }
+		}
+		hidden_effect = {
+			every_playable_country = {
+				limit = { is_galactic_community_member = yes }
+				country_event = { id = temporal.70 }
+			}
+		}
+	}
+
+	fail_effects = {
+	}
+
+	potential = {
+		has_nemesis = yes
+		is_galactic_emperor = yes
+		has_technology = tech_timeline_manipulation
+	}
+
+	active = {
+		has_galactic_emperor = yes
+	}
+
+	ai_weight = {
+		weight = @resolution_weight_disliked
+
+		modifier = {
+			factor = 2
+			any_owned_planet = {
+				planet_crime > 40
+			}
+		}
+
+		modifier = {
+			factor = 2
+			any_owned_planet = {
+				has_branch_office = yes
+				branch_office_owner = { is_criminal_syndicate = yes }
+			}
+		}
+
+		modifier = {
+			factor = 0
+			is_criminal_syndicate = yes
+		}
+
+		modifier = {
+			factor = 0.6
+			is_egalitarian = yes
+		}
+		modifier = {
+			factor = 1.4
+			is_part_of_galactic_council = yes
+		}
+		modifier = {
+			factor = 20
+			is_galactic_emperor = yes
+		}
+	}
+}

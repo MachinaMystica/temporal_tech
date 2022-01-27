@@ -1,0 +1,66 @@
+##################################
+#
+# Nemesis Galactic Emperor Events
+#
+# Written by Henrik Thyrwall
+#
+##################################
+
+namespace = emperor
+
+# Rise of the Galactic Empire - HIDDEN
+country_event = {
+	id = emperor.1
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		# Deal with existing Custodian resolutions
+		if = {
+			limit = { is_active_resolution = resolution_custodian_united_front }
+			set_country_flag = united_front_active
+		}
+		if = {
+			limit = { is_active_resolution = resolution_custodian_ina }
+			set_country_flag = custodian_ina_active
+		}
+		if = {
+			limit = { is_active_resolution = resolution_custodian_gto }
+			set_country_flag = custodian_gto_active
+		}
+		if = {
+			limit = {
+				OR = {
+					is_active_resolution = resolution_custodian_gdf
+					is_active_resolution = resolution_custodian_expand_gdf
+				}
+			}
+			set_timed_country_flag = { # To avoid duplicate IA events
+				flag = gdf_turned_into_armada
+				days = 11
+			}
+			country_event = { id = emperor.51 days = 10 }
+		}
+		if = {
+			limit = { is_active_resolution = resolution_custodian_galpol }
+			set_timed_country_flag = { # To avoid duplicate ISD events
+				flag = galpol_turned_into_isd
+				days = 5
+			}
+			country_event = { id = emperor.71 days = 4 }
+		}
+		if = {
+			limit = { is_active_resolution = resolution_custodian_tva }
+			set_timed_country_flag = { # To avoid duplicate ISD events
+				flag = tva_turned_into_iho
+				days = 9
+			}
+			country_event = { id = temporal.71 days = 8 }
+		}
+
+		# Coronation
+		save_event_target_as = gal_emperor
+		country_event = { id = emperor.2 }
+	}
+}

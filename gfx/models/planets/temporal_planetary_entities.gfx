@@ -1,0 +1,22 @@
+objectTypes = {
+
+	#######################				WHITE HOLE				#######################
+
+	pdxmesh = {
+		name = "ehof_whitehole_mesh"
+		file = "gfx/models/planets/black_hole_new.mesh"
+		scale = 0.55
+		cull_distance = 99999999.0f
+
+		meshsettings = {
+			name = "pSphereShape2"
+			shader = "OmniMeshWhiteHole"
+		}
+
+		meshsettings = {
+			name = "pSphereShape3"
+			index = 0
+			shader = "PdxMeshAtmosphereStar"
+		}
+	}
+}

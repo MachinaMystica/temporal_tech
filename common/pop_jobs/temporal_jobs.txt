@@ -1,0 +1,437 @@
+###################
+# Specialist Jobs
+###################
+
+# Dark Matter
+singularity_mechanic = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_dark_matter_plant_1
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_singularity_mechanics
+		produces = {
+			sr_dark_matter = 2
+		}
+		produces = {
+			trigger = {
+				owner = { has_technology = tech_dark_matter_plant_4 }
+			}
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			alloys = 5
+		}
+		upkeep = {
+			trigger = {
+				owner = { has_technology = tech_dark_matter_plant_4 }
+			}
+			alloys = 2
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 2
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}
+		modifier = {
+			factor = 7
+			has_job = singularity_mechanic
+		}
+		modifier = {
+			factor = 15
+			has_job = singularity_mechanic
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_void_dweller_1
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
+		}
+	}
+}
+
+singularity_mechanic_drone = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_dark_matter_plant_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible = {
+		drone_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_singularity_mechanics
+		produces = {
+			sr_dark_matter = 2
+		}
+		produces = {
+			trigger = {
+				owner = { has_technology = tech_dark_matter_plant_4 }
+			}
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			alloys = 5
+		}
+		upkeep = {
+			trigger = {
+				owner = { has_technology = tech_dark_matter_plant_4 }
+			}
+			alloys = 2
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}
+		modifier = {
+			factor = 5
+			has_job = singularity_mechanic_drone
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+	}
+}
+
+
+# Living Metal
+metal_breeder = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_living_metal_plant_1
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_metal_breeders
+		produces = {
+			sr_living_metal = 2
+		}
+		produces = {
+			trigger = {
+				owner = { has_technology = tech_living_metal_plant_4 }
+			}
+			sr_living_metal = 1
+		}
+		upkeep = {
+			alloys = 5
+		}
+		upkeep = {
+			trigger = {
+				owner = { has_technology = tech_living_metal_plant_4 }
+			}
+			alloys = 2
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 2
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}
+		modifier = {
+			factor = 7
+			has_job = metal_breeder
+		}
+		modifier = {
+			factor = 15
+			has_job = metal_breeder
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_void_dweller_1
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
+		}
+	}
+}
+
+metal_breeder_drone = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_living_metal_plant_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible = {
+		drone_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_metal_breeders
+		produces = {
+			sr_living_metal = 2
+		}
+		produces = {
+			trigger = {
+				owner = { has_technology = tech_living_metal_plant_4 }
+			}
+			sr_living_metal = 1
+		}
+		upkeep = {
+			alloys = 5
+		}
+		upkeep = {
+			trigger = {
+				owner = { has_technology = tech_living_metal_plant_4 }
+			}
+			alloys = 2
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}
+		modifier = {
+			factor = 5
+			has_job = metal_breeder_drone
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+	}
+}
+
+
+# Zro
+zro_distiller = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_zro_plant_1
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible = {
+		specialist_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_zro_distillers
+		produces = {
+			sr_zro = 2
+		}
+		produces = {
+			trigger = {
+				owner = { has_technology = tech_zro_plant_4 }
+			}
+			sr_zro = 1
+		}
+		upkeep = {
+			alloys = 5
+		}
+		upkeep = {
+			trigger = {
+				owner = { has_technology = tech_zro_plant_4 }
+			}
+			alloys = 2
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 2
+			species = {
+				has_species_flag = racket_species_flag
+			}
+		}
+		modifier = {
+			factor = 7
+			has_job = zro_distiller
+		}
+		modifier = {
+			factor = 15
+			has_job = zro_distiller
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
+		modifier = {
+			factor = 2
+			has_trait = trait_void_dweller_1
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
+		}
+	}
+}
+
+zro_distiller_drone = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_zro_plant_1
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible = {
+		drone_job_check_trigger = yes
+	}
+
+	resources = {
+		category = planet_zro_distillers
+		produces = {
+			sr_zro = 2
+		}
+		produces = {
+			trigger = {
+				owner = { has_technology = tech_zro_plant_4 }
+			}
+			sr_zro = 1
+		}
+		upkeep = {
+			alloys = 5
+		}
+		upkeep = {
+			trigger = {
+				owner = { has_technology = tech_zro_plant_4 }
+			}
+			alloys = 2
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 0.9
+			exists = owner
+			years_passed < 1
+			owner = { has_valid_civic = civic_machine_assimilator }
+			has_trait = trait_cybernetic
+		}
+		modifier = {
+			factor = 5
+			has_job = zro_distiller_drone
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+	}
+}

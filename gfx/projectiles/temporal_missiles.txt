@@ -1,0 +1,124 @@
+#All files in gfx/projectiles are reloadable with the "reload projectiles" console command
+#Filewatcher is also enabled for all files
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "temporal_small_missile_1"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "missile_small_hit_entity"
+	shield_hit_entity = "temporal_missile_1_small_shield_hit_entity"
+	muzzle_flash_entity = "temporal_missile_1_small_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "temporal_missile_1_small_entity"
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "temporal_medium_missile_1"
+	color = { 1.0 	0.6 	0.4 	1.0 }
+	hit_entity = "missile_medium_hit_entity"
+	shield_hit_entity = "temporal_missile_1_medium_shield_hit_entity"
+	muzzle_flash_entity = "temporal_missile_1_medium_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "temporal_missile_1_medium_entity"
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "temporal_large_missile_1"
+	color = { 0.87 	0.44 	0.63 	1.0 }
+	hit_entity = "temporal_missile_large_hit_entity"
+	shield_hit_entity = "temporal_missile_1_large_shield_hit_entity"
+	muzzle_flash_entity = "temporal_missile_1_large_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "temporal_missile_1_large_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+# TORPEDOES
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "large_torpedo_1_temporal"
+	color = { 1.0 	0.6 	0.4 	1.0 }
+	hit_entity = "torpedo_temporal_1_large_hit_entity"
+	shield_hit_entity = "temporal_missile_1_medium_shield_hit_entity"
+	muzzle_flash_entity = "temporal_torpedo_1_large_muzzle_entity"
+	
+	#torpedo specific data
+	entity = "torpedo_temporal_1_large_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "large_torpedo_2_temporal"
+	color = { 0.87 	0.44 	0.63 	1.0 }
+	hit_entity = "torpedo_temporal_2_large_hit_entity"
+	shield_hit_entity = "temporal_missile_1_large_shield_hit_entity"
+	muzzle_flash_entity = "temporal_torpedo_2_large_muzzle_entity"
+	
+	#torpedo specific data
+	entity = "torpedo_temporal_2_large_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "temporal_swarmer_missiles_01"
+	color = { 1.0 	0.6 	0.4 	1.0 }
+	hit_entity = "temporal_swarmer_missiles_01_hit_entity"
+	shield_hit_entity = "temporal_swarmer_missiles_01_shield_hit_entity"
+	muzzle_flash_entity = "temporal_swarmer_missiles_01_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "temporal_swarmer_missiles_01_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "temporal_swarmer_missiles_02"
+	color = { 0.87 	0.44 	0.63 	1.0 }
+	hit_entity = "temporal_swarmer_missiles_02_hit_entity"
+	shield_hit_entity = "temporal_swarmer_missiles_02_shield_hit_entity"
+	muzzle_flash_entity = "temporal_swarmer_missiles_02_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "temporal_swarmer_missiles_02_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}

@@ -1,0 +1,474 @@
+# Icons set here are the ones show in the actual slot.
+
+@tempcost6 = 22
+@tempcost7 = 49
+
+@temppower_6 = -54
+@temppower_7 = -122
+
+@tempdestroyer_power_6 = -108
+@tempdestroyer_power_7 = -243
+
+@tempdestroyer_cost6 = 43
+@tempdestroyer_cost7 = 97
+
+@tempcruiser_power_6 = -216
+@tempcruiser_power_7 = -486
+
+@tempcruiser_cost6 = 86
+@tempcruiser_cost7 = 194
+
+@tempbattleship_power_6 = -432
+@tempbattleship_power_7 = -972
+
+@tempbattleship_cost6 = 173
+@tempbattleship_cost7 = 389
+
+@temptitan_power_6 = -864
+@temptitan_power_7 = -1944
+
+@temptitan_cost6 = 346
+@temptitan_cost7 = 778
+
+@tempcolossus_power_6 = -1080
+@tempcolossus_power_7 = -2430
+
+@tempcolossus_cost6 = 540
+@tempcolossus_cost7 = 1215
+
+
+#############
+# THRUSTERS #
+#############
+
+### 6
+
+utility_component_template = {
+	key = "SHIP_THRUSTER_TEMPORAL"
+	size = small
+	icon = "GFX_ship_part_temporal_thruster"
+	icon_frame = 1
+	power = @temppower_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempcost6
+			sr_dark_matter = 1
+			sr_zro = 1
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.50
+		ship_evasion_add = 30
+	}
+
+	prerequisites = { "tech_temporal_thruster" }
+	component_set = "thruster_components"
+	upgrades_to = "SHIP_THRUSTER_2_TEMPORAL"
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
+	
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHIP_THRUSTER_TEMPORAL"
+	size = small
+	icon = "GFX_ship_part_temporal_thruster"
+	icon_frame = 1
+	power = @tempdestroyer_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempdestroyer_cost6
+			sr_dark_matter = 2
+			sr_zro = 2
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.75
+		ship_evasion_add = 24
+	}
+
+	prerequisites = { "tech_temporal_thruster" }
+	component_set = "thruster_components"
+	upgrades_to = "DESTROYER_SHIP_THRUSTER_2_TEMPORAL"
+	size_restriction = { destroyer crisis_destroyer }
+	
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SHIP_THRUSTER_TEMPORAL"
+	size = small
+	icon = "GFX_ship_part_temporal_thruster"
+	icon_frame = 1
+	power = @tempcruiser_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempcruiser_cost6
+			sr_dark_matter = 4
+			sr_zro = 4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.75
+		ship_evasion_add = 18
+	}
+
+	prerequisites = { "tech_temporal_thruster" }
+	component_set = "thruster_components"
+	upgrades_to = "CRUISER_SHIP_THRUSTER_2_TEMPORAL"
+	size_restriction = { cruiser crisis_cruiser }
+	
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SHIP_THRUSTER_TEMPORAL"
+	size = small
+	icon = "GFX_ship_part_temporal_thruster"
+	icon_frame = 1
+	power = @tempbattleship_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempbattleship_cost6
+			sr_dark_matter = 8
+			sr_zro = 8
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.75
+		ship_evasion_add = 12
+	}
+
+	prerequisites = { "tech_temporal_thruster" }
+	component_set = "thruster_components"
+	upgrades_to = "BATTLESHIP_SHIP_THRUSTER_2_TEMPORAL"
+	size_restriction = { battleship }
+	
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHIP_THRUSTER_TEMPORAL"
+	size = small
+	icon = "GFX_ship_part_temporal_thruster"
+	icon_frame = 1
+	power = @temptitan_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @temptitan_cost6
+			sr_dark_matter = 16
+			sr_zro = 16
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.75
+		ship_evasion_add = 6
+	}
+
+	prerequisites = { "tech_temporal_thruster" }
+	component_set = "thruster_components"
+	upgrades_to = "TITAN_SHIP_THRUSTER_2_TEMPORAL"
+	size_restriction = { titan }
+	
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "COLOSSUS_SHIP_THRUSTER_TEMPORAL"
+	size = small
+	icon = "GFX_ship_part_temporal_thruster"
+	icon_frame = 1
+	power = @tempcolossus_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempcolossus_cost6
+			sr_dark_matter = 32
+			sr_zro = 32
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 1.75
+	}
+
+	prerequisites = { "tech_temporal_thruster" }
+	component_set = "thruster_components"
+	upgrades_to = "COLOSSUS_SHIP_THRUSTER_2_TEMPORAL"
+	size_restriction = { colossus juggernaut star_eater }
+	
+	ai_weight = {
+		weight = 7
+
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+### 8
+
+utility_component_template = {
+	key = "SHIP_THRUSTER_2_TEMPORAL"
+	size = small
+	icon = "GFX_ship_part_temporal_thruster_2"
+	icon_frame = 1
+	power = @temppower_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempcost7
+			sr_dark_matter = 2.5
+			sr_zro = 2.5
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 2.50
+		ship_evasion_add = 60
+	}
+
+	prerequisites = { "tech_temporal_thruster_2" }
+	component_set = "thruster_components"
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
+	
+	ai_weight = {
+		weight = 9
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_SHIP_THRUSTER_2_TEMPORAL"
+	size = small
+	icon = "GFX_ship_part_temporal_thruster_2"
+	icon_frame = 1
+	power = @tempdestroyer_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempdestroyer_cost7
+			sr_dark_matter = 4.5
+			sr_zro = 4.5
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 2.50
+		ship_evasion_add = 48
+	}
+
+	prerequisites = { "tech_temporal_thruster_2" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer crisis_destroyer }
+	
+	ai_weight = {
+		weight = 9
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_SHIP_THRUSTER_2_TEMPORAL"
+	size = small
+	icon = "GFX_ship_part_temporal_thruster_2"
+	icon_frame = 1
+	power = @tempcruiser_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempcruiser_cost7
+			sr_dark_matter = 6.5
+			sr_zro = 6.5
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 2.50
+		ship_evasion_add = 36
+	}
+
+	prerequisites = { "tech_temporal_thruster_2" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser crisis_cruiser }
+	
+	ai_weight = {
+		weight = 9
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_SHIP_THRUSTER_2_TEMPORAL"
+	size = small
+	icon = "GFX_ship_part_temporal_thruster_2"
+	icon_frame = 1
+	power = @tempbattleship_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempbattleship_cost7
+			sr_dark_matter = 14.5
+			sr_zro = 14.5
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 2.50
+		ship_evasion_add = 24
+	}
+
+	prerequisites = { "tech_temporal_thruster_2" }
+	component_set = "thruster_components"
+	size_restriction = { battleship }
+	
+	ai_weight = {
+		weight = 9
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_SHIP_THRUSTER_2_TEMPORAL"
+	size = small
+	icon = "GFX_ship_part_temporal_thruster_2"
+	icon_frame = 1
+	power = @temptitan_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @temptitan_cost7
+			sr_dark_matter = 26.5
+			sr_zro = 26.5
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 2.50
+		ship_evasion_add = 12
+	}
+
+	prerequisites = { "tech_temporal_thruster_2" }
+	component_set = "thruster_components"
+	size_restriction = { titan }
+	
+	ai_weight = {
+		weight = 9
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "COLOSSUS_SHIP_THRUSTER_2_TEMPORAL"
+	size = small
+	icon = "GFX_ship_part_temporal_thruster_2"
+	icon_frame = 1
+	power = @tempcolossus_power_7
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempcolossus_cost7
+			sr_dark_matter = 48.5
+			sr_zro = 48.5
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 2.50
+	}
+
+	prerequisites = { "tech_temporal_thruster_2" }
+	component_set = "thruster_components"
+	size_restriction = { colossus juggernaut star_eater }
+	
+	ai_weight = {
+		weight = 9
+
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}

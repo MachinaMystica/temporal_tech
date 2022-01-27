@@ -1,0 +1,43 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "temporal_cannon_1_tracer_round_mesh"
+		file = "gfx/models/combat_items/tracer_round.mesh"
+		scale = 1.0
+		
+		meshsettings = {
+		texture_diffuse = "tracer_round_temporal_cannon_1.dds"
+		}	
+	}
+
+	pdxmesh = {
+		name = "temporal_cannon_tracer_round_mesh"
+		file = "gfx/models/combat_items/tracer_round.mesh"
+		scale = 1.0
+		
+		meshsettings = {
+		texture_diffuse = "tracer_round_temporal_cannon.dds"
+		}	
+	}
+
+	pdxmesh = {
+		name = "tem_kinetic_artillery_1_tracer_round_mesh"
+		file = "gfx/models/combat_items/adv_kinetic_artillery_tracer_round.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			texture_diffuse = "tem_kinetic_artillery_1_tracer_round.dds"
+		}	
+	}
+
+	pdxmesh = {
+		name = "tem_kinetic_artillery_tracer_round_mesh"
+		file = "gfx/models/combat_items/adv_kinetic_artillery_tracer_round.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			texture_diffuse = "tem_kinetic_artillery_tracer_round.dds"
+		}	
+	}
+	
+}		

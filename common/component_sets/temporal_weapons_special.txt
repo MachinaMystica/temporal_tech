@@ -1,0 +1,14 @@
+# Anti-Shield
+component_set = {
+	key = "SHIELD_ACCELERATOR"
+	
+	icon = "GFX_ship_part_shield_accelerator"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "SHIELD_2_ACCELERATOR"
+	
+	icon = "GFX_ship_part_shield_accelerator_2"
+	icon_frame = 1	
+}

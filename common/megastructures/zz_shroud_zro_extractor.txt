@@ -1,0 +1,332 @@
+shroud_zro_extractor_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	prerequisites = { tech_shroud_collapsing_zones }
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2500
+			influence = 75
+		}
+		upkeep = { energy = 5 }
+	}
+
+	potential = {
+		has_technology = tech_shroud_collapsing_zones
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = { fail_text = "requires_inside_border"		is_inside_border = from }
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+	
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_survey"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "must_build_around_shrouded"
+				is_planet_class = pc_shrouded
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				#can_build_megastructure_on_planet = yes
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = {
+						has_star_flag = ring_world_built
+					}
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_habitat
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_colony"
+				NOT = { is_colony = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 15
+		
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}	
+		
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = { 
+					owner = { is_same_value = from } 
+				}
+			}
+		}
+
+		# How many of this megastructure can the AI build?
+		modifier = { factor = 0.00 from = { has_country_flag = has_recently_built_shroud_zro_extractor } }
+		modifier = { factor = 0.00 from = { count_owned_megastructure = { limit = { is_megastructure_type = shroud_zro_extractor_3 } count > 2 } } }
+		modifier = { factor = 0.33 from = { count_owned_megastructure = { limit = { is_megastructure_type = shroud_zro_extractor_3 } count = 2 } } }
+		modifier = { factor = 0.66 from = { count_owned_megastructure = { limit = { is_megastructure_type = shroud_zro_extractor_3 } count = 1 } } }
+		modifier = {
+			factor = 0
+			from = {
+				OR = {
+					has_megastructure = shroud_zro_extractor_0
+					has_megastructure = shroud_zro_extractor_1
+					has_megastructure = shroud_zro_extractor_2
+				}
+			}
+		}
+	}
+
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = {
+			set_timed_country_flag = { flag = has_recently_built_shroud_zro_extractor years = 20 }
+			country_event = { id = temporal_dialog.1340 }	# Notification
+		}
+		fromfrom.planet = {
+			if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
+			set_planet_flag = megastructure			# Vanilla uses to check if a megastrucure can be built here
+			set_planet_flag = has_megastructure		# Vanilla uses to check if an orbital station can be built here
+		}
+	}
+}
+
+shroud_zro_extractor_1 = {
+	entity = "shroud_zro_extractor_phase_01_entity"
+	construction_entity = "shroud_zro_extractor_phase_01_entity"
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { shroud_zro_extractor_0 }
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 3000
+			nanites = 500
+		}
+		upkeep = {
+			energy = 25
+		}
+		produces = {
+			society_research = 25
+		}
+	}
+
+	possible = { from = { has_technology = tech_shroud_collapsing_zones } }
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = { country_event = { id = temporal_dialog.1341 } }	# Notification
+	}
+}
+
+shroud_zro_extractor_2 = {
+	entity = "shroud_zro_extractor_phase_02_entity"
+	construction_entity = "shroud_zro_extractor_02_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { shroud_zro_extractor_1 }
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 3000
+			nanites = 500
+		}
+		upkeep = {
+			energy = 30
+		}
+		produces = {
+			society_research = 50
+		}
+	}
+
+	possible = { from = { has_technology = tech_shroud_collapsing_zones } }
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { 
+			save_event_target_as = temporal_planet
+			if = {
+				limit = { planet_size > 49 }
+				change_planet_size = -10
+			}
+			if = {
+				limit = { planet_size > 39 }
+				change_planet_size = -10
+			}
+			if = {
+				limit = { planet_size > 29 }
+				change_planet_size = -10
+			}
+			if = {
+				limit = { planet_size = 29 }
+				change_planet_size = -11
+			}
+			if = {
+				limit = { planet_size = 28 }
+				change_planet_size = -10
+			}
+			if = {
+				limit = { planet_size = 27 }
+				change_planet_size = -9
+			}
+			if = {
+				limit = { planet_size = 26 }
+				change_planet_size = -8
+			}
+			if = {
+				limit = { planet_size = 25 }
+				change_planet_size = -7
+			}
+			if = {
+				limit = { planet_size = 24 }
+				change_planet_size = -6
+			}
+			if = {
+				limit = { planet_size = 23 }
+				change_planet_size = -5
+			}
+			if = {
+				limit = { planet_size = 22 }
+				change_planet_size = -4
+			}
+			if = {
+				limit = { planet_size = 21 }
+				change_planet_size = -3
+			}
+			if = {
+				limit = { planet_size = 20 }
+				change_planet_size = -2
+			}
+			if = {
+				limit = { planet_size = 19 }
+				change_planet_size = -1
+			}
+			if = {
+				limit = { planet_size = 14 }
+				change_planet_size = 1
+			}
+			if = {
+				limit = { planet_size = 13 }
+				change_planet_size = 2
+			}
+			if = {
+				limit = { planet_size = 12 }
+				change_planet_size = 3
+			}
+			if = {
+				limit = { planet_size = 11 }
+				change_planet_size = 4
+			}
+			if = {
+				limit = { planet_size = 10 }
+				change_planet_size = 5
+			}
+			if = {
+				limit = { planet_size = 9 }
+				change_planet_size = 6
+			}
+			if = {
+				limit = { planet_size = 8 }
+				change_planet_size = 7
+			}
+			if = {
+				limit = { planet_size = 7 }
+				change_planet_size = 8
+			}
+			if = {
+				limit = { planet_size = 6 }
+				change_planet_size = 9
+			}
+			if = {
+				limit = { planet_size < 6 }
+				change_planet_size = 10
+			}
+		}
+		from = { country_event = { id = temporal_dialog.1342 } }	# Notification
+	}
+}
+
+shroud_zro_extractor_3 = {
+	entity = "shroud_zro_extractor_phase_03_entity"
+	construction_entity = "shroud_zro_extractor_03_construction_entity"
+	portrait = "GFX_megastructure_shrouded_planet"
+	upgrade_from = { shroud_zro_extractor_2 }
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = { 
+			energy = 15000 
+			sr_zro = 500
+		}
+		upkeep = {
+			energy = 40
+		}
+		produces = {
+			sr_zro = 125
+			society_research = 100
+		}
+	}
+
+	possible = { from = { has_technology = tech_shroud_collapsing_zones } }
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { 
+			save_event_target_as = temporal_planet
+		}
+		from = {
+			country_event = { id = temporal_dialog.1343 }	# Notification
+		}
+	}
+}

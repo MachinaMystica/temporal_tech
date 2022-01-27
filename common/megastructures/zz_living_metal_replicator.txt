@@ -1,0 +1,324 @@
+living_metal_replicator_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	prerequisites = { tech_planetscale_metal_seeding }
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2500
+			influence = 75
+		}
+		upkeep = { energy = 5 }
+	}
+
+	potential = {
+		has_technology = tech_planetscale_metal_seeding
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = { fail_text = "requires_inside_border"		is_inside_border = from }
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+	
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_survey"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				#can_build_megastructure_on_planet = yes
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = {
+						has_star_flag = ring_world_built
+					}
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_habitat
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_colony"
+				NOT = { is_colony = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				is_ringworld = no
+			}
+			custom_tooltip = {
+				fail_text = "cant_build_around_gas"
+				NOR = {
+					is_planet_class = pc_shrouded
+					is_planet_class = pc_gas_giant
+					giga_brown_dwarf = yes
+				}
+			}
+			custom_tooltip = { 
+				fail_text = "requires_no_birch"
+				NOT = {
+					is_planet_class = pc_birch 
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 15
+		
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}	
+		
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = { 
+					owner = { is_same_value = from } 
+				}
+			}
+		}
+
+		# How many of this megastructure can the AI build?
+		modifier = { factor = 0.00 from = { has_country_flag = has_recently_built_living_metal_replicator } }
+		modifier = { factor = 0.00 from = { count_owned_megastructure = { limit = { is_megastructure_type = living_metal_replicator_3 } count > 2 } } }
+		modifier = { factor = 0.33 from = { count_owned_megastructure = { limit = { is_megastructure_type = living_metal_replicator_3 } count = 2 } } }
+		modifier = { factor = 0.66 from = { count_owned_megastructure = { limit = { is_megastructure_type = living_metal_replicator_3 } count = 1 } } }
+		modifier = {
+			factor = 0
+			from = {
+				OR = {
+					has_megastructure = living_metal_replicator_0
+					has_megastructure = living_metal_replicator_1
+					has_megastructure = living_metal_replicator_2
+				}
+			}
+		}
+	}
+
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = {
+			set_timed_country_flag = { flag = has_recently_built_living_metal_replicator years = 20 }
+			country_event = { id = temporal_dialog.1330 }	# Notification
+		}
+		fromfrom.planet = {
+			if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
+			set_planet_flag = megastructure			# Vanilla uses to check if a megastrucure can be built here
+			set_planet_flag = has_megastructure		# Vanilla uses to check if an orbital station can be built here
+		}
+	}
+}
+
+living_metal_replicator_1 = {
+	entity = "living_metal_replicator_phase_01_entity"
+	construction_entity = "living_metal_replicator_phase_01_entity"
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { living_metal_replicator_0 }
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 3000
+			nanites = 500
+		}
+		upkeep = {
+			energy = 20
+			alloys = 5
+		}
+		produces = {
+			engineering_research = 25
+		}
+	}
+
+	possible = { from = { has_technology = tech_planetscale_metal_seeding } }
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = { country_event = { id = temporal_dialog.1331 } }	# Notification
+	}
+}
+
+living_metal_replicator_2 = {
+	entity = "living_metal_replicator_phase_02_entity"
+	construction_entity = "living_metal_replicator_02_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { living_metal_replicator_1 }
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 3000
+			sr_living_metal = 500
+		}
+		upkeep = {
+			energy = 20
+			alloys = 10
+		}
+		produces = {
+			engineering_research = 50
+		}
+	}
+
+	possible = { from = { has_technology = tech_planetscale_metal_seeding } }
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { 
+			save_event_target_as = temporal_planet
+			if = {
+				limit = { planet_size > 49 }
+				change_planet_size = -10
+			}
+			if = {
+				limit = { planet_size > 39 }
+				change_planet_size = -10
+			}
+			if = {
+				limit = { planet_size > 29 }
+				change_planet_size = -5
+			}
+			if = {
+				limit = { planet_size = 29 }
+				change_planet_size = -4
+			}
+			if = {
+				limit = { planet_size = 28 }
+				change_planet_size = -3
+			}
+			if = {
+				limit = { planet_size = 27 }
+				change_planet_size = -2
+			}
+			if = {
+				limit = { planet_size = 26 }
+				change_planet_size = -1
+			}
+			if = {
+				limit = { planet_size = 14 }
+				change_planet_size = 1
+			}
+			if = {
+				limit = { planet_size = 13 }
+				change_planet_size = 2
+			}
+			if = {
+				limit = { planet_size = 12 }
+				change_planet_size = 3
+			}
+			if = {
+				limit = { planet_size = 11 }
+				change_planet_size = 4
+			}
+			if = {
+				limit = { planet_size = 10 }
+				change_planet_size = 5
+			}
+			if = {
+				limit = { planet_size = 9 }
+				change_planet_size = 6
+			}
+			if = {
+				limit = { planet_size = 8 }
+				change_planet_size = 7
+			}
+			if = {
+				limit = { planet_size = 7 }
+				change_planet_size = 8
+			}
+			if = {
+				limit = { planet_size = 6 }
+				change_planet_size = 9
+			}
+			if = {
+				limit = { planet_size < 6 }
+				change_planet_size = 10
+			}
+		}
+		from = { country_event = { id = temporal_dialog.1332 } }	# Notification
+	}
+}
+
+living_metal_replicator_3 = {
+	entity = "living_metal_replicator_phase_03_entity"
+	portrait = "GFX_megastructure_ai_planet"
+	upgrade_from = { living_metal_replicator_2 }
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 5000
+			energy = 15000 
+		}
+		upkeep = {
+			energy = 25
+			alloys = 15
+		}
+		produces = {
+			sr_living_metal = 50
+			engineering_research = 100
+		}
+	}
+
+	possible = { from = { has_technology = tech_planetscale_metal_seeding } }
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { 
+			save_event_target_as = temporal_planet
+			change_pc = pc_temporal_livingmetal
+		}
+		from = {
+			country_event = { id = temporal_dialog.1333 }	# Notification
+		}
+	}
+}

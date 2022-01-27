@@ -1,0 +1,324 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+#############
+# UTILITIES #
+#############
+
+# Chronostatic Armor
+utility_component_template = {
+	key = "SMALL_TEMPORAL_ARMOR"
+	size = small
+	icon = "GFX_ship_part_armor_temporal"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 333
+		ship_hull_add = 240
+		ship_hull_regen_add_static = 4
+		ship_armor_regen_add_static = 5
+	}
+
+	prerequisites = { "tech_armor_temporal" }
+	component_set = "TEMPORAL_ARMOR"
+	upgrades_to = "SMALL_TEMPORAL_2_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t7_cost
+			nanites = 1
+			sr_living_metal = 1
+		}		
+		upkeep = {
+			energy = @s_t7_upkeep_energy
+			alloys = @s_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = nanites }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_TEMPORAL_ARMOR"
+	size = medium
+	icon = "GFX_ship_part_armor_temporal"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 837
+		ship_hull_add = 605
+		ship_hull_regen_add_static = 5
+		ship_armor_regen_add_static = 6
+	}
+
+	prerequisites = { "tech_armor_temporal" }
+	component_set = "TEMPORAL_ARMOR"
+	upgrades_to = "MEDIUM_TEMPORAL_2_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t7_cost
+			nanites = 1.25
+			sr_living_metal = 1.25
+		}		
+		upkeep = {
+			energy = @m_t7_upkeep_energy
+			alloys = @m_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = nanites }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_TEMPORAL_ARMOR"
+	size = large
+	icon = "GFX_ship_part_armor_temporal"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 1998
+		ship_hull_add = 1443
+		ship_hull_regen_add_static = 6
+		ship_armor_regen_add_static = 7
+	}
+
+	prerequisites = { "tech_armor_temporal" }
+	component_set = "TEMPORAL_ARMOR"
+	upgrades_to = "LARGE_TEMPORAL_2_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+			nanites = 1.5
+			sr_living_metal = 1.5
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = nanites }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+			}
+		}
+	}
+}
+
+# Negentropy Armor T2
+utility_component_template = {
+	key = "SMALL_TEMPORAL_2_ARMOR"
+	size = small
+	icon = "GFX_ship_part_armor_temporal_2"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 750
+		ship_hull_add = 432
+		ship_hull_regen_add_static = 8
+		ship_armor_regen_add_static = 10
+	}
+
+	prerequisites = { "tech_armor_temporal_2" }
+	component_set = "TEMPORAL_2_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_temp_t8_cost
+			nanites = 2
+			sr_living_metal = 2
+		}		
+		upkeep = {
+			energy = @s_temp_t8_upkeep_energy
+			alloys = @s_temp_t8_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = nanites }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_TEMPORAL_2_ARMOR"
+	size = medium
+	icon = "GFX_ship_part_armor_temporal_2"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 1884
+		ship_hull_add = 1089
+		ship_hull_regen_add_static = 10
+		ship_armor_regen_add_static = 12
+	}
+
+	prerequisites = { "tech_armor_temporal_2" }
+	component_set = "TEMPORAL_2_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_temp_t8_cost
+			nanites = 2.25
+			sr_living_metal = 2.25
+		}		
+		upkeep = {
+			energy = @m_temp_t8_upkeep_energy
+			alloys = @m_temp_t8_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = nanites }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_TEMPORAL_2_ARMOR"
+	size = large
+	icon = "GFX_ship_part_armor_temporal_2"
+	icon_frame = 1
+	power = 0
+	modifier = {
+		ship_armor_add = 4496
+		ship_hull_add = 2598
+		ship_hull_regen_add_static = 12
+		ship_armor_regen_add_static = 14
+	}
+
+	prerequisites = { "tech_armor_temporal_2" }
+	component_set = "TEMPORAL_2_ARMOR"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_temp_t8_cost
+			nanites = 2.5
+			sr_living_metal = 2.5
+		}		
+		upkeep = {
+			energy = @l_temp_t8_upkeep_energy
+			alloys = @l_temp_t8_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = nanites }
+				no_resource_for_component = { RESOURCE = sr_living_metal }
+			}
+		}
+	}
+}
+
+########################
+# Enigmatic Fortress
+########################
+
+utility_component_template = {
+	key = "TEMPORAL_DECODER"
+	size = aux
+	icon = "GFX_ship_part_temporal_decoder"
+	icon_frame = 1
+	power = -45
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_dark_matter = 2.5
+			sr_zro = 2.5
+		}
+	}
+	
+	prerequisites = { tech_temporal_decoder }
+	component_set = "TEMPORAL_DECODER"
+
+	ship_modifier = {
+		ship_tracking_add = 15
+		ship_accuracy_add = 15
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2
+			OR = {
+				is_preferred_weapons = weapon_type_energy
+				is_preferred_weapons = weapon_type_kinetic
+			}		
+		}
+	}
+}
+
+utility_component_template = {
+	key = "TEMPORAL_ENCODER"
+	size = aux
+	icon = "GFX_ship_part_temporal_encoder"
+	icon_frame = 1
+	power = -45
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+			sr_dark_matter = 2.5
+			sr_zro = 2.5
+		}
+	}
+	
+	prerequisites = { tech_temporal_encoder }
+	component_set = "TEMPORAL_ENCODER"
+
+	modifier = {
+		ship_evasion_mult = 0.45
+		ship_evasion_add = 5
+	}
+	
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2
+			OR = {
+				is_preferred_weapons = weapon_type_explosive
+				is_preferred_weapons = weapon_type_strike_craft
+			}		
+		}
+	}
+}

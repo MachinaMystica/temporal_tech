@@ -1,0 +1,3778 @@
+###position = { 0<-[+Left,-Right] | 0<-[+Up,-Down] | 0<-[+Back,-Forward] }
+
+#########################
+### Timeline Tunneler ###
+#########################
+
+#####################################################
+#####											#####
+#####				Molluscoid					#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "molluscoid_01_temporal_tunneler_phase_01_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "molluscoid_01_temporal_tunneler_dyson_entity" }
+	
+	scale = 1.0
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "molluscoid_01_temporal_tunneler_phase_02_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	
+	attach = { "root" = "molluscoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "molluscoid_01_temporal_tunneler_phase_03_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	
+	attach = { "root" = "molluscoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "molluscoid_01_temporal_tunneler_phase_04_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	
+	attach = { "root" = "molluscoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "molluscoid_01_temporal_mega_art_institution_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "molluscoid_01_temporal_tunneler_phase_05_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "molluscoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "molluscoid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "molluscoid_01_temporal_matter_decompressor_stage_3_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "molluscoid_01_temporal_tunneler_phase_06_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "molluscoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "molluscoid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "molluscoid_01_temporal_matter_decompressor_stage_3_entity" }
+
+	attach = { "loc1302" = "molluscoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "molluscoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "molluscoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "molluscoid_01_temporal_matter_decompressor_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "molluscoid_01_temporal_tunneler_dyson_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "molluscoid_01_dyson_sphere_frame_entity" }
+	attach = { "root" = "molluscoid_01_dyson_sphere_part_1_entity" }
+	attach = { "root" = "molluscoid_01_dyson_sphere_part_2_entity" }
+	attach = { "root" = "molluscoid_01_dyson_sphere_part_3_entity" }
+	attach = { "root" = "molluscoid_01_dyson_sphere_part_4_entity" }
+	
+	attach = { "root" = "penta_rays_entity" }
+	attach = { "root" = "hexa_rays_entity" }
+	
+	scale = 0.5
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "molluscoid_01_temporal_mega_art_institution_stage_2_entity"
+	pdxmesh = "mega_art_institution_01_stage_2_mesh"
+
+	scale = 8
+	
+		meshsettings = {
+			name = "polySurface13Shape"
+			index = 0
+			texture_diffuse = "molluscoid_01_mega_art_institution_diffuse.dds"
+			texture_normal = "molluscoid_01_mega_art_institution_normal.dds"
+			texture_specular = "molluscoid_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+}
+
+entity = {
+	name = "molluscoid_01_temporal_matter_decompressor_stage_2_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+
+	scale = 1
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "molluscoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "molluscoid_01_matter_decompressor_normal.dds"
+			texture_specular = "molluscoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+entity = {
+	name = "molluscoid_01_temporal_matter_decompressor_stage_3_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+
+	scale = 2
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "molluscoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "molluscoid_01_matter_decompressor_normal.dds"
+			texture_specular = "molluscoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+#############################
+### Construction Entities ###
+#############################
+
+entity = {
+
+	###General Information
+	
+	name = "molluscoid_01_temporal_tunneler_phase_02_construction_entity"
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "molluscoid_01_temporal_tunneler_phase_03_construction_entity"
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "molluscoid_01_temporal_tunneler_phase_04_construction_entity"
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+
+	attach = { "loc1306" = "molluscoid_01_temporal_mega_art_institution_stage_2_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "molluscoid_01_temporal_tunneler_phase_05_construction_entity"
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+
+	attach = { "loc1307" = "molluscoid_01_temporal_matter_decompressor_stage_3_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "molluscoid_01_temporal_tunneler_phase_06_construction_entity"
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+
+	attach = { "loc1302" = "molluscoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "molluscoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "molluscoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "molluscoid_01_temporal_matter_decompressor_stage_2_entity" }
+	scale = 1.0
+}
+
+#####################################################
+#####											#####
+#####				Mammalian					#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "mammalian_01_temporal_tunneler_phase_01_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "mammalian_01_temporal_tunneler_dyson_entity" }
+	
+	scale = 1.0
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "mammalian_01_temporal_tunneler_phase_02_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	
+	attach = { "root" = "mammalian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "mammalian_01_temporal_tunneler_phase_03_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	
+	attach = { "root" = "mammalian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "mammalian_01_temporal_tunneler_phase_04_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	
+	attach = { "root" = "mammalian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "mammalian_01_temporal_mega_art_institution_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "mammalian_01_temporal_tunneler_phase_05_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "mammalian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "mammalian_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "mammalian_01_temporal_matter_decompressor_stage_3_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "mammalian_01_temporal_tunneler_phase_06_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "mammalian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "mammalian_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "mammalian_01_temporal_matter_decompressor_stage_3_entity" }
+
+	attach = { "loc1302" = "mammalian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "mammalian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "mammalian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "mammalian_01_temporal_matter_decompressor_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "mammalian_01_temporal_tunneler_dyson_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "mammalian_01_dyson_sphere_frame_entity" }
+	attach = { "root" = "mammalian_01_dyson_sphere_part_1_entity" }
+	attach = { "root" = "mammalian_01_dyson_sphere_part_2_entity" }
+	attach = { "root" = "mammalian_01_dyson_sphere_part_3_entity" }
+	attach = { "root" = "mammalian_01_dyson_sphere_part_4_entity" }
+	
+	attach = { "root" = "penta_rays_entity" }
+	attach = { "root" = "hexa_rays_entity" }
+	
+	scale = 0.5
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "mammalian_01_temporal_mega_art_institution_stage_2_entity"
+	pdxmesh = "mega_art_institution_01_stage_2_mesh"
+
+	scale = 8
+	
+		meshsettings = {
+			name = "polySurface13Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_mega_art_institution_diffuse.dds"
+			texture_normal = "mammalian_01_mega_art_institution_normal.dds"
+			texture_specular = "mammalian_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+}
+
+entity = {
+	name = "mammalian_01_temporal_matter_decompressor_stage_2_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+
+	scale = 1
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_matter_decompressor_diffuse.dds"
+			texture_normal = "mammalian_01_matter_decompressor_normal.dds"
+			texture_specular = "mammalian_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+entity = {
+	name = "mammalian_01_temporal_matter_decompressor_stage_3_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+
+	scale = 2
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_matter_decompressor_diffuse.dds"
+			texture_normal = "mammalian_01_matter_decompressor_normal.dds"
+			texture_specular = "mammalian_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+#############################
+### Construction Entities ###
+#############################
+
+entity = {
+
+	###General Information
+	
+	name = "mammalian_01_temporal_tunneler_phase_02_construction_entity"
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "mammalian_01_temporal_tunneler_phase_03_construction_entity"
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "mammalian_01_temporal_tunneler_phase_04_construction_entity"
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+
+	attach = { "loc1306" = "mammalian_01_temporal_mega_art_institution_stage_2_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "mammalian_01_temporal_tunneler_phase_05_construction_entity"
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+
+	attach = { "loc1307" = "mammalian_01_temporal_matter_decompressor_stage_3_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "mammalian_01_temporal_tunneler_phase_06_construction_entity"
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+
+	attach = { "loc1302" = "mammalian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "mammalian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "mammalian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "mammalian_01_temporal_matter_decompressor_stage_2_entity" }
+	scale = 1.0
+}
+
+#####################################################
+#####											#####
+#####				Plantoid					#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "plantoid_01_temporal_tunneler_phase_01_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "plantoid_01_temporal_tunneler_dyson_entity" }
+	
+	scale = 1.0
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "plantoid_01_temporal_tunneler_phase_02_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	
+	attach = { "root" = "plantoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "plantoid_01_temporal_tunneler_phase_03_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	
+	attach = { "root" = "plantoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "plantoid_01_temporal_tunneler_phase_04_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	
+	attach = { "root" = "plantoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "plantoid_01_temporal_mega_art_institution_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "plantoid_01_temporal_tunneler_phase_05_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "plantoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "plantoid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "plantoid_01_temporal_matter_decompressor_stage_3_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "plantoid_01_temporal_tunneler_phase_06_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "plantoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "plantoid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "plantoid_01_temporal_matter_decompressor_stage_3_entity" }
+
+	attach = { "loc1302" = "plantoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "plantoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "plantoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "plantoid_01_temporal_matter_decompressor_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "plantoid_01_temporal_tunneler_dyson_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "plantoid_01_dyson_sphere_frame_entity" }
+	attach = { "root" = "plantoid_01_dyson_sphere_part_1_entity" }
+	attach = { "root" = "plantoid_01_dyson_sphere_part_2_entity" }
+	attach = { "root" = "plantoid_01_dyson_sphere_part_3_entity" }
+	attach = { "root" = "plantoid_01_dyson_sphere_part_4_entity" }
+	
+	attach = { "root" = "penta_rays_entity" }
+	attach = { "root" = "hexa_rays_entity" }
+	
+	scale = 0.5
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "plantoid_01_temporal_mega_art_institution_stage_2_entity"
+	pdxmesh = "mega_art_institution_01_stage_2_mesh"
+
+	scale = 8
+	
+		meshsettings = {
+			name = "polySurface13Shape"
+			index = 0
+			texture_diffuse = "plantoid_01_mega_art_institution_diffuse.dds"
+			texture_normal = "plantoid_01_mega_art_institution_normal.dds"
+			texture_specular = "plantoid_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+}
+
+entity = {
+	name = "plantoid_01_temporal_matter_decompressor_stage_2_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+
+	scale = 1
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "plantoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "plantoid_01_matter_decompressor_normal.dds"
+			texture_specular = "plantoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+entity = {
+	name = "plantoid_01_temporal_matter_decompressor_stage_3_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+
+	scale = 2
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "plantoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "plantoid_01_matter_decompressor_normal.dds"
+			texture_specular = "plantoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+#############################
+### Construction Entities ###
+#############################
+
+entity = {
+
+	###General Information
+	
+	name = "plantoid_01_temporal_tunneler_phase_02_construction_entity"
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "plantoid_01_temporal_tunneler_phase_03_construction_entity"
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "plantoid_01_temporal_tunneler_phase_04_construction_entity"
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+
+	attach = { "loc1306" = "plantoid_01_temporal_mega_art_institution_stage_2_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "plantoid_01_temporal_tunneler_phase_05_construction_entity"
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+
+	attach = { "loc1307" = "plantoid_01_temporal_matter_decompressor_stage_3_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "plantoid_01_temporal_tunneler_phase_06_construction_entity"
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+
+	attach = { "loc1302" = "plantoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "plantoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "plantoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "plantoid_01_temporal_matter_decompressor_stage_2_entity" }
+	scale = 1.0
+}
+
+#####################################################
+#####											#####
+#####				Fungoid 					#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "fungoid_01_temporal_tunneler_phase_01_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "fungoid_01_temporal_tunneler_dyson_entity" }
+	
+	scale = 1.0
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "fungoid_01_temporal_tunneler_phase_02_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	
+	attach = { "root" = "fungoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "fungoid_01_temporal_tunneler_phase_03_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	
+	attach = { "root" = "fungoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "fungoid_01_temporal_tunneler_phase_04_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	
+	attach = { "root" = "fungoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "fungoid_01_temporal_mega_art_institution_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "fungoid_01_temporal_tunneler_phase_05_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "fungoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "fungoid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "fungoid_01_temporal_matter_decompressor_stage_3_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "fungoid_01_temporal_tunneler_phase_06_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "fungoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "fungoid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "fungoid_01_temporal_matter_decompressor_stage_3_entity" }
+
+	attach = { "loc1302" = "fungoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "fungoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "fungoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "fungoid_01_temporal_matter_decompressor_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "fungoid_01_temporal_tunneler_dyson_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "fungoid_01_dyson_sphere_frame_entity" }
+	attach = { "root" = "fungoid_01_dyson_sphere_part_1_entity" }
+	attach = { "root" = "fungoid_01_dyson_sphere_part_2_entity" }
+	attach = { "root" = "fungoid_01_dyson_sphere_part_3_entity" }
+	attach = { "root" = "fungoid_01_dyson_sphere_part_4_entity" }
+	
+	attach = { "root" = "penta_rays_entity" }
+	attach = { "root" = "hexa_rays_entity" }
+	
+	scale = 0.5
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "fungoid_01_temporal_mega_art_institution_stage_2_entity"
+	pdxmesh = "mega_art_institution_01_stage_2_mesh"
+
+	scale = 8
+	
+		meshsettings = {
+			name = "polySurface13Shape"
+			index = 0
+			texture_diffuse = "fungoid_01_mega_art_institution_diffuse.dds"
+			texture_normal = "fungoid_01_mega_art_institution_normal.dds"
+			texture_specular = "fungoid_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+}
+
+entity = {
+	name = "fungoid_01_temporal_matter_decompressor_stage_2_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+
+	scale = 1
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "fungoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "fungoid_01_matter_decompressor_normal.dds"
+			texture_specular = "fungoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+entity = {
+	name = "fungoid_01_temporal_matter_decompressor_stage_3_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+
+	scale = 2
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "fungoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "fungoid_01_matter_decompressor_normal.dds"
+			texture_specular = "fungoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+#############################
+### Construction Entities ###
+#############################
+
+entity = {
+
+	###General Information
+	
+	name = "fungoid_01_temporal_tunneler_phase_02_construction_entity"
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "fungoid_01_temporal_tunneler_phase_03_construction_entity"
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "fungoid_01_temporal_tunneler_phase_04_construction_entity"
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+
+	attach = { "loc1306" = "fungoid_01_temporal_mega_art_institution_stage_2_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "fungoid_01_temporal_tunneler_phase_05_construction_entity"
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+
+	attach = { "loc1307" = "fungoid_01_temporal_matter_decompressor_stage_3_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "fungoid_01_temporal_tunneler_phase_06_construction_entity"
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+
+	attach = { "loc1302" = "fungoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "fungoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "fungoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "fungoid_01_temporal_matter_decompressor_stage_2_entity" }
+	scale = 1.0
+}
+
+#####################################################
+#####											#####
+#####				Reptilian					#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "reptilian_01_temporal_tunneler_phase_01_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "reptilian_01_temporal_tunneler_dyson_entity" }
+	
+	scale = 1.0
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "reptilian_01_temporal_tunneler_phase_02_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	
+	attach = { "root" = "reptilian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "reptilian_01_temporal_tunneler_phase_03_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	
+	attach = { "root" = "reptilian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "reptilian_01_temporal_tunneler_phase_04_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	
+	attach = { "root" = "reptilian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "reptilian_01_temporal_mega_art_institution_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "reptilian_01_temporal_tunneler_phase_05_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "reptilian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "reptilian_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "reptilian_01_temporal_matter_decompressor_stage_3_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "reptilian_01_temporal_tunneler_phase_06_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "reptilian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "reptilian_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "reptilian_01_temporal_matter_decompressor_stage_3_entity" }
+
+	attach = { "loc1302" = "reptilian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "reptilian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "reptilian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "reptilian_01_temporal_matter_decompressor_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "reptilian_01_temporal_tunneler_dyson_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "reptilian_01_dyson_sphere_frame_entity" }
+	attach = { "root" = "reptilian_01_dyson_sphere_part_1_entity" }
+	attach = { "root" = "reptilian_01_dyson_sphere_part_2_entity" }
+	attach = { "root" = "reptilian_01_dyson_sphere_part_3_entity" }
+	attach = { "root" = "reptilian_01_dyson_sphere_part_4_entity" }
+	
+	attach = { "root" = "penta_rays_entity" }
+	attach = { "root" = "hexa_rays_entity" }
+	
+	scale = 0.5
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "reptilian_01_temporal_mega_art_institution_stage_2_entity"
+	pdxmesh = "mega_art_institution_01_stage_2_mesh"
+
+	scale = 8
+	
+		meshsettings = {
+			name = "polySurface13Shape"
+			index = 0
+			texture_diffuse = "reptilian_01_mega_art_institution_diffuse.dds"
+			texture_normal = "reptilian_01_mega_art_institution_normal.dds"
+			texture_specular = "reptilian_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+}
+
+entity = {
+	name = "reptilian_01_temporal_matter_decompressor_stage_2_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+
+	scale = 1
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "reptilian_01_matter_decompressor_diffuse.dds"
+			texture_normal = "reptilian_01_matter_decompressor_normal.dds"
+			texture_specular = "reptilian_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+entity = {
+	name = "reptilian_01_temporal_matter_decompressor_stage_3_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+
+	scale = 2
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "reptilian_01_matter_decompressor_diffuse.dds"
+			texture_normal = "reptilian_01_matter_decompressor_normal.dds"
+			texture_specular = "reptilian_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+#############################
+### Construction Entities ###
+#############################
+
+entity = {
+
+	###General Information
+	
+	name = "reptilian_01_temporal_tunneler_phase_02_construction_entity"
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "reptilian_01_temporal_tunneler_phase_03_construction_entity"
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "reptilian_01_temporal_tunneler_phase_04_construction_entity"
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+
+	attach = { "loc1306" = "reptilian_01_temporal_mega_art_institution_stage_2_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "reptilian_01_temporal_tunneler_phase_05_construction_entity"
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+
+	attach = { "loc1307" = "reptilian_01_temporal_matter_decompressor_stage_3_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "reptilian_01_temporal_tunneler_phase_06_construction_entity"
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+
+	attach = { "loc1302" = "reptilian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "reptilian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "reptilian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "reptilian_01_temporal_matter_decompressor_stage_2_entity" }
+	scale = 1.0
+}
+
+#####################################################
+#####											#####
+#####				Arthropoid					#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "arthropoid_01_temporal_tunneler_phase_01_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "arthropoid_01_temporal_tunneler_dyson_entity" }
+	
+	scale = 1.0
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "arthropoid_01_temporal_tunneler_phase_02_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	
+	attach = { "root" = "arthropoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "arthropoid_01_temporal_tunneler_phase_03_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	
+	attach = { "root" = "arthropoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "arthropoid_01_temporal_tunneler_phase_04_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	
+	attach = { "root" = "arthropoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "arthropoid_01_temporal_mega_art_institution_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "arthropoid_01_temporal_tunneler_phase_05_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "arthropoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "arthropoid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "arthropoid_01_temporal_matter_decompressor_stage_3_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "arthropoid_01_temporal_tunneler_phase_06_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "arthropoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "arthropoid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "arthropoid_01_temporal_matter_decompressor_stage_3_entity" }
+
+	attach = { "loc1302" = "arthropoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "arthropoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "arthropoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "arthropoid_01_temporal_matter_decompressor_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "arthropoid_01_temporal_tunneler_dyson_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "arthropoid_01_dyson_sphere_frame_entity" }
+	attach = { "root" = "arthropoid_01_dyson_sphere_part_1_entity" }
+	attach = { "root" = "arthropoid_01_dyson_sphere_part_2_entity" }
+	attach = { "root" = "arthropoid_01_dyson_sphere_part_3_entity" }
+	attach = { "root" = "arthropoid_01_dyson_sphere_part_4_entity" }
+	
+	attach = { "root" = "penta_rays_entity" }
+	attach = { "root" = "hexa_rays_entity" }
+	
+	scale = 0.5
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "arthropoid_01_temporal_mega_art_institution_stage_2_entity"
+	pdxmesh = "mega_art_institution_01_stage_2_mesh"
+
+	scale = 8
+	
+		meshsettings = {
+			name = "polySurface13Shape"
+			index = 0
+			texture_diffuse = "arthropoid_01_mega_art_institution_diffuse.dds"
+			texture_normal = "arthropoid_01_mega_art_institution_normal.dds"
+			texture_specular = "arthropoid_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+}
+
+entity = {
+	name = "arthropoid_01_temporal_matter_decompressor_stage_2_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+
+	scale = 1
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "arthropoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "arthropoid_01_matter_decompressor_normal.dds"
+			texture_specular = "arthropoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+entity = {
+	name = "arthropoid_01_temporal_matter_decompressor_stage_3_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+
+	scale = 2
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "arthropoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "arthropoid_01_matter_decompressor_normal.dds"
+			texture_specular = "arthropoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+#############################
+### Construction Entities ###
+#############################
+
+entity = {
+
+	###General Information
+	
+	name = "arthropoid_01_temporal_tunneler_phase_02_construction_entity"
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "arthropoid_01_temporal_tunneler_phase_03_construction_entity"
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "arthropoid_01_temporal_tunneler_phase_04_construction_entity"
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+
+	attach = { "loc1306" = "arthropoid_01_temporal_mega_art_institution_stage_2_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "arthropoid_01_temporal_tunneler_phase_05_construction_entity"
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+
+	attach = { "loc1307" = "arthropoid_01_temporal_matter_decompressor_stage_3_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "arthropoid_01_temporal_tunneler_phase_06_construction_entity"
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+
+	attach = { "loc1302" = "arthropoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "arthropoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "arthropoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "arthropoid_01_temporal_matter_decompressor_stage_2_entity" }
+	scale = 1.0
+}
+
+#####################################################
+#####											#####
+#####				Avian						#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "avian_01_temporal_tunneler_phase_01_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "avian_01_temporal_tunneler_dyson_entity" }
+	
+	scale = 1.0
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "avian_01_temporal_tunneler_phase_02_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	
+	attach = { "root" = "avian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "avian_01_temporal_tunneler_phase_03_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	
+	attach = { "root" = "avian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "avian_01_temporal_tunneler_phase_04_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	
+	attach = { "root" = "avian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "avian_01_temporal_mega_art_institution_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "avian_01_temporal_tunneler_phase_05_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "avian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "avian_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "avian_01_temporal_matter_decompressor_stage_3_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "avian_01_temporal_tunneler_phase_06_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "avian_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "avian_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "avian_01_temporal_matter_decompressor_stage_3_entity" }
+
+	attach = { "loc1302" = "avian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "avian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "avian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "avian_01_temporal_matter_decompressor_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "avian_01_temporal_tunneler_dyson_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "avian_01_dyson_sphere_frame_entity" }
+	attach = { "root" = "avian_01_dyson_sphere_part_1_entity" }
+	attach = { "root" = "avian_01_dyson_sphere_part_2_entity" }
+	attach = { "root" = "avian_01_dyson_sphere_part_3_entity" }
+	attach = { "root" = "avian_01_dyson_sphere_part_4_entity" }
+	
+	attach = { "root" = "penta_rays_entity" }
+	attach = { "root" = "hexa_rays_entity" }
+	
+	scale = 0.5
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "avian_01_temporal_mega_art_institution_stage_2_entity"
+	pdxmesh = "mega_art_institution_01_stage_2_mesh"
+
+	scale = 8
+	
+		meshsettings = {
+			name = "polySurface13Shape"
+			index = 0
+			texture_diffuse = "avian_01_mega_art_institution_diffuse.dds"
+			texture_normal = "avian_01_mega_art_institution_normal.dds"
+			texture_specular = "avian_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+}
+
+entity = {
+	name = "avian_01_temporal_matter_decompressor_stage_2_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+
+	scale = 1
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "avian_01_matter_decompressor_diffuse.dds"
+			texture_normal = "avian_01_matter_decompressor_normal.dds"
+			texture_specular = "avian_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+entity = {
+	name = "avian_01_temporal_matter_decompressor_stage_3_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+
+	scale = 2
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "avian_01_matter_decompressor_diffuse.dds"
+			texture_normal = "avian_01_matter_decompressor_normal.dds"
+			texture_specular = "avian_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+#############################
+### Construction Entities ###
+#############################
+
+entity = {
+
+	###General Information
+	
+	name = "avian_01_temporal_tunneler_phase_02_construction_entity"
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "avian_01_temporal_tunneler_phase_03_construction_entity"
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "avian_01_temporal_tunneler_phase_04_construction_entity"
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+
+	attach = { "loc1306" = "avian_01_temporal_mega_art_institution_stage_2_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "avian_01_temporal_tunneler_phase_05_construction_entity"
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+
+	attach = { "loc1307" = "avian_01_temporal_matter_decompressor_stage_3_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "avian_01_temporal_tunneler_phase_06_construction_entity"
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+
+	attach = { "loc1302" = "avian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "avian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "avian_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "avian_01_temporal_matter_decompressor_stage_2_entity" }
+	scale = 1.0
+}
+
+#####################################################
+#####											#####
+#####				Lithoid						#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "lithoid_01_temporal_tunneler_phase_01_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "lithoid_01_temporal_tunneler_dyson_entity" }
+	
+	scale = 1.0
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "lithoid_01_temporal_tunneler_phase_02_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	
+	attach = { "root" = "lithoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "lithoid_01_temporal_tunneler_phase_03_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	
+	attach = { "root" = "lithoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "lithoid_01_temporal_tunneler_phase_04_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	
+	attach = { "root" = "lithoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "lithoid_01_temporal_mega_art_institution_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "lithoid_01_temporal_tunneler_phase_05_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "lithoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "lithoid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "lithoid_01_temporal_matter_decompressor_stage_3_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "lithoid_01_temporal_tunneler_phase_06_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "lithoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "lithoid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "lithoid_01_temporal_matter_decompressor_stage_3_entity" }
+
+	attach = { "loc1302" = "lithoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "lithoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "lithoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "lithoid_01_temporal_matter_decompressor_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "lithoid_01_temporal_tunneler_dyson_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "lithoid_01_dyson_sphere_frame_entity" }
+	attach = { "root" = "lithoid_01_dyson_sphere_part_1_entity" }
+	attach = { "root" = "lithoid_01_dyson_sphere_part_2_entity" }
+	attach = { "root" = "lithoid_01_dyson_sphere_part_3_entity" }
+	attach = { "root" = "lithoid_01_dyson_sphere_part_4_entity" }
+	
+	attach = { "root" = "penta_rays_entity" }
+	attach = { "root" = "hexa_rays_entity" }
+	
+	scale = 0.5
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "lithoid_01_temporal_mega_art_institution_stage_2_entity"
+	pdxmesh = "mega_art_institution_01_stage_2_mesh"
+
+	scale = 8
+	
+		meshsettings = {
+			name = "polySurface13Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_mega_art_institution_diffuse.dds"
+			texture_normal = "lithoid_01_mega_art_institution_normal.dds"
+			texture_specular = "lithoid_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+}
+
+entity = {
+	name = "lithoid_01_temporal_matter_decompressor_stage_2_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+
+	scale = 1
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "lithoid_01_matter_decompressor_normal.dds"
+			texture_specular = "lithoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+entity = {
+	name = "lithoid_01_temporal_matter_decompressor_stage_3_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+
+	scale = 2
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "lithoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "lithoid_01_matter_decompressor_normal.dds"
+			texture_specular = "lithoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+#############################
+### Construction Entities ###
+#############################
+
+entity = {
+
+	###General Information
+	
+	name = "lithoid_01_temporal_tunneler_phase_02_construction_entity"
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "lithoid_01_temporal_tunneler_phase_03_construction_entity"
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "lithoid_01_temporal_tunneler_phase_04_construction_entity"
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+
+	attach = { "loc1306" = "lithoid_01_temporal_mega_art_institution_stage_2_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "lithoid_01_temporal_tunneler_phase_05_construction_entity"
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+
+	attach = { "loc1307" = "lithoid_01_temporal_matter_decompressor_stage_3_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "lithoid_01_temporal_tunneler_phase_06_construction_entity"
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+
+	attach = { "loc1302" = "lithoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "lithoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "lithoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "lithoid_01_temporal_matter_decompressor_stage_2_entity" }
+	scale = 1.0
+}
+
+#####################################################
+#####											#####
+#####				Humanoid					#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "humanoid_01_temporal_tunneler_phase_01_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "humanoid_01_temporal_tunneler_dyson_entity" }
+	
+	scale = 1.0
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "humanoid_01_temporal_tunneler_phase_02_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	
+	attach = { "root" = "humanoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "humanoid_01_temporal_tunneler_phase_03_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	
+	attach = { "root" = "humanoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "humanoid_01_temporal_tunneler_phase_04_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	
+	attach = { "root" = "humanoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "humanoid_01_temporal_mega_art_institution_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "humanoid_01_temporal_tunneler_phase_05_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "humanoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "humanoid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "humanoid_01_temporal_matter_decompressor_stage_3_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "humanoid_01_temporal_tunneler_phase_06_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "humanoid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "humanoid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "humanoid_01_temporal_matter_decompressor_stage_3_entity" }
+
+	attach = { "loc1302" = "humanoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "humanoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "humanoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "humanoid_01_temporal_matter_decompressor_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "humanoid_01_temporal_tunneler_dyson_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "humanoid_01_dyson_sphere_frame_entity" }
+	attach = { "root" = "humanoid_01_dyson_sphere_part_1_entity" }
+	attach = { "root" = "humanoid_01_dyson_sphere_part_2_entity" }
+	attach = { "root" = "humanoid_01_dyson_sphere_part_3_entity" }
+	attach = { "root" = "humanoid_01_dyson_sphere_part_4_entity" }
+	
+	attach = { "root" = "penta_rays_entity" }
+	attach = { "root" = "hexa_rays_entity" }
+	
+	scale = 0.5
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "humanoid_01_temporal_mega_art_institution_stage_2_entity"
+	pdxmesh = "mega_art_institution_01_stage_2_mesh"
+
+	scale = 8
+	
+		meshsettings = {
+			name = "polySurface13Shape"
+			index = 0
+			texture_diffuse = "humanoid_01_mega_art_institution_diffuse.dds"
+			texture_normal = "humanoid_01_mega_art_institution_normal.dds"
+			texture_specular = "humanoid_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+}
+
+entity = {
+	name = "humanoid_01_temporal_matter_decompressor_stage_2_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+
+	scale = 1
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "humanoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "humanoid_01_matter_decompressor_normal.dds"
+			texture_specular = "humanoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+entity = {
+	name = "humanoid_01_temporal_matter_decompressor_stage_3_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+
+	scale = 2
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "humanoid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "humanoid_01_matter_decompressor_normal.dds"
+			texture_specular = "humanoid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+#############################
+### Construction Entities ###
+#############################
+
+entity = {
+
+	###General Information
+	
+	name = "humanoid_01_temporal_tunneler_phase_02_construction_entity"
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "humanoid_01_temporal_tunneler_phase_03_construction_entity"
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "humanoid_01_temporal_tunneler_phase_04_construction_entity"
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+
+	attach = { "loc1306" = "humanoid_01_temporal_mega_art_institution_stage_2_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "humanoid_01_temporal_tunneler_phase_05_construction_entity"
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+
+	attach = { "loc1307" = "humanoid_01_temporal_matter_decompressor_stage_3_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "humanoid_01_temporal_tunneler_phase_06_construction_entity"
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+
+	attach = { "loc1302" = "humanoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "humanoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "humanoid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "humanoid_01_temporal_matter_decompressor_stage_2_entity" }
+	scale = 1.0
+}
+
+#####################################################
+#####											#####
+#####				Necroid						#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "necroid_01_temporal_tunneler_phase_01_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "necroid_01_temporal_tunneler_dyson_entity" }
+	
+	scale = 1.0
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "necroid_01_temporal_tunneler_phase_02_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	
+	attach = { "root" = "necroid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "necroid_01_temporal_tunneler_phase_03_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	
+	attach = { "root" = "necroid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "necroid_01_temporal_tunneler_phase_04_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	
+	attach = { "root" = "necroid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "necroid_01_temporal_mega_art_institution_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "necroid_01_temporal_tunneler_phase_05_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "necroid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "necroid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "necroid_01_temporal_matter_decompressor_stage_3_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "necroid_01_temporal_tunneler_phase_06_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "necroid_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "necroid_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "necroid_01_temporal_matter_decompressor_stage_3_entity" }
+
+	attach = { "loc1302" = "necroid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "necroid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "necroid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "necroid_01_temporal_matter_decompressor_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "necroid_01_temporal_tunneler_dyson_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "necroid_01_dyson_sphere_frame_entity" }
+	attach = { "root" = "necroid_01_dyson_sphere_part_1_entity" }
+	attach = { "root" = "necroid_01_dyson_sphere_part_2_entity" }
+	attach = { "root" = "necroid_01_dyson_sphere_part_3_entity" }
+	attach = { "root" = "necroid_01_dyson_sphere_part_4_entity" }
+	
+	attach = { "root" = "penta_rays_entity" }
+	attach = { "root" = "hexa_rays_entity" }
+	
+	scale = 0.5
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "necroid_01_temporal_mega_art_institution_stage_2_entity"
+	pdxmesh = "mega_art_institution_01_stage_2_mesh"
+
+	scale = 8
+	
+		meshsettings = {
+			name = "polySurface13Shape"
+			index = 0
+			texture_diffuse = "necroid_01_mega_art_institution_diffuse.dds"
+			texture_normal = "necroid_01_mega_art_institution_normal.dds"
+			texture_specular = "necroid_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+}
+
+entity = {
+	name = "necroid_01_temporal_matter_decompressor_stage_2_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+
+	scale = 1
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "necroid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "necroid_01_matter_decompressor_normal.dds"
+			texture_specular = "necroid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+entity = {
+	name = "necroid_01_temporal_matter_decompressor_stage_3_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+
+	scale = 2
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "necroid_01_matter_decompressor_diffuse.dds"
+			texture_normal = "necroid_01_matter_decompressor_normal.dds"
+			texture_specular = "necroid_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+#############################
+### Construction Entities ###
+#############################
+
+entity = {
+
+	###General Information
+	
+	name = "necroid_01_temporal_tunneler_phase_02_construction_entity"
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "necroid_01_temporal_tunneler_phase_03_construction_entity"
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "necroid_01_temporal_tunneler_phase_04_construction_entity"
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+
+	attach = { "loc1306" = "necroid_01_temporal_mega_art_institution_stage_2_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "necroid_01_temporal_tunneler_phase_05_construction_entity"
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+
+	attach = { "loc1307" = "necroid_01_temporal_matter_decompressor_stage_3_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "necroid_01_temporal_tunneler_phase_06_construction_entity"
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+
+	attach = { "loc1302" = "necroid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "necroid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "necroid_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "necroid_01_temporal_matter_decompressor_stage_2_entity" }
+	scale = 1.0
+}
+
+#####################################################
+#####											#####
+#####				Nemesis						#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "nemesis_01_temporal_tunneler_phase_01_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "nemesis_01_temporal_tunneler_dyson_entity" }
+	
+	scale = 1.0
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "nemesis_01_temporal_tunneler_phase_02_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	
+	attach = { "root" = "nemesis_01_temporal_tunneler_dyson_entity" }
+
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "nemesis_01_temporal_tunneler_phase_03_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	
+	attach = { "root" = "nemesis_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "nemesis_01_temporal_tunneler_phase_04_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	
+	attach = { "root" = "nemesis_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "nemesis_01_temporal_mega_art_institution_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "nemesis_01_temporal_tunneler_phase_05_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "nemesis_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "nemesis_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "nemesis_01_temporal_matter_decompressor_stage_3_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "nemesis_01_temporal_tunneler_phase_06_entity"
+	cull_radius = 1000
+	scale = 1.0
+
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "root"	position = { 0 	0  0 } }	
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+	
+	attach = { "root" = "nemesis_01_temporal_tunneler_dyson_entity" }
+
+	attach = { "loc101" = "temporal_tunneler_rings_entity" }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+
+	attach = { "loc1306" = "nemesis_01_temporal_mega_art_institution_stage_2_entity" }
+
+	attach = { "loc1307" = "nemesis_01_temporal_matter_decompressor_stage_3_entity" }
+
+	attach = { "loc1302" = "nemesis_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "nemesis_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "nemesis_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "nemesis_01_temporal_matter_decompressor_stage_2_entity" }
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+
+}
+
+entity = {
+	name = "nemesis_01_temporal_tunneler_dyson_entity"
+	locator = { name = "root"	position = { 0 	0 0 } }	
+	
+	attach = { "root" = "nemesis_01_dyson_sphere_frame_entity" }
+	attach = { "root" = "nemesis_01_dyson_sphere_part_1_entity" }
+	attach = { "root" = "nemesis_01_dyson_sphere_part_2_entity" }
+	attach = { "root" = "nemesis_01_dyson_sphere_part_3_entity" }
+	attach = { "root" = "nemesis_01_dyson_sphere_part_4_entity" }
+	
+	attach = { "root" = "penta_rays_entity" }
+	attach = { "root" = "hexa_rays_entity" }
+	
+	scale = 0.5
+	cull_radius = 500
+	
+	game_data = {
+		emissive_recolor_crunch = 6.0
+	}
+}
+
+entity = {
+	name = "nemesis_01_temporal_mega_art_institution_stage_2_entity"
+	pdxmesh = "mega_art_institution_01_stage_2_mesh"
+
+	scale = 8
+	
+		meshsettings = {
+			name = "polySurface13Shape"
+			index = 0
+			texture_diffuse = "nemesis_01_mega_art_institution_diffuse.dds"
+			texture_normal = "nemesis_01_mega_art_institution_normal.dds"
+			texture_specular = "nemesis_01_mega_art_institution_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+	}
+	
+	attach = { part1_upper = "mega_art_fountain_splash_entity" }
+}
+
+entity = {
+	name = "nemesis_01_temporal_matter_decompressor_stage_2_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+
+	scale = 1
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "nemesis_01_matter_decompressor_diffuse.dds"
+			texture_normal = "nemesis_01_matter_decompressor_normal.dds"
+			texture_specular = "nemesis_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+entity = {
+	name = "nemesis_01_temporal_matter_decompressor_stage_3_entity"
+	pdxmesh = "matter_decompressor_01_stage_3_mesh"
+
+	scale = 2
+	
+		meshsettings = {
+			name = "body3Shape"
+			index = 0
+			texture_diffuse = "nemesis_01_matter_decompressor_diffuse.dds"
+			texture_normal = "nemesis_01_matter_decompressor_normal.dds"
+			texture_specular = "nemesis_01_matter_decompressor_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+
+#############################
+### Construction Entities ###
+#############################
+
+entity = {
+
+	###General Information
+	
+	name = "nemesis_01_temporal_tunneler_phase_02_construction_entity"
+	locator = { name = "loc101" position = { 0 0 0 } rotation = { 0 0 90 } }
+	attach = { loc101 = "temporal_tunneler_rings_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "nemesis_01_temporal_tunneler_phase_03_construction_entity"
+	locator = { name = "loc1300" position = { 0 -90 0 } rotation = { 0 90 0 } }
+	locator = { name = "loc1301" position = { 0 -160 0 } rotation = { 0 90 0 } }
+
+	attach = { "loc1300" = "temporal_borehole_wormhole_station_01_entity" }
+	attach = { "loc1301" = "temporal_borehole_wormhole_station_02_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "nemesis_01_temporal_tunneler_phase_04_construction_entity"
+	locator = { name = "loc1306" position = { 0 -150 0 } rotation = { 0 -180 0 } }
+
+	attach = { "loc1306" = "nemesis_01_temporal_mega_art_institution_stage_2_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "nemesis_01_temporal_tunneler_phase_05_construction_entity"
+	locator = { name = "loc1307" position = { 0 -180 0 } rotation = { 0 -90 0 } }
+
+	attach = { "loc1307" = "nemesis_01_temporal_matter_decompressor_stage_3_entity" }
+	scale = 1.0
+}
+
+entity = {
+
+	###General Information
+	
+	name = "nemesis_01_temporal_tunneler_phase_06_construction_entity"
+	locator = { name = "loc1302" position = { 120 -240 0 } rotation = { 90 0 0 } }
+	locator = { name = "loc1303" position = { -120 -240 0 } rotation = { -90 0 0 } }
+	locator = { name = "loc1304" position = { 0 -240 120 } rotation = { 0 0 0 } }
+	locator = { name = "loc1305" position = { 0 -240 -120 } rotation = { 180 0 0 } }
+
+	attach = { "loc1302" = "nemesis_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1303" = "nemesis_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1304" = "nemesis_01_temporal_matter_decompressor_stage_2_entity" }
+	attach = { "loc1305" = "nemesis_01_temporal_matter_decompressor_stage_2_entity" }
+	scale = 1.0
+}

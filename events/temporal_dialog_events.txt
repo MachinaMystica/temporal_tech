@@ -1,0 +1,237 @@
+namespace = temporal_dialog
+
+####################################################
+### Temporal Vacation Service ######################
+####################################################
+
+country_event = {
+	id = temporal_dialog.1310
+	title = "temporal_dialog.1310.name"
+	desc = "temporal_dialog.1310.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_start
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1310.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1311
+	title = "temporal_dialog.1311.name"
+	desc = "temporal_dialog.1311.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_upgrade_panel
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1311.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1312
+	title = "temporal_dialog.1312.name"
+	desc = "temporal_dialog.1312.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_upgrade_panel
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1312.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1313
+	title = "temporal_dialog.1313.name"
+	desc = "temporal_dialog.1313.desc"
+	picture = GFX_evt_galactic_market
+	show_sound = event_dyson_sphere_build_complete
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1313.a" }
+}
+
+####################################################
+### Timeline Tunneler ##############################
+####################################################
+
+country_event = {
+	id = temporal_dialog.1320
+	title = "temporal_dialog.1320.name"
+	desc = "temporal_dialog.1320.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_start
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1320.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1321
+	title = "temporal_dialog.1321.name"
+	desc = "temporal_dialog.1321.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_upgrade_panel
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1321.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1322
+	title = "temporal_dialog.1322.name"
+	desc = "temporal_dialog.1322.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_upgrade_panel
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1322.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1323
+	title = "temporal_dialog.1323.name"
+	desc = "temporal_dialog.1323.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_complete
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1323.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1324
+	title = "temporal_dialog.1324.name"
+	desc = "temporal_dialog.1324.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_complete
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1324.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1325
+	title = "temporal_dialog.1325.name"
+	desc = "temporal_dialog.1325.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_complete
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1325.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1326
+	title = "temporal_dialog.1326.name"
+	desc = "temporal_dialog.1326.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_complete
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1326.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1327
+	title = "temporal_dialog.1327.name"
+	desc = "temporal_dialog.1327.desc"
+	picture = GFX_evt_vortex
+	show_sound = event_dyson_sphere_build_complete
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1327.a" }
+}
+
+####################################################
+### Living Metal Replicator ########################
+####################################################
+
+country_event = {
+	id = temporal_dialog.1330
+	title = "temporal_dialog.1330.name"
+	desc = "temporal_dialog.1330.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_start
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1330.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1331
+	title = "temporal_dialog.1331.name"
+	desc = "temporal_dialog.1331.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_upgrade_panel
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1331.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1332
+	title = "temporal_dialog.1332.name"
+	desc = "temporal_dialog.1332.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_upgrade_panel
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1332.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1333
+	title = "temporal_dialog.1333.name"
+	desc = "temporal_dialog.1333.desc"
+	picture = GFX_evt_ai_planet
+	show_sound = event_dyson_sphere_build_complete
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1333.a" }
+}
+
+####################################################
+### Shroud Zro Extractor ###########################
+####################################################
+
+country_event = {
+	id = temporal_dialog.1340
+	title = "temporal_dialog.1340.name"
+	desc = "temporal_dialog.1340.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_start
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1340.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1341
+	title = "temporal_dialog.1341.name"
+	desc = "temporal_dialog.1341.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_upgrade_panel
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1341.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1342
+	title = "temporal_dialog.1342.name"
+	desc = "temporal_dialog.1342.desc"
+	picture = GFX_evt_megastructure_construction
+	show_sound = event_dyson_sphere_build_upgrade_panel
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1342.a" }
+}
+
+country_event = {
+	id = temporal_dialog.1343
+	title = "temporal_dialog.1343.name"
+	desc = "temporal_dialog.1343.desc"
+	picture = GFX_evt_shrouded_planet
+	show_sound = event_dyson_sphere_build_complete
+	location = event_target:temporal_planet
+	is_triggered_only = yes
+	option = { name = "temporal_dialog.1343.a" }
+}

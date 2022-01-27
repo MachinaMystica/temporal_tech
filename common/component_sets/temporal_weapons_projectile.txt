@@ -1,0 +1,81 @@
+# Icons set here are the ones shown in compnent editor list.
+
+# Auto-Cannons
+
+component_set = {
+	key = "AUTOCANNON_TEMPORAL"
+	
+	icon = "GFX_ship_part_energy_dampener"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "AUTOCANNON_2_TEMPORAL"
+	
+	icon = "GFX_ship_part_energy_dampener_2"
+	icon_frame = 1	
+}
+
+# Flak Batteries
+
+component_set = {
+	key = "FLAK_BATTERY_TEMPORAL"
+	
+	icon = "GFX_ship_part_tachyon_projection_cannon"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "FLAK_BATTERY_2_TEMPORAL"
+	
+	icon = "GFX_ship_part_tachyon_projection_cannon_2"
+	icon_frame = 1	
+}
+
+# Kinetic Artillery
+
+component_set = {
+	key = "KINETIC_ARTILLERY_TEMPORAL"
+	
+	icon = "GFX_ship_part_shard_cannon"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "KINETIC_ARTILLERY_2_TEMPORAL"
+	
+	icon = "GFX_ship_part_shard_cannon_2"
+	icon_frame = 1	
+}
+
+# Mass Driver
+
+component_set = {
+	key = "MASS_DRIVER_TEMPORAL"
+	
+	icon = "GFX_ship_part_high_energy_magnifier"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MASS_DRIVER_2_TEMPORAL"
+	
+	icon = "GFX_ship_part_high_energy_magnifier_2"
+	icon_frame = 1	
+}
+
+# Mass Accelerators
+
+component_set = {
+	key = "MASS_ACCELERATOR_TEMPORAL"
+	
+	icon = "GFX_ship_part_massive_shield_depleter"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MASS_ACCELERATOR_2_TEMPORAL"
+	
+	icon = "GFX_ship_part_massive_shield_depleter_2"
+	icon_frame = 1	
+}

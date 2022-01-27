@@ -1,0 +1,203 @@
+#######################        LIVING METAL PLANET          #######################
+entity = {
+	name = "livingmetal_planet_01_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "livingmetal_01_diffuse.dds"
+	texture_normal = "livingmetal_01_normal.dds"
+	texture_specular = "livingmetal_01_spec.dds"
+	}
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "clouds_thin_diffuse.dds"
+	texture_normal = "clouds_thin_normal.dds"
+	texture_specular = "clouds_thin_specular.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "clouds_thin_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+
+#######################				WHITE HOLE				#######################
+entity = {
+	name = "wh_star_class_star_entity"
+	pdxmesh = "ehof_whitehole_mesh"
+	scale = 1
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { time = 0.0 node = "planet" particle = "ehof_whitehole_particle"  keep_particle = no trigger_once = yes }
+		start_event = { time = 0.0 node = "planet" particle = "ehof_whitehole2_particle"  keep_particle = no trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+	}
+
+	locator = { name = planet }
+	locator = { name = planet2 rotation = { 10 0 0 } }
+	locator = { name = planet3 rotation = { 20 15 0 } }
+	locator = { name = planet4 rotation = { 30 0 20 } }
+	locator = { name = planet5 rotation = { 40 6 80 } }
+	locator = { name = planet6 rotation = { 50 90 30 } }
+	locator = { name = planet7 rotation = { 60 50 10 } }
+	attach = { planet = "white_hole_rings_entity"  }
+	attach = { planet = "white_hole_grav_lens_entity" }
+	attach = { planet = "white_hole_grav_animation_entity" }
+	attach = { planet = "ehof_penta_rays_entity" }
+	attach = { planet = "ehof_hexa_rays_entity" }
+	attach = { planet2 = "ehof_penta_rays_entity" }
+	attach = { planet2 = "ehof_hexa_rays_entity" }
+	attach = { planet3 = "ehof_penta_rays_entity" }
+	attach = { planet3 = "ehof_hexa_rays_entity" }
+	attach = { planet4 = "ehof_penta_rays_entity" }
+	attach = { planet4 = "ehof_hexa_rays_entity" }
+	attach = { planet5 = "ehof_penta_rays_entity" }
+	attach = { planet5 = "ehof_hexa_rays_entity" }
+	attach = { planet6 = "ehof_penta_rays_entity" }
+	attach = { planet6 = "ehof_hexa_rays_entity" }
+	attach = { planet7 = "ehof_penta_rays_entity" }
+	attach = { planet7 = "ehof_hexa_rays_entity" }
+
+	game_data = {
+		size = 1.0
+		bloom_factor = 5
+	}
+}
+
+# Crisis Version
+entity = {
+	name = "whdyson_star_class_star_entity"
+	pdxmesh = "ehof_whitehole_mesh"
+	scale = 1
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { time = 0.0 node = "planet" particle = "ehof_whitehole_particle"  keep_particle = no trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+	}
+
+	game_data = {
+		size = 1.0
+		bloom_factor = 5
+	}
+}
+
+# Megastructure Version
+entity = {
+	name = "whc_star_class_star_entity"
+	pdxmesh = "ehof_whitehole_mesh"
+	scale = 1
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { time = 0.0 node = "planet" particle = "ehof_whitehole_particle"  keep_particle = no trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "blackhole_hum_idle" } }
+	}
+
+	game_data = {
+		size = 1.0
+		bloom_factor = 5
+	}
+}
+
+# Disc/Grav Lens
+entity = {
+	name = "white_hole_rings_entity"
+	pdxmesh = "black_hole_rings_mesh"
+	scale = 1.3
+
+	meshsettings = {
+		shader = OmniMeshShip
+	}
+
+	playback_rate = -1
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+
+	game_data = {
+		uv_animation_speed   = 0.1
+		uv_animation_direction  = { 0.4 0.4 }
+	}
+}
+
+entity = {
+	name = "white_hole_grav_lens_entity"
+	pdxmesh = "black_hole_grav_lens_mesh"
+	scale = 1.3
+
+	playback_rate = -1
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+	}
+}
+
+entity = {
+	name = "white_hole_grav_animation_entity"
+	pdxmesh = "black_hole_grav_animation_mesh"
+	scale = 1.3
+
+	playback_rate = -1
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+	}
+
+	game_data = {
+		uv_animation_speed   = 0.15
+		uv_animation_direction  = { 0.0 0.4 }
+	}
+}
+
+entity = {
+	name = "ehof_penta_rays_entity"
+	pdxmesh = "penta_rays_mesh"
+	scale = 0.8
+
+	meshsettings = {
+		name = "polySurfaceShape7"
+		index = 0
+		texture_diffuse = "dyson_rays.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+		shader = PdxMeshAlphaAdditiveAnimateUVNoDissolve
+	}
+
+	game_data = {
+		bloom_factor = 2
+		uv_animation_speed   = 0.02
+		uv_animation_direction  = { 0.0 3.5 }
+	}
+}
+
+entity = {
+	name = "ehof_hexa_rays_entity"
+	pdxmesh = "hexa_rays_mesh"
+	scale = 0.8
+
+	meshsettings = {
+		name = "polySurface5Shape"
+		index = 0
+		texture_diffuse = "dyson_rays.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+		shader = PdxMeshAlphaAdditiveAnimateUVNoDissolve
+	}
+
+	game_data = {
+		bloom_factor = 2
+		uv_animation_speed   = 0.1
+		uv_animation_direction  = { 1.0 1.0 }
+	}
+}

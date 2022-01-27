@@ -1,0 +1,713 @@
+## Possible Deposit Variables ##
+# resources, resource and amount
+# potential trigger (planet scope)
+# blocked_modifier - applied to planet only when deposit blocker has been cleared
+# constant_modifier - applied to planet always
+# blocker = <key/any/none> - default any
+# station = station class in orbit to gather
+
+#############################
+###   Temporal Deposits   ###
+#############################
+
+### Repeatable Transdimensional Chronobore Deposits ###
+
+d_temporal_bathwater_epoch = {
+	is_for_colonizeable = yes
+	icon = d_temporal_bathwater_epoch
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			exotic_gases = 15
+			food = 30
+			society_research = 30
+		}
+		produces = { 
+			trigger = { 
+				owner = {
+					OR = {
+						is_hive_empire = yes
+						is_machine_empire = yes
+					}
+				}
+			} 
+			energy = 25
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				NOT = {
+					has_ascension_perk = ap_engineered_evolution
+				}
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_food_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				has_ascension_perk = ap_engineered_evolution
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_food_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_food_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {	
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_food_produces_mult = 0.025
+		}
+	}
+
+}
+
+d_temporal_stelliferous_era = {
+	is_for_colonizeable = yes
+	icon = d_temporal_stelliferous_era
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			consumer_goods = 15
+			volatile_motes = 15
+			energy = 30
+		}
+		produces = { 
+			trigger = { 
+				owner = {
+					OR = {
+						is_hive_empire = yes
+						is_machine_empire = yes
+					}
+				}
+			} 
+			energy = 25
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				NOT = {
+					has_ascension_perk = ap_engineered_evolution
+				}
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_energy_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				has_ascension_perk = ap_engineered_evolution
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_energy_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_energy_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {	
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_energy_produces_mult = 0.025
+		}
+	}
+
+}
+
+d_temporal_degenerate_era = {
+	is_for_colonizeable = yes
+	icon = d_temporal_degenerate_era
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			minor_artifacts = 0.10
+			sr_living_metal = 5
+			alloys = 15
+		}
+		produces = { 
+			trigger = { 
+				owner = {
+					OR = {
+						is_hive_empire = yes
+						is_machine_empire = yes
+					}
+				}
+			} 
+			energy = 25
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				NOT = {
+					has_ascension_perk = ap_engineered_evolution
+				}
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_alloys_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				has_ascension_perk = ap_engineered_evolution
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_alloys_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_alloys_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {	
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_alloys_produces_mult = 0.025
+		}
+	}
+
+}
+
+d_temporal_black_hole_era = {
+	is_for_colonizeable = yes
+	icon = d_temporal_black_hole_era
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			sr_dark_matter = 5
+			minerals = 30
+			physics_research = 30
+		}
+		produces = { 
+			trigger = { 
+				owner = {
+					OR = {
+						is_hive_empire = yes
+						is_machine_empire = yes
+					}
+				}
+			} 
+			energy = 25
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				NOT = {
+					has_ascension_perk = ap_engineered_evolution
+				}
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_minerals_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				has_ascension_perk = ap_engineered_evolution
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_minerals_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_minerals_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {	
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_minerals_produces_mult = 0.025
+		}
+	}
+
+}
+
+d_temporal_dark_era = {
+	is_for_colonizeable = yes
+	icon = d_temporal_dark_era
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			sr_dark_matter = 15
+			physics_research = 60
+		}
+		produces = { 
+			trigger = { 
+				owner = {
+					OR = {
+						is_hive_empire = yes
+						is_machine_empire = yes
+					}
+				}
+			} 
+			energy = 25
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				NOT = {
+					has_ascension_perk = ap_engineered_evolution
+				}
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_sr_dark_matter_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				has_ascension_perk = ap_engineered_evolution
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_sr_dark_matter_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_sr_dark_matter_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {	
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_sr_dark_matter_produces_mult = 0.025
+		}
+	}
+
+}
+
+d_temporal_synthetic_universe = {
+	is_for_colonizeable = yes
+	icon = d_temporal_synthetic_universe
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			influence = 0.05
+			nanites = 15
+			engineering_research = 30
+		}
+		produces = { 
+			trigger = { 
+				owner = {
+					OR = {
+						is_hive_empire = yes
+						is_machine_empire = yes
+					}
+				}
+			} 
+			energy = 25
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				NOT = {
+					has_ascension_perk = ap_engineered_evolution
+				}
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_nanites_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				has_ascension_perk = ap_engineered_evolution
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_nanites_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_nanites_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {	
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_nanites_produces_mult = 0.025
+		}
+	}
+
+}
+
+
+d_temporal_anomalous_dimension = {
+	is_for_colonizeable = yes
+	icon = d_temporal_anomalous_dimension
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			sr_zro = 5
+			rare_crystals = 15
+			unity = 30
+		}
+		produces = { 
+			trigger = { 
+				owner = {
+					OR = {
+						is_hive_empire = yes
+						is_machine_empire = yes
+					}
+				}
+			} 
+			energy = 25
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				NOT = {
+					has_ascension_perk = ap_engineered_evolution
+				}
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_unity_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				has_ascension_perk = ap_engineered_evolution
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_unity_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_unity_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {	
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_unity_produces_mult = 0.025
+		}
+	}
+
+}
+
+d_temporal_eldritch_dimension = {
+	is_for_colonizeable = yes
+	icon = d_temporal_eldritch_dimension
+	category = deposit_cat_rare
+
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			sr_zro = 15
+			rare_crystals = 30
+			society_research = 60
+		}
+		produces = { 
+			trigger = { 
+				owner = {
+					OR = {
+						is_hive_empire = yes
+						is_machine_empire = yes
+					}
+				}
+			} 
+			energy = 25
+		}
+	}
+
+	country_modifier = {
+		all_technology_research_speed = 0.1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				NOT = {
+					has_ascension_perk = ap_engineered_evolution
+				}
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_sr_zro_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_regular_empire = yes
+				has_ascension_perk = ap_engineered_evolution
+			}
+		}
+		modifier = {
+			trade_value_add = 25
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_sr_zro_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			pop_growth_speed = 0.05
+			planet_pop_assembly_organic_mult = 0.05
+			planet_jobs_sr_zro_produces_mult = 0.025
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {	
+			pop_growth_speed = 0.05
+			planet_pop_assembly_mult = 0.05
+			planet_jobs_sr_zro_produces_mult = 0.025
+		}
+	}
+
+}

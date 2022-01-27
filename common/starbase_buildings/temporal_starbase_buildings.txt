@@ -1,0 +1,166 @@
+events_predictor = {
+	icon = "GFX_sb_events_predictor"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_events_predictor }
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 1000
+			nanites = 150
+			sr_zro = 150
+
+		}
+
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	station_modifier = {
+		starbase_defense_platform_capacity_add = 16
+		ship_weapon_range_mult = 0.50
+	}
+
+	equipped_component = "STARBASE_AURA_COMMAND_CENTER"
+	show_in_tech = "tech_events_predictor"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = no
+	ai_weight = {
+		weight = 10
+	}
+}
+
+temporal_regulatory_agencies = {
+	icon = "GFX_sb_temporal_vacation_service"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_temporal_regulatory_agencies
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_colonized_planet"
+			solar_system = {
+				any_system_planet = {
+					is_owned_by = from
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 300
+			nanites = 75
+			sr_zro = 75
+		}
+
+		produces = {
+			unity = 25
+		}
+
+		upkeep = {
+			energy = 15
+		}
+	}
+
+	system_modifier = {
+		pop_government_ethic_attraction = 0.50
+		planet_stability_add = 10
+	}
+
+	show_in_tech = "tech_temporal_regulatory_agencies"
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 150
+	}
+}
+
+temporal_transit_hub = {
+	icon = "GFX_sb_time_shrine"
+	construction_days = 360
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_stable_temporal_tunnels
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_starport"
+			has_starbase_size >= starbase_starport
+		}
+		custom_tooltip = {
+			fail_text = "requires_colonized_planet"
+			solar_system = {
+				any_system_planet = {
+					is_owned_by = from
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 300
+			nanites = 75
+			sr_zro = 75
+		}
+
+		upkeep = {
+			energy = 7.5
+		}
+	}
+
+	system_modifier = {
+		planet_resettlement_unemployed_mult = 2.00
+		pop_growth_from_immigration = 0.25
+		trade_value_mult = 0.25
+	}
+
+	show_in_tech = "tech_stable_temporal_tunnels"
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = 0
+			NOT = {
+				solar_system = {
+					any_system_planet = {
+						exists = owner
+						owner = { is_country_type = default }
+					}
+				}
+			}
+		}
+	}
+}

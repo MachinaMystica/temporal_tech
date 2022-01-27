@@ -1,0 +1,250 @@
+objectTypes = {
+
+####################
+#	WINDUP
+####################
+	
+	pdxparticle = {
+		name = "temporal_lance_1_windup_effect"
+		type = "temporal_lance_1_windup_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "temporal_lance_1_muzzle_windup_effect"
+		type = "temporal_lance_1_muzzle_windup_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "temporal_lance_windup_effect"
+		type = "temporal_lance_windup_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "temporal_lance_muzzle_windup_effect"
+		type = "temporal_lance_muzzle_windup_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "temporal_arc_emitter_windup_effect"
+		type = "temporal_arc_emitter_windup_effect"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "temporal_arc_emitter_muzzle_windup_effect"
+		type = "temporal_arc_emitter_muzzle_windup_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "temporal_arc_emitter_2_windup_effect"
+		type = "temporal_arc_emitter_2_windup_effect"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "temporal_arc_emitter_2_muzzle_windup_effect"
+		type = "temporal_arc_emitter_2_muzzle_windup_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "temporal_titan_laser_1_windup_effect"
+		type = "temporal_titan_laser_1_windup_effect"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "temporal_titan_laser_1_muzzle_windup_effect"
+		type = "temporal_titan_laser_1_muzzle_windup_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "temporal_titan_laser_windup_effect"
+		type = "temporal_titan_laser_windup_effect"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "temporal_titan_laser_muzzle_windup_effect"
+		type = "temporal_titan_laser_muzzle_windup_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "tem_kinetic_artillery_1_windup_effect"
+		type = "tem_kinetic_artillery_1_windup_effect"
+	}
+
+	pdxparticle = {
+		name = "tem_kinetic_artillery_1_muzzle_windup_effect"
+		type = "tem_kinetic_artillery_1_muzzle_windup_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "tem_kinetic_artillery_windup_effect"
+		type = "tem_kinetic_artillery_windup_effect"
+	}
+
+	pdxparticle = {
+		name = "tem_kinetic_artillery_muzzle_windup_effect"
+		type = "tem_kinetic_artillery_muzzle_windup_effect"
+		
+		scale = 1.5
+	}
+
+
+####################
+#	MUZZLE FLASHES
+####################
+	
+	pdxparticle = {
+		name = "temporal_lance_1_muzzle_particle"
+		type = "temporal_lance_1_muzzle"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "temporal_lance_muzzle_particle"
+		type = "temporal_lance_muzzle"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "temporal_arc_emitter_muzzle_particle"
+		type = "temporal_arc_emitter_muzzle"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "temporal_arc_emitter_2_muzzle_particle"
+		type = "temporal_arc_emitter_2_muzzle"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "temporal_titan_laser_1_muzzle_particle"
+		type = "temporal_titan_laser_1_muzzle_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "temporal_titan_laser_muzzle_particle"
+		type = "temporal_titan_laser_muzzle_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "tem_kinetic_artillery_1_muzzle_particle"
+		type = "tem_kinetic_artillery_1_file"
+		
+		scale = 2.0
+	}
+
+	pdxparticle = {
+		name = "tem_kinetic_artillery_1_muzzle_particle"
+		type = "tem_kinetic_artillery_1_file"
+		
+		scale = 2.0
+	}
+
+	pdxparticle = {
+		name = "tem_kinetic_artillery_muzzle_particle"
+		type = "tem_kinetic_artillery_file"
+		
+		scale = 2.0
+	}
+
+	pdxparticle = {
+		name = "tem_kinetic_artillery_muzzle_particle"
+		type = "tem_kinetic_artillery_file"
+		
+		scale = 2.0
+	}
+
+####################
+#	HIT EFFECTS
+####################
+	
+	pdxparticle = {
+		name = "temporal_lance_1_hit_effect"
+		type = "temporal_lance_1_hit_effect"
+		
+		scale = 1.15
+	}
+
+	pdxparticle = {
+		name = "temporal_lance_hit_effect"
+		type = "temporal_lance_hit_effect"
+		
+		scale = 1.15
+	}
+
+	pdxparticle = {
+		name = "temporal_arc_emitter_hit_effect"
+		type = "temporal_arc_emitter_hit_effect"
+		
+		scale = 1.15
+	}
+
+	pdxparticle = {
+		name = "temporal_arc_emitter_2_hit_effect"
+		type = "temporal_arc_emitter_2_hit_effect"
+		
+		scale = 1.15
+	}
+
+	pdxparticle = {
+		name = "temporal_titan_laser_1_hit_effect"
+		type = "temporal_titan_laser_1_hit_effect"
+		
+		scale = 3.0
+	}
+
+	pdxparticle = {
+		name = "temporal_titan_laser_hit_effect"
+		type = "temporal_titan_laser_hit_effect"
+		
+		scale = 3.0
+	}
+
+	pdxparticle = {
+		name = "tem_kinetic_artillery_1_hit_effect"
+		type = "tem_kinetic_artillery_1_hit_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "tem_kinetic_artillery_hit_effect"
+		type = "tem_kinetic_artillery_hit_effect"
+		
+		scale = 1.5
+	}
+	
+}

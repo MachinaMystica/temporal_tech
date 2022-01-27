@@ -1,0 +1,129 @@
+### Tech Levels
+
+# 6
+@temporaltier6cost1 = 64000
+@temporaltier6cost2 = 80000
+@temporaltier6cost3 = 96000
+
+# 7
+@temporaltier7cost1 = 128000
+@temporaltier7cost2 = 160000
+@temporaltier7cost3 = 192000
+
+# 8
+@temporaltier8cost1 = 256000
+@temporaltier8cost2 = 320000
+@temporaltier8cost3 = 384000
+
+# Small
+
+@s_temp_t8_cost = 63
+
+@s_temp_t8_upkeep_energy = 0.56
+@s_temp_t8_upkeep_alloys = 0.156
+
+# Medium
+
+@m_temp_t8_cost = 128
+
+@m_temp_t8_upkeep_energy = 1.74
+@m_temp_t8_upkeep_alloys = 0.248
+
+# Large
+
+@l_temp_t8_cost = 296 #192
+
+@l_temp_t8_upkeep_energy = 2.48
+@l_temp_t8_upkeep_alloys = 0.396
+
+# Extra Large
+
+@xl_temp_t8_cost = 596
+
+@xl_temp_t8_upkeep_energy = 3.98
+@xl_temp_t8_upkeep_alloys = 0.796
+
+# Titanic
+
+@titanic_temp_t8_cost = 593 #771
+
+@titanic_temp_t8_upkeep_energy = 7.93
+@titanic_temp_t8_upkeep_alloys = 2.486
+
+#################
+# RARE RESOURCES
+#################
+
+@s_temp_t8_rare = 0.95
+      
+@m_temp_t8_rare = 2.15
+      
+@l_temp_t8_rare = 4.4
+
+@xl_temp_t8_rare = 8.8
+
+@titanic_temp_t8_rare = 17.58
+
+#################
+# SHIELDS
+#################
+
+# Small
+
+@tempshield_s_t8_cost = 26 #27
+@tempshield_s_t9_cost = 52 #27
+
+@tempshield_s_t8_upkeep_energy = 0.26
+@tempshield_s_t8_upkeep_alloys = 0.054
+@tempshield_s_t9_upkeep_energy = 0.36
+@tempshield_s_t9_upkeep_alloys = 0.084
+
+# Medium
+
+@tempshield_m_t8_cost = 47
+@tempshield_m_t9_cost = 94
+
+@tempshield_m_t8_upkeep_energy = 0.47
+@tempshield_m_t8_upkeep_alloys = 0.094
+@tempshield_m_t9_upkeep_energy = 0.67
+@tempshield_m_t9_upkeep_alloys = 0.134
+
+# Large
+
+@tempshield_l_t8_cost = 91
+@tempshield_l_t9_cost = 182
+
+@tempshield_l_t8_upkeep_energy = 0.91
+@tempshield_l_t8_upkeep_alloys = 0.192
+@tempshield_l_t9_upkeep_energy = 1.21
+@tempshield_l_t9_upkeep_alloys = 0.232
+
+
+#############
+#	POWER	#
+#############
+
+@tempower_S8 = -135
+@tempower_M8 = -270
+@tempower_L8 = -540
+@tempower_S9 = -304
+@tempower_M9 = -608
+@tempower_L9 = -1215
+
+#############
+#	SHIELD	#
+#############
+
+@tempshield_S8 = 432 # 1.8x
+@tempshield_M8 = 1080 # 1.8x
+@tempshield_L8 = 2592 # 1.8x
+@tempshield_S9 = 972 # 2.25x
+@tempshield_M9 = 2430 # 2.25x
+@tempshield_L9 = 5832 # 2.25x
+
+@tempregen_S8 = 3.75
+@tempregen_M8 = 9.65
+@tempregen_L8 = 23.30
+@tempregen_S9 = 7.50
+@tempregen_M9 = 19.30
+@tempregen_L9 = 46.60

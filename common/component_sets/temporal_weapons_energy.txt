@@ -1,0 +1,113 @@
+# Icons set here are the ones shown in component editor list.
+
+
+# Arc Emitter
+
+component_set = {
+	key = "ARC_EMITTER_TEMPORAL"
+	
+	icon = "GFX_ship_part_temporal_shifter"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ARC_EMITTER_2_TEMPORAL"
+	
+	icon = "GFX_ship_part_temporal_shifter_2"
+	icon_frame = 1	
+}
+
+# Disruptors
+
+component_set = {
+	key = "DISRUPTOR_TEMPORAL"
+	
+	icon = "GFX_ship_part_temporal_disruptor"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "DISRUPTOR_2_TEMPORAL"
+	
+	icon = "GFX_ship_part_temporal_disruptor_2"
+	icon_frame = 1	
+}
+
+# Laser
+component_set = {
+	key = "TEMPORAL_LASER"
+	
+	icon = "GFX_ship_part_null_space_projector"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TEMPORAL_2_LASER"
+	
+	icon = "GFX_ship_part_null_space_projector_2"
+	icon_frame = 1	
+}
+
+# Energy Lance
+
+component_set = {
+	key = "ENERGY_LANCE_TEMPORAL"
+	
+	icon = "GFX_ship_part_subspace_rupture_beam"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ENERGY_LANCE_2_TEMPORAL"
+	
+	icon = "GFX_ship_part_subspace_rupture_beam_2"
+	icon_frame = 1	
+}
+
+# Energy Torpedoes
+
+component_set = {
+	key = "ENERGY_TORPEDO_TEMPORAL"
+	
+	icon = "GFX_ship_part_mental_singularity_generator"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ENERGY_TORPEDO_2_TEMPORAL"
+	
+	icon = "GFX_ship_part_mental_singularity_generator_2"
+	icon_frame = 1	
+}
+
+# Plasma
+
+component_set = {
+	key = "PLASMA_TEMPORAL"
+	
+	icon = "GFX_ship_part_time_distortion_burst"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "PLASMA_2_TEMPORAL"
+	
+	icon = "GFX_ship_part_time_distortion_burst_2"
+	icon_frame = 1	
+}
+
+# Titan Laser
+
+component_set = {
+	key = "TEMPORAL_BEAM"
+	
+	icon = "GFX_ship_part_temporal_tachyon_cannon"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TEMPORAL_2_BEAM"
+	
+	icon = "GFX_ship_part_temporal_tachyon_cannon_2"
+	icon_frame = 1	
+}

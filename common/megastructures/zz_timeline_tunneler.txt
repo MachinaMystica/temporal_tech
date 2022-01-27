@@ -1,0 +1,415 @@
+timeline_tunneler_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	prerequisites = { tech_temporal_tunnelers }
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			influence = 300
+		}
+		upkeep = { energy = 5 }
+	}
+
+	potential = {
+		has_technology = tech_temporal_tunnelers
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = { fail_text = "requires_inside_border"		is_inside_border = from }
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_black_hole_neutron_star_pulsar"
+			NOR = {
+				is_star_class = sc_black_hole
+				is_star_class = sc_neutron_star
+				is_star_class = sc_pulsar
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_binary_trinary"
+			NOR = {
+				is_star_class = sc_binary_1
+				is_star_class = sc_binary_2
+				is_star_class = sc_binary_3
+				is_star_class = sc_binary_4
+				is_star_class = sc_binary_5
+				is_star_class = sc_binary_6
+				is_star_class = sc_binary_7
+				is_star_class = sc_binary_8
+				is_star_class = sc_binary_9
+				is_star_class = sc_binary_10
+				is_star_class = sc_trinary_1
+				is_star_class = sc_trinary_2
+				is_star_class = sc_trinary_3
+				is_star_class = sc_trinary_4
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_timeline_tunneler"
+			from = { NOT = { has_country_flag = built_timeline_tunneler_site } }
+		}
+	}
+	
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 15
+		
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}	
+		
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = { 
+					owner = { is_same_value = from } 
+				}
+			}
+		}
+	}
+
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = {
+			set_country_flag = built_timeline_tunneler_site
+			country_event = { id = temporal_dialog.1320 }	# Notification
+		}
+		fromfrom.planet = {
+			if = { limit = { exists = orbital_station } orbital_station = { dismantle = yes } }
+			set_planet_flag = megastructure			# Vanilla uses to check if a megastrucure can be built here
+			set_planet_flag = has_megastructure		# Vanilla uses to check if an orbital station can be built here
+		}
+	}
+}
+
+timeline_tunneler_1 = {
+	entity = "temporal_tunneler_phase_01_entity"
+	construction_entity = "temporal_tunneler_phase_01_entity"
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { timeline_tunneler_0 }
+
+	build_time = 10800
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 50000
+			nanites = 12000
+		}
+		upkeep = {
+			energy = 15
+			sr_dark_matter = 2.5
+			sr_zro = 2.5
+		}
+	}
+
+	possible = { from = { has_technology = tech_temporal_tunnelers } }
+	
+	country_modifier = {
+		trade_value_add = 100
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		random_system_planet = {
+			limit = { is_star = yes }
+			change_planet_size = -30
+		}
+		from = { country_event = { id = temporal_dialog.1321 } }	# Notification
+	}
+}
+
+timeline_tunneler_2 = {
+	entity = "temporal_tunneler_phase_02_entity"
+	construction_entity = "temporal_tunneler_phase_02_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { timeline_tunneler_1 }
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 35000
+			nanites = 10000
+		}
+		upkeep = {
+			energy = 25
+			sr_dark_matter = 5
+			sr_zro = 5
+		}
+	}
+
+	possible = { from = { has_technology = tech_temporal_tunnelers } }
+
+	country_modifier = {
+		trade_value_mult = 0.15
+		planet_amenities_mult = 0.1
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = { country_event = { id = temporal_dialog.1322 } }	# Notification
+	}
+}
+
+timeline_tunneler_3 = {
+	entity = "temporal_tunneler_phase_03_entity"
+	construction_entity = "temporal_tunneler_phase_03_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { timeline_tunneler_2 }
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 35000
+			nanites = 10000
+		}
+		upkeep = {
+			energy = 50
+			sr_dark_matter = 10
+			sr_zro = 10
+		}
+	}
+
+	possible = { from = { has_technology = tech_temporal_tunnelers } }
+
+	country_modifier = {
+		trade_value_mult = 0.3
+		planet_immigration_pull_mult = 0.25
+		planet_amenities_mult = 0.15
+		pop_citizen_happiness = 0.05
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = {
+			country_event = { id = temporal_dialog.1323 }	# Notification
+		}
+	}
+}
+
+timeline_tunneler_4 = {
+	entity = "temporal_tunneler_phase_04_entity"
+	construction_entity = "temporal_tunneler_phase_04_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { timeline_tunneler_3 }
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 35000
+			nanites = 10000
+		}
+		upkeep = {
+			energy = 100
+			sr_dark_matter = 15
+			sr_zro = 15
+		}
+	}
+
+	possible = { from = { has_technology = tech_temporal_tunnelers } }
+
+	country_modifier = {
+		trade_value_mult = 0.3
+		planet_immigration_pull_mult = 0.25
+		planet_amenities_mult = 0.15
+		pop_citizen_happiness = 0.05
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = {
+			country_event = { id = temporal_dialog.1324 }	# Notification
+		}
+	}
+}
+
+timeline_tunneler_5 = {
+	entity = "temporal_tunneler_phase_05_entity"
+	construction_entity = "temporal_tunneler_phase_05_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { timeline_tunneler_4 }
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 35000
+			nanites = 10000
+		}
+		upkeep = {
+			energy = 250
+			sr_dark_matter = 35
+			sr_zro = 35
+		}
+	}
+
+	possible = { from = { has_technology = tech_temporal_tunnelers } }
+
+	country_modifier = {
+		trade_value_mult = 0.3
+		planet_immigration_pull_mult = 0.25
+		planet_amenities_mult = 0.15
+		pop_citizen_happiness = 0.05
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = {
+			country_event = { id = temporal_dialog.1325 }	# Notification
+		}
+	}
+}
+
+timeline_tunneler_6 = {
+	entity = "temporal_tunneler_phase_06_entity"
+	construction_entity = "temporal_tunneler_phase_06_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { timeline_tunneler_5 }
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = { 
+			alloys = 35000
+			nanites = 10000
+		}
+		upkeep = {
+			energy = 500
+			sr_dark_matter = 75
+			sr_zro = 75
+		}
+	}
+
+	possible = { from = { has_technology = tech_temporal_tunnelers } }
+
+	country_modifier = {
+		trade_value_mult = 0.3
+		planet_immigration_pull_mult = 0.25
+		planet_amenities_mult = 0.15
+		pop_citizen_happiness = 0.05
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = {
+			country_event = { id = temporal_dialog.1326 }	# Notification
+		}
+	}
+}
+
+timeline_tunneler_7 = {
+	entity = "temporal_tunneler_phase_06_entity"
+	construction_entity = "temporal_tunneler_phase_06_construction_entity"
+	portrait = "GFX_megastructure_vortex"
+	upgrade_from = { timeline_tunneler_6 }
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = { 
+			energy = 150000
+			sr_dark_matter = 15000
+			sr_zro = 15000
+		}
+		upkeep = {
+			energy = 1000
+			sr_dark_matter = 100
+			sr_zro = 100
+		}
+	}
+
+	possible = { from = { has_technology = tech_temporal_tunnelers } }
+
+	country_modifier = {
+		trade_value_mult = 0.3
+		planet_immigration_pull_mult = 0.25
+		planet_amenities_mult = 0.15
+		pop_citizen_happiness = 0.05
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		fromfrom = {
+			create_ambient_object = {
+				type = "psi_storm_1"
+				location = this
+				entity_offset_height = {
+					min = -33
+					max = -33
+				}
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "temporal_wormhole_object"
+				location = this
+				entity_offset_height = {
+					min = -53
+					max = -53
+				}
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 0
+					angle = random
+				}
+			}
+		}
+		save_event_target_as = temporal_system
+		fromfrom.planet = { save_event_target_as = temporal_planet }
+		from = {
+			country_event = { id = temporal_dialog.1327 }	# Notification
+		}
+	}
+}

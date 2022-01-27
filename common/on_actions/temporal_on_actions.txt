@@ -1,0 +1,12 @@
+### Set global flag ###
+on_game_start = {
+	events = { 
+		temporal.1
+	} 
+}
+
+on_post_government_changed = {
+    events = {
+		temporal.69
+    }
+}

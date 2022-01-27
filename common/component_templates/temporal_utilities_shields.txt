@@ -1,0 +1,238 @@
+#############
+# UTILITIES #
+#############
+
+####################
+# Temporal Shields
+####################
+
+utility_component_template = {
+	key = "SMALL_TEMPORAL_SHIELD"
+	size = small
+	icon = "GFX_ship_part_temporal_shield"
+	icon_frame = 1
+	power = @tempower_S8
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempshield_s_t8_cost
+			sr_zro = 1
+			sr_dark_matter = 1
+		}
+		upkeep = {
+			energy = @tempshield_s_t8_upkeep_energy
+			alloys = @tempshield_s_t8_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @tempshield_S8
+		ship_shield_regen_add_static = @tempregen_S8 #Regeneration per day
+	}
+	prerequisites = { "tech_temporal_shield" }
+	component_set = "TEMPORAL_SHIELD"
+	upgrades_to = "SMALL_TEMPORAL_2_SHIELD"
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_TEMPORAL_SHIELD"
+	size = medium
+	icon = "GFX_ship_part_temporal_shield"
+	icon_frame = 1
+	power = @tempower_M8
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempshield_l_t8_cost
+			sr_zro = 1.25
+			sr_dark_matter = 1.25
+		}
+		upkeep = {
+			energy = @tempshield_l_t8_upkeep_energy
+			alloys = @tempshield_l_t8_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @tempshield_M8
+		ship_shield_regen_add_static = @tempregen_M8 #Regeneration per day
+	}
+	prerequisites = { "tech_temporal_shield" }
+	component_set = "TEMPORAL_SHIELD"
+	upgrades_to = "MEDIUM_TEMPORAL_2_SHIELD"
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_TEMPORAL_SHIELD"
+	size = large
+	icon = "GFX_ship_part_temporal_shield"
+	icon_frame = 1
+	power = @tempower_L8
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempshield_l_t8_cost
+			sr_zro = 1.5
+			sr_dark_matter = 1.5
+		}
+		upkeep = {
+			energy = @tempshield_l_t8_upkeep_energy
+			alloys = @tempshield_l_t8_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @tempshield_L8
+		ship_shield_regen_add_static = @tempregen_L8 #Regeneration per day
+	}
+	prerequisites = { "tech_temporal_shield" }
+	component_set = "TEMPORAL_SHIELD"
+	upgrades_to = "LARGE_TEMPORAL_2_SHIELD"
+
+	ai_weight = {
+		weight = 3
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "SMALL_TEMPORAL_2_SHIELD"
+	size = small
+	icon = "GFX_ship_part_temporal_shield_2"
+	icon_frame = 1
+	power = @tempower_S9
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempshield_s_t9_cost
+			sr_zro = 2
+			sr_dark_matter = 2
+			rare_crystals = 2
+		}
+		upkeep = {
+			energy = @tempshield_s_t9_upkeep_energy
+			alloys = @tempshield_s_t9_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @tempshield_S9
+		ship_shield_regen_add_static = @tempregen_S9 #Regeneration per day
+	}
+	prerequisites = { "tech_temporal_shield_2" }
+	component_set = "TEMPORAL_2_SHIELD"
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = rare_crystals }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "MEDIUM_TEMPORAL_2_SHIELD"
+	size = medium
+	icon = "GFX_ship_part_temporal_shield_2"
+	icon_frame = 1
+	power = @tempower_M9
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempshield_l_t9_cost
+			sr_zro = 2.25
+			sr_dark_matter = 2.25
+			rare_crystals = 2.25
+		}
+		upkeep = {
+			energy = @tempshield_l_t9_upkeep_energy
+			alloys = @tempshield_l_t9_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @tempshield_M9
+		ship_shield_regen_add_static = @tempregen_M9 #Regeneration per day
+	}
+	prerequisites = { "tech_temporal_shield_2" }
+	component_set = "TEMPORAL_2_SHIELD"
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = rare_crystals }
+			}
+		}
+	}
+}
+
+utility_component_template = {
+	key = "LARGE_TEMPORAL_2_SHIELD"
+	size = large
+	icon = "GFX_ship_part_temporal_shield_2"
+	icon_frame = 1
+	power = @tempower_L9
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @tempshield_l_t9_cost
+			sr_zro = 2.5
+			sr_dark_matter = 2.5
+			rare_crystals = 2.5
+		}
+		upkeep = {
+			energy = @tempshield_l_t9_upkeep_energy
+			alloys = @tempshield_l_t9_upkeep_alloys
+		}
+	}
+	modifier = {
+		ship_shield_add = @tempshield_L9
+		ship_shield_regen_add_static = @tempregen_L9 #Regeneration per day
+	}
+	prerequisites = { "tech_temporal_shield_2" }
+	component_set = "TEMPORAL_2_SHIELD"
+
+	ai_weight = {
+		weight = 4
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = sr_dark_matter }
+				no_resource_for_component = { RESOURCE = sr_zro }
+				no_resource_for_component = { RESOURCE = rare_crystals }
+			}
+		}
+	}
+}

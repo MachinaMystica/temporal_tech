@@ -1,0 +1,208 @@
+objectTypes = {
+
+
+####################
+#	MUZZLE FLASHES
+####################
+	
+	pdxparticle = {
+		name = "disruptor_temporal_1_small_muzzle_particle"
+		type = "disruptor_temporal_1_muzzle_file"
+		
+		scale = 0.75
+	}
+
+	pdxparticle = {
+		name = "disruptor_temporal_1_medium_muzzle_particle"
+		type = "disruptor_temporal_1_muzzle_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "disruptor_temporal_1_large_muzzle_particle"
+		type = "disruptor_temporal_1_muzzle_file"
+		
+		scale = 1.25
+	}
+
+	pdxparticle = {
+		name = "disruptor_temporal_small_muzzle_particle"
+		type = "disruptor_temporal_muzzle_file"
+		
+		scale = 0.75
+	}
+
+	pdxparticle = {
+		name = "disruptor_temporal_medium_muzzle_particle"
+		type = "disruptor_temporal_muzzle_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "disruptor_temporal_large_muzzle_particle"
+		type = "disruptor_temporal_muzzle_file"
+		
+		scale = 1.25
+	}
+
+	pdxparticle = {
+		name = "null_laser_large_muzzle_particle"
+		type = "null_laser_file"
+		
+		scale = 2.0
+	}
+
+	pdxparticle = {
+		name = "null_laser_medium_muzzle_particle"
+		type = "null_laser_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "null_laser_small_muzzle_particle"
+		type = "null_laser_file"
+		
+		scale = 0.75
+	}
+
+	pdxparticle = {
+		name = "null_laser_2_large_muzzle_particle"
+		type = "null_laser_2_file"
+		
+		scale = 2.0
+	}
+
+	pdxparticle = {
+		name = "null_laser_2_medium_muzzle_particle"
+		type = "null_laser_2_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "null_laser_2_small_muzzle_particle"
+		type = "null_laser_2_file"
+		
+		scale = 0.75
+	}
+
+	pdxparticle = {
+		name = "temporal_whale_weapon_muzzle_particle"
+		type = "temporal_whale_weapon_muzzle_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "temporal_whale_2_weapon_muzzle_particle"
+		type = "temporal_whale_2_weapon_muzzle_file"
+		
+		scale = 1.0
+	}
+	
+####################
+#	HIT EFFECTS
+####################
+	
+	pdxparticle = {
+		name = "disruptor_temporal_1_small_hit_effect"
+		type = "disruptor_temporal_1_hit_effect"
+		
+		scale = 0.75
+	}
+
+	pdxparticle = {
+		name = "disruptor_temporal_1_medium_hit_effect"
+		type = "disruptor_temporal_1_hit_effect"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "disruptor_temporal_1_large_hit_effect"
+		type = "disruptor_temporal_1_hit_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "disruptor_temporal_small_hit_effect"
+		type = "disruptor_temporal_hit_effect"
+		
+		scale = 0.75
+	}
+
+	pdxparticle = {
+		name = "disruptor_temporal_medium_hit_effect"
+		type = "disruptor_temporal_hit_effect"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "disruptor_temporal_large_hit_effect"
+		type = "disruptor_temporal_hit_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "null_laser_small_hit_effect"
+		type = "null_laser_hit_effect"
+		
+		scale = 0.5
+	}
+
+	pdxparticle = {
+		name = "null_laser_medium_hit_effect"
+		type = "null_laser_hit_effect"
+		
+		scale = 0.75
+	}
+
+	pdxparticle = {
+		name = "null_laser_large_hit_effect"
+		type = "null_laser_hit_effect"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "null_laser_2_small_hit_effect"
+		type = "null_laser_2_hit_effect"
+		
+		scale = 0.5
+	}
+
+	pdxparticle = {
+		name = "null_laser_2_medium_hit_effect"
+		type = "null_laser_2_hit_effect"
+		
+		scale = 0.75
+	}
+
+	pdxparticle = {
+		name = "null_laser_2_large_hit_effect"
+		type = "null_laser_2_hit_effect"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "temporal_whale_weapon_hit_effect"
+		type = "temporal_whale_weapon_hit_effect"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "temporal_whale_2_weapon_hit_effect"
+		type = "temporal_whale_2_weapon_hit_effect"
+		
+		scale = 1.0
+	}
+	
+}

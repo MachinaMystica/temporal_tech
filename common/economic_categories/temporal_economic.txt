@@ -1,0 +1,23 @@
+planet_singularity_mechanics = {
+	icon = job_singularity_mechanic
+	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+	}
+}
+
+planet_metal_breeders = {
+	icon = job_metal_breeder
+	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+	}
+}
+
+planet_zro_distillers = {
+	icon = job_zro_distiller
+	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+	}
+}

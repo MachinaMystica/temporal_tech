@@ -1,0 +1,598 @@
+#############
+# Resource buildings
+#############
+
+### Dark Matter Plant ###
+building_dark_matter_plant_1 = {
+	base_buildtime = @b2_time
+
+	category = manufacturing
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			AND = {
+				exists = owner
+				buildings_no_motes = yes
+			}
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_singularity_mechanic_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_singularity_mechanic_drone_add = 1
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 500
+		}
+		upkeep = {
+			volatile_motes = 2
+			energy = 5
+		}
+	}
+
+	upgrades = {
+		building_dark_matter_plant_2
+	}
+
+	prerequisites = {
+		"tech_dark_matter_plant_1"
+	}
+
+	ai_resource_production = {
+		sr_dark_matter = 2
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+building_dark_matter_plant_2 = {
+	base_buildtime = @b3_time
+	can_build = no
+	category = manufacturing
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			AND = {
+				exists = owner
+				buildings_no_motes = yes
+			}
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_singularity_mechanic_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_singularity_mechanic_drone_add = 3
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 750
+		}
+		upkeep = {
+			volatile_motes = 3
+			energy = 10
+		}
+	}
+
+	upgrades = {
+		building_dark_matter_plant_3
+	}
+
+	prerequisites = {
+		"tech_dark_matter_plant_2"
+	}
+
+	ai_resource_production = {
+		sr_dark_matter = 6
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+building_dark_matter_plant_3 = {
+	base_buildtime = @b4_time
+
+	category = manufacturing
+	can_build = no
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			AND = {
+				exists = owner
+				buildings_no_motes = yes
+			}
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_singularity_mechanic_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_singularity_mechanic_drone_add = 5
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 1000
+		}
+		upkeep = {
+			volatile_motes = 5
+			energy = 15
+		}
+	}
+
+	prerequisites = {
+		"tech_dark_matter_plant_3"
+	}
+
+	ai_resource_production = {
+		sr_dark_matter = 10
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+### Living Metal Plant ###
+building_living_metal_plant_1 = {
+	base_buildtime = @b2_time
+
+	category = manufacturing
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			AND = {
+				exists = owner
+				buildings_no_crystals = yes
+			}
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_metal_breeder_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_metal_breeder_drone_add = 1
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 500
+		}
+		upkeep = {
+			volatile_motes = 2
+			energy = 5
+		}
+	}
+
+	upgrades = {
+		building_living_metal_plant_2
+	}
+
+	prerequisites = {
+		"tech_living_metal_plant_1"
+	}
+
+	ai_resource_production = {
+		sr_dark_matter = 2
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+building_living_metal_plant_2 = {
+	base_buildtime = @b3_time
+	can_build = no
+	category = manufacturing
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			AND = {
+				exists = owner
+				buildings_no_crystals = yes
+			}
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_metal_breeder_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_metal_breeder_drone_add = 3
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 750
+		}
+		upkeep = {
+			volatile_motes = 3
+			energy = 10
+		}
+	}
+
+	upgrades = {
+		building_living_metal_plant_3
+	}
+
+	prerequisites = {
+		"tech_living_metal_plant_2"
+	}
+
+	ai_resource_production = {
+		sr_dark_matter = 6
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+building_living_metal_plant_3 = {
+	base_buildtime = @b4_time
+
+	category = manufacturing
+	can_build = no
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			AND = {
+				exists = owner
+				buildings_no_crystals = yes
+			}
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_metal_breeder_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_metal_breeder_drone_add = 5
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 1000
+		}
+		upkeep = {
+			volatile_motes = 5
+			energy = 15
+		}
+	}
+
+	prerequisites = {
+		"tech_living_metal_plant_3"
+	}
+
+	ai_resource_production = {
+		sr_dark_matter = 10
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+
+### Zro Plant ###
+building_zro_plant_1 = {
+	base_buildtime = @b2_time
+
+	category = manufacturing
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			AND = {
+				exists = owner
+				buildings_no_exotic_gases = yes
+			}
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_zro_distiller_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_zro_distiller_drone_add = 1
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 500
+		}
+		upkeep = {
+			exotic_gases = 2
+			energy = 5
+		}
+	}
+
+	upgrades = {
+		building_zro_plant_2
+	}
+
+	prerequisites = {
+		"tech_zro_plant_1"
+	}
+
+	ai_resource_production = {
+		sr_zro = 2
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+building_zro_plant_2 = {
+	base_buildtime = @b3_time
+	can_build = no
+	category = manufacturing
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			AND = {
+				exists = owner
+				buildings_no_exotic_gases = yes
+			}
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_zro_distiller_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_zro_distiller_drone_add = 3
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 750
+		}
+		upkeep = {
+			exotic_gases = 3
+			energy = 10
+		}
+	}
+
+	upgrades = {
+		building_zro_plant_3
+	}
+
+	prerequisites = {
+		"tech_zro_plant_2"
+	}
+
+	ai_resource_production = {
+		sr_zro = 6
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+building_zro_plant_3 = {
+	base_buildtime = @b4_time
+
+	category = manufacturing
+	can_build = no
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			AND = {
+				exists = owner
+				buildings_no_exotic_gases = yes
+			}
+		}
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_zro_distiller_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_zro_distiller_drone_add = 5
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 1000
+		}
+		upkeep = {
+			exotic_gases = 5
+			energy = 15
+		}
+	}
+
+	prerequisites = {
+		"tech_zro_plant_3"
+	}
+
+	ai_resource_production = {
+		sr_zro = 10
+		trigger = {
+			always = yes
+		}
+	}
+}

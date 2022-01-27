@@ -1,0 +1,527 @@
+#######
+# DISRUPTOR TEMPORAL
+#######
+
+# MUZZLE FLASHES
+
+entity = {
+	name = "disruptor_temporal_1_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "disruptor_temporal_1_small_muzzle_particle" keep_particle = yes sound = { soundeffect = disruptor_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+
+entity = {
+	name = "disruptor_temporal_1_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "disruptor_temporal_1_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = disruptor_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+
+entity = {
+	name = "disruptor_temporal_1_large_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "disruptor_temporal_1_large_muzzle_particle" keep_particle = yes sound = { soundeffect = disruptor_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "disruptor_temporal_1_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = disruptor_temporal_1_small_hit_effect sound = { soundeffect = disruptor_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "disruptor_temporal_1_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = disruptor_temporal_1_medium_hit_effect sound = { soundeffect = disruptor_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "disruptor_temporal_1_large_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = disruptor_temporal_1_large_hit_effect sound = { soundeffect = disruptor_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+# SHIELD HIT ENTITIES
+
+entity = {
+	name = "disruptor_temporal_1_small_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = disruptor_temporal_1_small_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "disruptor_temporal_1_medium_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = disruptor_temporal_1_medium_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "disruptor_temporal_1_large_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = disruptor_temporal_1_large_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#######
+# DISRUPTOR TEMPORAL 2
+#######
+
+# MUZZLE FLASHES
+
+entity = {
+	name = "disruptor_temporal_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "disruptor_temporal_small_muzzle_particle" keep_particle = yes sound = { soundeffect = disruptor_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+
+entity = {
+	name = "disruptor_temporal_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "disruptor_temporal_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = disruptor_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+
+entity = {
+	name = "disruptor_temporal_large_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "disruptor_temporal_large_muzzle_particle" keep_particle = yes sound = { soundeffect = disruptor_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_fire" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "disruptor_temporal_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = disruptor_temporal_small_hit_effect sound = { soundeffect = disruptor_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "disruptor_temporal_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = disruptor_temporal_medium_hit_effect sound = { soundeffect = disruptor_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "disruptor_temporal_large_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = disruptor_temporal_large_hit_effect sound = { soundeffect = disruptor_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_disruptor_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+# SHIELD HIT ENTITIES
+
+entity = {
+	name = "disruptor_temporal_small_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = disruptor_temporal_small_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "disruptor_temporal_medium_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = disruptor_temporal_medium_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "disruptor_temporal_large_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = disruptor_temporal_large_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#######
+# NULL LASERS
+#######
+
+# MUZZLE FLASHES
+
+entity = {
+	name = "null_laser_large_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "null_laser_large_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "null_laser_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "null_laser_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "null_laser_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 1 looping = no
+		event = { time = 0 particle = "null_laser_small_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "null_laser_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = null_laser_small_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "null_laser_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = null_laser_medium_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "null_laser_large_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = null_laser_large_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "null_laser_small_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = null_laser_small_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_small_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "null_laser_medium_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = null_laser_medium_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "null_laser_large_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = null_laser_large_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_large_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#######
+# NULL LASERS 2
+#######
+
+# MUZZLE FLASHES
+
+entity = {
+	name = "null_laser_2_large_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "null_laser_2_large_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "null_laser_2_medium_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 2 looping = no
+		event = { time = 0 particle = "null_laser_2_medium_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+entity = {
+	name = "null_laser_2_small_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 1 looping = no
+		event = { time = 0 particle = "null_laser_2_small_muzzle_particle" keep_particle = yes sound = { soundeffect = laser_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_laser_fire" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "null_laser_2_small_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = null_laser_2_small_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "null_laser_2_medium_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = null_laser_2_medium_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "null_laser_2_large_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = null_laser_2_large_hit_effect sound = { soundeffect = laser_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_laser_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "null_laser_2_small_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = null_laser_2_small_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_small_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "null_laser_2_medium_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = null_laser_2_medium_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_medium_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "null_laser_2_large_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { particle = null_laser_2_large_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { particle = laser_large_shield_hit_effect }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#######
+# TEMPORAL WHALE WEAPON
+#######
+
+# MUZZLE FLASHES
+
+entity = {
+	name = "temporal_whale_weapon_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 0.9 looping = no
+		event = { time = 0 particle = "temporal_whale_weapon_muzzle_particle" keep_particle = yes sound = { soundeffect = space_whale_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_space_whale_fire" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "temporal_whale_weapon_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = temporal_whale_weapon_hit_effect sound = { soundeffect = space_whale_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_space_whale_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "temporal_whale_weapon_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		#event = { time = 0.0 particle = space_whale_weapon_hit_effect }
+		start_event = { particle = laser_medium_shield_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+#######
+# TEMPORAL WHALE WEAPON 2
+#######
+
+# MUZZLE FLASHES
+
+entity = {
+	name = "temporal_whale_2_weapon_muzzle_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 0.9 looping = no
+		event = { time = 0 particle = "temporal_whale_2_weapon_muzzle_particle" keep_particle = yes sound = { soundeffect = space_whale_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_space_whale_fire" } }
+	}
+}
+
+# HIT ENTITIES
+
+entity = {
+	name = "temporal_whale_2_weapon_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { particle = temporal_whale_2_weapon_hit_effect sound = { soundeffect = space_whale_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_space_whale_hit" } }
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}
+
+entity = {
+	name = "temporal_whale_2_weapon_shield_hit_entity"
+	cull_radius = 1.0
+	default_state = "idle"
+	state = { name = "idle"
+		#event = { time = 0.0 particle = space_whale_weapon_hit_effect }
+		start_event = { particle = laser_medium_shield_hit_effect sound = { soundeffect = shield_hit } }
+		start_event = { trigger_once = yes sound = { soundeffect = "distance_shield_hit" } } 
+	}
+	state = { name = "stop" state_time = 0.5 looping = no }
+}

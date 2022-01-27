@@ -1,0 +1,28 @@
+ spriteTypes = {
+	 
+	spriteType = {
+		name = "GFX_resolution_imperial_timeline_institutions"
+		texturefile = "gfx/interface/icons/resolutions/resolution_imperial_timeline_institutions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_imperial_horological_office"
+		texturefile = "gfx/interface/icons/resolutions/resolution_imperial_horological_office.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_timeline_institutions"
+		texturefile = "gfx/interface/icons/resolutions/resolution_timeline_institutions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_temporal_variance_authority"
+		texturefile = "gfx/interface/icons/resolutions/resolution_temporal_variance_authority.dds"
+	}
+
+	spriteType = {
+		name = "GFX_resolution_disband_tva"
+		texturefile = "gfx/interface/icons/resolutions/resolution_repeal_temporal_variance_authority.dds"
+	}
+   
+ }

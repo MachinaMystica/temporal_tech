@@ -1,0 +1,13 @@
+# Icons set here are the ones shown in compnent editor list.
+
+component_set = {
+	key = "POINT_DEFENCE_TEMPORAL"
+	icon = "GFX_ship_part_small_time_distortion_burst"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "POINT_DEFENCE_2_TEMPORAL"
+	icon = "GFX_ship_part_small_time_distortion_burst_2"
+	icon_frame = 1	
+}

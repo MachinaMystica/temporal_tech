@@ -1,0 +1,43 @@
+# Alloy Burner Missile
+
+component_set = {
+	key = "ALLOY_BURNER_MISSILE"
+	
+	icon = "GFX_ship_part_alloy_burner_missile"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ALLOY_BURNER_2_MISSILE"
+	
+	icon = "GFX_ship_part_alloy_burner_missile_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TORPEDO_TEMPORAL"
+	
+	icon = "GFX_ship_part_temporal_torpedo"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TORPEDO_2_TEMPORAL"
+	
+	icon = "GFX_ship_part_temporal_torpedo_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TEMPORAL_SWARMER_MISSILE"
+	
+	icon = "GFX_ship_part_temporal_swarmer_missile"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TEMPORAL_SWARMER_2_MISSILE"
+	
+	icon = "GFX_ship_part_temporal_swarmer_missile_2"
+	icon_frame = 1	
+}

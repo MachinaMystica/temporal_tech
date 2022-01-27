@@ -1,0 +1,3271 @@
+### Tier 5 Prerequisites ###
+
+# T5 Artificial Singularities - Dark Matter Building 1
+tech_dark_matter_plant_1 = {
+	area = physics
+	cost = @tier5cost3
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_universal_programmable_matter" "tech_mine_dark_matter" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# T5 Living Metal Breeding - Living Metal Building 1
+tech_living_metal_plant_1 = {
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	category = { materials }
+	prerequisites = { "tech_universal_programmable_matter" "tech_mine_living_metal" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+# T5 Megastructure
+tech_planetscale_metal_seeding = {
+	area = engineering
+	cost = @tier5cost3
+	tier = 5
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_mega_engineering" "tech_living_metal_plant_1" }
+	weight = @tier5weight3
+	is_rare = yes
+
+	potential = {
+		host_has_dlc = "Utopia"
+	}
+
+	modifier = {
+        description = tech_planetscale_metal_seeding_modifier_desc
+    }
+
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_spark_of_genius"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
+			}
+		}
+		modifier = {
+			factor = 6
+			has_ascension_perk = ap_master_builders
+		}
+		modifier = {
+			factor = 9
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_science_nexus }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+# T5 Shroud Harvesting - Zro Building 1
+tech_zro_plant_1 = {
+	area = society
+	cost = @tier5cost3
+	tier = 5
+	category = { psionics }
+	prerequisites = { "tech_universal_programmable_matter" "tech_mine_zro" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
+}
+
+### Tier 6 Fundamentals ###
+
+# T6 Artificial Singularities - Dark Matter Building 2
+tech_dark_matter_plant_2 = {
+	area = physics
+	cost = @temporaltier6cost3
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_atto_optimizations" "tech_dark_matter_plant_1" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# T6 Living Metal Breeding - Living Metal Building 2
+tech_living_metal_plant_2 = {
+	area = engineering
+	cost = @temporaltier6cost3
+	tier = 5
+	category = { materials }
+	prerequisites = { "tech_atto_optimizations" "tech_living_metal_plant_1" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+# T6 Shroud Harvesting - Zro Building 2
+tech_zro_plant_2 = {
+	area = society
+	cost = @temporaltier6cost3
+	tier = 5
+	category = { psionics }
+	prerequisites = { "tech_atto_optimizations" "tech_zro_plant_1" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
+}
+
+# T6 Megastructure
+tech_shroud_collapsing_zones = {
+	area = society
+	cost = @temporaltier6cost3
+	tier = 5
+	category = { statecraft }
+	ai_update_type = all
+	prerequisites = { "tech_mega_engineering" "tech_zro_plant_2" }
+	weight = @tier5weight3
+	is_rare = yes
+
+	potential = {
+		host_has_dlc = "Utopia"
+	}
+
+	modifier = {
+        description = tech_shroud_collapsing_zones_modifier_desc
+    }
+
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_spark_of_genius"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
+			}
+		}
+		modifier = {
+			factor = 6
+			has_ascension_perk = ap_master_builders
+		}
+		modifier = {
+			factor = 9
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_science_nexus }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
+}
+
+# T6 Psionic Nanite Swarms - 
+tech_zro_nanites = {
+	area = society
+	cost = @temporaltier6cost3
+	tier = 5
+	is_rare = yes
+	is_dangerous = yes
+	category = { psionics }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0
+	}
+}
+
+# T6 Temporal Theory - 
+tech_temporal_theory = {
+	area = physics
+	cost = @temporaltier6cost3
+	tier = 5
+	is_rare = yes
+	category = { field_manipulation }
+	prerequisites = { "tech_zro_nanites" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0
+	}
+}
+
+### Tier 7 Universal Manipulation ###
+
+# T7 Temporal Manipulation - 
+tech_temporal_manipulation = {
+	area = physics
+	cost = @temporaltier7cost1
+	tier = 5
+	is_rare = yes
+	is_dangerous = yes
+	category = { field_manipulation }
+	prerequisites = { "tech_temporal_theory" }
+	weight = @tier5weight3
+
+	modifier = {
+        description = tech_temporal_manipulation_modifier_desc
+    }
+	
+	weight_modifier = {
+		factor = 0
+	}
+}
+
+# T7 Stable Temporal Bubbles
+tech_stable_temporal_bubbles = {
+	area = physics
+	cost = @temporaltier7cost1
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_temporal_manipulation" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# T7 Acceleration Fields - 
+tech_temporal_acceleration = {
+	area = physics
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_stable_temporal_bubbles" }
+	weight = @tier5weight3
+
+	modifier = {
+        description = tech_temporal_acceleration_modifier_desc
+    }
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# T7 Deceleration Fields - 
+tech_temporal_deceleration = {
+	area = physics
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_stable_temporal_bubbles" }
+	weight = @tier5weight3
+
+	modifier = {
+        description = tech_temporal_deceleration_modifier_desc
+    }
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# T7 Defensive Module
+tech_events_predictor = {
+	area = engineering
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "tech_temporal_manipulation" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 3 # ship upgrades are supposed to be good!
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+# T7 Strike Craft
+tech_strike_craft_fighter_temporal = {
+	area = engineering
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "tech_temporal_manipulation" "tech_miniaturized_autowars" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+# T7 Mass Driver
+tech_high_energy_magnifier = {
+	area = engineering
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_temporal_manipulation" "tech_mass_drivers_5" }
+	weight = @tier5weight3
+	
+	gateway = kinetic_weapons
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T7 Artillery
+tech_shard_cannon = {
+	area = engineering
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_high_energy_magnifier" "tech_kinetic_artillery_2" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T7 Cannons
+tech_massive_shield_depleter = {
+	area = engineering
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_high_energy_magnifier" "tech_mass_accelerator_2" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T7 Autocannons
+tech_energy_dampener = {
+	area = engineering
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_high_energy_magnifier" "tech_autocannons_3" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T7 Flak
+tech_tachyon_projection_cannon = {
+	area = engineering
+	cost = @temporaltier7cost1
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_temporal_manipulation" "tech_flak_batteries_3" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T7 Missiles
+tech_alloy_burner_missile = {
+	area = engineering
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_temporal_power_core" "tech_missiles_5" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T7 Swarmer Missiles
+tech_temporal_swarmer_missile = {
+	area = engineering
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_alloy_burner_missile" "tech_nano_swarmer_missile" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T7 Torpedo
+tech_temporal_torpedo = {
+	area = engineering
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_alloy_burner_missile" "tech_nano_torpedoes" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T7 Armor
+tech_armor_temporal = {
+	area = engineering
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { materials }
+	prerequisites = { "tech_temporal_manipulation" "tech_self_healing_armor" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+# T7 Thrusters
+tech_temporal_thruster = {
+	area = engineering
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_temporal_manipulation" "tech_dark_matter_propulsion" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_battleships
+		}
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_THRUSTER_5_TITLE"
+			desc = "TECH_UNLOCK_THRUSTER_5_DESC"
+		}
+	}
+
+	ai_weight = {
+		factor = 1.25 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T7 Afterburners
+tech_temporal_afterburners = {
+	area = engineering
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_temporal_manipulation" "tech_temporal_thruster" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_AFTERBURNER_3_TITLE"
+			desc = "TECH_UNLOCK_AFTERBURNER_3_DESC"
+		}
+	}
+
+	ai_weight = {
+		factor = 1.25 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T7 Reactor
+tech_temporal_power_core = {
+	area = physics
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_temporal_manipulation" "tech_dark_matter_power_core" }
+	weight = @tier5weight3
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_TEMPORAL_POWER_TITLE"
+			desc = "TECH_UNLOCK_TEMPORAL_POWER_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 3 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T7 Shield
+tech_temporal_shield = {
+	area = physics
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_stable_temporal_bubbles" "tech_dark_matter_deflector" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# T7 Sensor
+tech_ship_part_temporal_sensor = {
+	area = physics
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { computing }
+	prerequisites = { "tech_temporal_manipulation" "tech_sensors_4" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 1.25 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_SENSOR_5_TITLE"
+			desc = "TECH_UNLOCK_SENSOR_5_DESC"
+		}
+	}
+}
+
+# T7 Jump Drive
+tech_temporal_jump_drive = {
+	area = physics
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_temporal_manipulation" "tech_jump_drive_1" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.1
+		modifier = {
+			factor = 0.1
+			NOR = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_particles"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_maniacal"
+				}
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_temporal_jump_drive }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+	}
+
+	ai_weight = {
+		factor = 20 #FTL techs are good
+	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TEMPORAL_JUMP_DRIVE_TITLE"
+			desc = "TECH_UNLOCK_TEMPORAL_JUMP_DRIVE_DESC"
+		}
+	}
+}
+
+# T7 Lasers
+tech_null_space_projector = {
+	area = physics
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_temporal_manipulation" "tech_lasers_5" }
+	weight = @tier5weight3
+	
+	gateway = energy_weapons
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T7 Lances
+tech_subspace_rupture_beam = {
+	area = physics
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_null_space_projector" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T7 Plasma
+tech_time_distortion_burst = {
+	area = physics
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_null_space_projector" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T7 Disruptor
+tech_temporal_disruptor = {
+	area = physics
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_null_space_projector" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}	
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T7 Arc Emitters
+tech_temporal_shifter = {
+	area = physics
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_temporal_disruptor" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T7 Anti-Shields
+tech_shield_accelerator = {
+	area = physics
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_temporal_disruptor" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}	
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T7 Energy Launcher
+tech_mental_singularity_generator = {
+	area = physics
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_null_space_projector" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T7 Point Defense
+tech_small_time_distortion_burst = {
+	area = physics
+	cost = @temporaltier7cost2
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_temporal_manipulation" "tech_pd_tracking_3" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}		
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}
+
+# Artificial Singularities - Dark Matter Building 3
+tech_dark_matter_plant_3 = {
+	area = physics
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_temporal_manipulation" "tech_dark_matter_plant_2" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# Living Metal Breeding - Living Metal Building 3
+tech_living_metal_plant_3 = {
+	area = engineering
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { materials }
+	prerequisites = { "tech_temporal_manipulation" "tech_living_metal_plant_2" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+# Shroud Harvesting - Zro Building 3
+tech_zro_plant_3 = {
+	area = society
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { psionics }
+	prerequisites = { "tech_temporal_manipulation" "tech_zro_plant_2" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
+}
+
+# T7 Megastructure
+tech_temporal_tourism = {
+	area = society
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { statecraft }
+	ai_update_type = all
+	prerequisites = { "tech_mega_engineering" "tech_temporal_power_core" }
+	weight = @tier5weight3
+	is_rare = yes
+
+	potential = {
+		host_has_dlc = "Utopia"
+	}
+
+	modifier = {
+        description = tech_temporal_tourism_modifier_desc
+    }
+
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_spark_of_genius"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
+			}
+		}
+		modifier = {
+			factor = 6
+			has_ascension_perk = ap_master_builders
+		}
+		modifier = {
+			factor = 9
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_science_nexus }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+### Tier 8 Multiverse Manipulation ###
+
+# Timeline Manipulation - 
+tech_timeline_manipulation = {
+	area = physics
+	cost = @temporaltier8cost1
+	tier = 5
+	is_rare = yes
+	category = { field_manipulation }
+	prerequisites = { "tech_temporal_manipulation" }
+	weight = @tier5weight3
+
+	modifier = {
+        description = tech_timeline_manipulation_modifier_desc
+    }
+	
+	weight_modifier = {
+		factor = 0
+	}
+}
+
+# T8 Megastructure
+tech_temporal_tunnelers = {
+	area = physics
+	cost = @temporaltier8cost3
+	tier = 5
+	category = { field_manipulation }
+	ai_update_type = all
+	prerequisites = { "tech_mega_engineering" "tech_timeline_manipulation" }
+	weight = @tier5weight3
+	is_rare = yes
+
+	potential = {
+		host_has_dlc = "Utopia"
+	}
+
+	modifier = {
+        description = tech_temporal_tunnelers_modifier_desc
+    }
+
+	weight_modifier = {
+		factor = 0.25
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_maniacal"
+			}
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_spark_of_genius"
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_ascension_perk = ap_galactic_wonders_utopia
+				has_ascension_perk = ap_galactic_wonders_utopia_and_megacorp
+			}
+		}
+		modifier = {
+			factor = 6
+			has_ascension_perk = ap_master_builders
+		}
+		modifier = {
+			factor = 9
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_science_nexus }
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# Stable Temporal Tunnels
+tech_stable_temporal_tunnels = {
+	area = physics
+	cost = @temporaltier8cost1
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_temporal_tunnelers" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	} 
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# Hyper-Acceleration Fields - 
+tech_temporal_hyperacceleration = {
+	area = physics
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_stable_temporal_tunnels" }
+	weight = @tier5weight3
+
+	modifier = {
+        description = tech_temporal_hyperacceleration_modifier_desc
+    }
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# Stasis Fields - 
+tech_temporal_stasis = {
+	area = physics
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_stable_temporal_tunnels" }
+	weight = @tier5weight3
+
+	modifier = {
+        description = tech_temporal_stasis_modifier_desc
+    }
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# T8 Strike Craft
+tech_strike_craft_fighter_temporal_2 = {
+	area = engineering
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_strike_craft_fighter_temporal" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}
+
+# T8 Mass Driver
+tech_high_energy_magnifier_2 = {
+	area = engineering
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_high_energy_magnifier" }
+	weight = @tier5weight3
+	
+	gateway = kinetic_weapons
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T8 Artillery
+tech_shard_cannon_2 = {
+	area = engineering
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_shard_cannon" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T8 Cannons
+tech_massive_shield_depleter_2 = {
+	area = engineering
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_massive_shield_depleter" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T8 Autocannons
+tech_energy_dampener_2 = {
+	area = engineering
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_energy_dampener" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T8 Flak
+tech_tachyon_projection_cannon_2 = {
+	area = engineering
+	cost = @temporaltier8cost1
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_tachyon_projection_cannon" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T8 Missiles
+tech_alloy_burner_missile_2 = {
+	area = engineering
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_alloy_burner_missile" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T8 Swarmer Missiles
+tech_temporal_swarmer_missile_2 = {
+	area = engineering
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_temporal_swarmer_missile" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T8 Torpedo
+tech_temporal_torpedo_2 = {
+	area = engineering
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_temporal_torpedo" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T8 Armor
+tech_armor_temporal_2 = {
+	area = engineering
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { materials }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_armor_temporal" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+# T8 Thrusters
+tech_temporal_thruster_2 = {
+	area = engineering
+	cost = @temporaltier8cost3
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_temporal_thruster" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+		modifier = {
+			factor = 2
+			has_technology = tech_battleships
+		}
+	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_THRUSTER_6_TITLE"
+			desc = "TECH_UNLOCK_THRUSTER_6_DESC"
+		}
+	}
+
+	ai_weight = {
+		factor = 1.25 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T8 Afterburners
+tech_temporal_afterburners_2 = {
+	area = engineering
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { propulsion }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_temporal_afterburners" "tech_temporal_thruster_2" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_AFTERBURNER_4_TITLE"
+			desc = "TECH_UNLOCK_AFTERBURNER_4_DESC"
+		}
+	}
+
+	ai_weight = {
+		factor = 1.25 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_propulsion"
+			}
+		}
+	}
+}
+
+# T8 Reactor
+tech_temporal_power_core_2 = {
+	area = physics
+	cost = @temporaltier8cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_temporal_power_core" }
+	weight = @tier5weight3
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = component
+		custom = {
+			title = "TECH_UNLOCK_TEMPORAL_POWER_2_TITLE"
+			desc = "TECH_UNLOCK_TEMPORAL_POWER_2_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 3 #important component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T8 Shield
+tech_temporal_shield_2 = {
+	area = physics
+	cost = @temporaltier8cost3
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_temporal_shield" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 1.25
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 2 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+# T8 Sensor
+tech_ship_part_temporal_sensor_2 = {
+	area = physics
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { computing }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_ship_part_temporal_sensor" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 1.25 #good component
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_SENSOR_6_TITLE"
+			desc = "TECH_UNLOCK_SENSOR_6_DESC"
+		}
+	}
+}
+
+#Temporal Decoder
+tech_temporal_decoder = {
+	cost = @temporaltier8cost3
+	area = physics
+	tier = 5
+	category = { computing }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_ship_part_temporal_sensor_2" "tech_enigmatic_decoder" }
+	ai_update_type = all
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}
+
+#Temporal Encoder
+tech_temporal_encoder = {
+	cost = @temporaltier8cost3
+	area = physics
+	tier = 5
+	category = { computing }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_ship_part_temporal_sensor_2" "tech_enigmatic_encoder" }
+	ai_update_type = all
+	weight = @tier5weight3
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}
+
+
+# T8 Jump Drive
+tech_temporal_jump_drive_2 = {
+	area = physics
+	cost = @temporaltier8cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_temporal_jump_drive" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.1
+		modifier = {
+			factor = 0.1
+			NOR = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_particles"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_maniacal"
+				}
+			}
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_temporal_jump_drive_2 }
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+	}
+
+	ai_weight = {
+		factor = 20 #FTL techs are good
+	}
+
+	prereqfor_desc = {
+		component = {
+			title = "TECH_UNLOCK_TEMPORAL_JUMP_DRIVE_2_TITLE"
+			desc = "TECH_UNLOCK_TEMPORAL_JUMP_DRIVE_2_DESC"
+		}
+	}
+}
+
+# T8 Lasers
+tech_null_space_projector_2 = {
+	area = physics
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_null_space_projector" }
+	weight = @tier5weight3
+	
+	gateway = energy_weapons
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T8 Lances
+tech_subspace_rupture_beam_2 = {
+	area = physics
+	cost = @temporaltier8cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_subspace_rupture_beam" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T8 Plasma
+tech_time_distortion_burst_2 = {
+	area = physics
+	cost = @temporaltier8cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_time_distortion_burst" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T8 Disruptor
+tech_temporal_disruptor_2 = {
+	area = physics
+	cost = @temporaltier8cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_temporal_disruptor" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}	
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T8 Arc Emitters
+tech_temporal_shifter_2 = {
+	area = physics
+	cost = @temporaltier8cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_temporal_shifter" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T8 Anti-Shields
+tech_shield_accelerator_2 = {
+	area = physics
+	cost = @temporaltier7cost3
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_shield_accelerator" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}	
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T8 Energy Launcher
+tech_mental_singularity_generator_2 = {
+	area = physics
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_mental_singularity_generator" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+
+# T8 Point Defense
+tech_small_time_distortion_burst_2 = {
+	area = physics
+	cost = @temporaltier8cost2
+	tier = 5
+	category = { particles }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_small_time_distortion_burst" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}		
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}
+
+# Artificial Singularities - Dark Matter Building 3
+tech_dark_matter_plant_4 = {
+	area = physics
+	cost = @temporaltier8cost3
+	tier = 5
+	category = { field_manipulation }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_dark_matter_plant_3" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+
+    modifier = {
+        description = tech_dark_matter_plant_4_modifier_desc
+    }
+}
+
+# Living Metal Breeding - Living Metal Building 3
+tech_living_metal_plant_4 = {
+	area = engineering
+	cost = @temporaltier8cost3
+	tier = 5
+	category = { materials }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_living_metal_plant_3" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+    modifier = {
+        description = tech_living_metal_plant_4_modifier_desc
+    }
+}
+
+# Shroud Harvesting - Zro Building 3
+tech_zro_plant_4 = {
+	area = society
+	cost = @temporaltier8cost3
+	tier = 5
+	category = { psionics }
+	prerequisites = { "tech_stable_temporal_tunnels" "tech_zro_plant_3" }
+	weight = @tier5weight3
+	
+	weight_modifier = {
+		factor = 0.50
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
+
+    modifier = {
+        description = tech_zro_plant_4_modifier_desc
+    }
+}
+
+# Temporal Regulatory Agencies
+tech_temporal_regulatory_agencies = {
+	area = engineering
+	cost = @temporaltier8cost3
+	tier = 5
+	category = { voidcraft }
+	prerequisites = { "tech_stable_temporal_tunnels" }
+	weight = @tier5weight3
+	
+	potential = {
+		owner = { 
+			is_galactic_community_member = yes 
+		}
+		OR = {
+			is_active_resolution = "resolution_custodian_tva"
+			is_active_resolution = "resolution_emperor_iho"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 3 # ship upgrades are supposed to be good!
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+}

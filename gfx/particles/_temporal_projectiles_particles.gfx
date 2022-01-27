@@ -1,0 +1,358 @@
+objectTypes = {
+
+
+####################
+#	MUZZLE FLASHES
+####################
+	
+	pdxparticle = {
+		name = "plasma_temporal_1_large_muzzle_particle"
+		type = "plasma_temporal_1_file"
+		
+		scale = 0.80
+	}
+
+	pdxparticle = {
+		name = "plasma_temporal_1_medium_muzzle_particle"
+		type = "plasma_temporal_1_file"
+		
+		scale = 0.5
+	}
+
+	pdxparticle = {
+		name = "plasma_temporal_1_small_muzzle_particle"
+		type = "plasma_temporal_1_file"
+		
+		scale = 0.25
+	}
+
+	pdxparticle = {
+		name = "plasma_temporal_large_muzzle_particle"
+		type = "plasma_temporal_file"
+		
+		scale = 0.80
+	}
+	
+	pdxparticle = {
+		name = "plasma_temporal_medium_muzzle_particle"
+		type = "plasma_temporal_file"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "plasma_temporal_small_muzzle_particle"
+		type = "plasma_temporal_file"
+		
+		scale = 0.25
+	}
+
+	pdxparticle = {
+		name = "temporal_auto_cannons_1_small_muzzle_particle"
+		type = "temporal_auto_cannons_1_muzzle"
+		
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "temporal_auto_cannons_1_medium_muzzle_particle"
+		type = "temporal_auto_cannons_1_muzzle"
+		
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "temporal_auto_cannons_1_large_muzzle_particle"
+		type = "temporal_auto_cannons_1_muzzle"
+		
+		scale = 1.25
+	}
+
+	pdxparticle = {
+		name = "temporal_auto_cannons_small_muzzle_particle"
+		type = "temporal_auto_cannons_muzzle"
+		
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "temporal_auto_cannons_medium_muzzle_particle"
+		type = "temporal_auto_cannons_muzzle"
+		
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "temporal_auto_cannons_large_muzzle_particle"
+		type = "temporal_auto_cannons_muzzle"
+		
+		scale = 1.25
+	}
+
+	pdxparticle = {
+		name = "temporal_cannon_1_large_muzzle_particle"
+		type = "temporal_cannon_1_muzzle"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "temporal_cannon_1_medium_muzzle_particle"
+		type = "temporal_cannon_1_muzzle"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "temporal_cannon_1_small_muzzle_particle"
+		type = "temporal_cannon_1_muzzle"
+		
+		scale = 0.75
+	}
+
+	pdxparticle = {
+		name = "temporal_cannon_large_muzzle_particle"
+		type = "temporal_cannon_muzzle"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "temporal_cannon_medium_muzzle_particle"
+		type = "temporal_cannon_muzzle"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "temporal_cannon_small_muzzle_particle"
+		type = "temporal_cannon_muzzle"
+		
+		scale = 0.75
+	}
+	
+#################
+#	FLYING EFFECTS
+#################
+	
+	pdxparticle = {
+		name = "large_plasma_temporal_1_idle_particle"
+		type = "plasma_temporal_1_idle_file"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "large_plasma_temporal_1_idle_drops_particle"
+		type = "plasma_temporal_1_idle_drops_file"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "medium_plasma_temporal_1_idle_particle"
+		type = "plasma_temporal_1_idle_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "medium_plasma_temporal_1_idle_drops_particle"
+		type = "plasma_temporal_1_idle_drops_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "small_plasma_temporal_1_idle_particle"
+		type = "plasma_temporal_1_idle_file"
+		
+		scale = 0.5
+	}
+
+	pdxparticle = {
+		name = "small_plasma_temporal_1_idle_drops_particle"
+		type = "plasma_temporal_1_idle_drops_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "large_plasma_temporal_idle_particle"
+		type = "plasma_temporal_idle_file"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "large_plasma_temporal_idle_drops_particle"
+		type = "plasma_temporal_idle_drops_file"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "medium_plasma_temporal_idle_particle"
+		type = "plasma_temporal_idle_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "medium_plasma_temporal_idle_drops_particle"
+		type = "plasma_temporal_idle_drops_file"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "small_plasma_temporal_idle_particle"
+		type = "plasma_temporal_idle_file"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "small_plasma_temporal_idle_drops_particle"
+		type = "plasma_temporal_idle_drops_file"
+		
+		scale = 1.0
+	}
+	
+#####
+# HIT EFFECTS
+#####
+	
+	pdxparticle = {
+		name = "singularity_hit_effect"
+		type = "singularity_hit_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "singularity_2_hit_effect"
+		type = "singularity_2_hit_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "plasma_temporal_1_small_hit_effect"
+		type = "plasma_temporal_1_hit_effect"
+		
+		scale = 0.35
+	}
+	
+	pdxparticle = {
+		name = "plasma_temporal_1_medium_hit_effect"
+		type = "plasma_temporal_1_hit_effect"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "plasma_temporal_1_large_hit_effect"
+		type = "plasma_temporal_1_hit_effect"
+		
+		scale = 0.8
+	}
+
+	pdxparticle = {
+		name = "plasma_temporal_small_hit_effect"
+		type = "plasma_temporal_hit_effect"
+		
+		scale = 0.35
+	}
+	
+	pdxparticle = {
+		name = "plasma_temporal_medium_hit_effect"
+		type = "plasma_temporal_hit_effect"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "plasma_temporal_large_hit_effect"
+		type = "plasma_temporal_hit_effect"
+		
+		scale = 0.8
+	}
+
+	pdxparticle = {
+		name = "temporal_auto_cannons_1_small_hit_effect"
+		type = "temporal_auto_cannons_1_hit_effect"
+		
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "temporal_auto_cannons_1_medium_hit_effect"
+		type = "temporal_auto_cannons_1_hit_effect"
+		
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "temporal_auto_cannons_1_large_hit_effect"
+		type = "temporal_auto_cannons_1_hit_effect"
+		
+		scale = 1.25
+	}
+
+	pdxparticle = {
+		name = "temporal_auto_cannons_small_hit_effect"
+		type = "temporal_auto_cannons_hit_effect"
+		
+		scale = 0.5
+	}
+	pdxparticle = {
+		name = "temporal_auto_cannons_medium_hit_effect"
+		type = "temporal_auto_cannons_hit_effect"
+		
+		scale = 1.0
+	}
+	pdxparticle = {
+		name = "temporal_auto_cannons_large_hit_effect"
+		type = "temporal_auto_cannons_hit_effect"
+		
+		scale = 1.25
+	}
+
+	pdxparticle = {
+		name = "temporal_cannon_1_large_hit_effect"
+		type = "temporal_cannon_1_hit_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "temporal_cannon_1_medium_hit_effect"
+		type = "temporal_cannon_1_hit_effect"
+		
+		scale = 0.75
+	}
+	
+	pdxparticle = {
+		name = "temporal_cannon_1_small_hit_effect"
+		type = "temporal_cannon_1_hit_effect"
+		
+		scale = 0.5
+	}
+
+	pdxparticle = {
+		name = "temporal_cannon_large_hit_effect"
+		type = "temporal_cannon_hit_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "temporal_cannon_medium_hit_effect"
+		type = "temporal_cannon_hit_effect"
+		
+		scale = 0.75
+	}
+	
+	pdxparticle = {
+		name = "temporal_cannon_small_hit_effect"
+		type = "temporal_cannon_hit_effect"
+		
+		scale = 0.5
+	}
+	
+}
